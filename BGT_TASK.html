@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Akshay Kulkarni" />
+
+<meta name="date" content="2019-03-25" />
+
+<title>Analytical Occupation Classfication on O*NET Database</title>
+
+<script src="BGT_TASK_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="BGT_TASK_files/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="BGT_TASK_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="BGT_TASK_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="BGT_TASK_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="BGT_TASK_files/navigation-1.1/tabsets.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Analytical Occupation Classfication on O*NET Database</h1>
+<h4 class="author">Akshay Kulkarni</h4>
+<h4 class="date">25 March 2019</h4>
+
+</div>
+
+
+<div id="introduction" class="section level1">
+<h1><span class="header-section-number">1</span> Introduction</h1>
+<div id="the-onet-database-a-primary-source-of-occupational-information" class="section level2">
+<h2><span class="header-section-number">1.1</span> The ONET Database: A Primary Source of Occupational Information</h2>
+<p>The ONET database has a wide variety of worker and job oriented data categories. The ONET Content Model provides the framework that identifies and organizes this important information about work. The O*NET-SOC Occupation Taxonomy covers work performed in the U.S. economy and defines the set of occupations for which data is collected.</p>
+<p>The ONet is now the primary source of occupational information. It is sponsored by ETA through a grant to the North Carolina Department of Commerce. Thus, it is a rich database with a sizable ampunt of information of very high quality.</p>
+<p>This is script deals with the task of classifying a given occupation from the the ONET database by implementing a model to estimate a probability of an occupation being <em>Analytical</em> in nature. After spending some time looking around on the ONET site, Relevant tables that contain possible promising features were identified and data was aqucisitoned, cleaned and transformed to create a feature matrix on which modelling was done to predict an occupation being analytical.</p>
+<p>This RMD script contains:</p>
+<ul>
+<li>Feature Analysis and manipulation.</li>
+<li>Training the model on manually pre-labled data</li>
+<li>Prediction</li>
+</ul>
+</div>
+<div id="checking-and-loading-required-libraries" class="section level2">
+<h2><span class="header-section-number">1.2</span> Checking and Loading required libraries</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Initialization</span>
+
+packages &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;tidyverse&quot;</span>,<span class="st">&quot;readxl&quot;</span>,<span class="st">&quot;scales&quot;</span>,<span class="st">&quot;mice&quot;</span>,<span class="st">&quot;randomForest&quot;</span>,<span class="st">&quot;MASS&quot;</span>,<span class="st">&quot;caret&quot;</span>,<span class="st">&quot;klaR&quot;</span>,<span class="st">&quot;xlsx&quot;</span>,<span class="st">&quot;modelr&quot;</span>,<span class="st">&quot;kernlab&quot;</span>) <span class="co"># add any packages that need to be installed to this vec.</span>
+
+checkPackage &lt;-<span class="st"> </span><span class="cf">function</span>(package_vec){                 <span class="co"># defining a custom function for checking packages.</span>
+                            <span class="cf">for</span> (p <span class="cf">in</span> package_vec){
+                                <span class="cf">if</span>(p <span class="op">%in%</span><span class="st"> </span><span class="kw">rownames</span>(<span class="kw">installed.packages</span>()) <span class="op">==</span><span class="st"> </span><span class="ot">FALSE</span>){
+                                    <span class="kw">cat</span>(<span class="kw">paste</span>(p,<span class="st">&quot;Package is not found/installed on this machine,                  installing the required package... </span><span class="ch">\n</span><span class="st">&quot;</span>))
+                                    <span class="kw">install.packages</span>(p,<span class="dt">dependencies =</span> <span class="ot">TRUE</span>) <span class="co"># Installing with dependancies</span>
+                                } <span class="cf">else</span> {
+                                <span class="kw">cat</span>(<span class="kw">paste</span>(<span class="st">&quot;[&quot;</span>,p,<span class="st">&quot;]&quot;</span>,<span class="st">&quot;is present. </span><span class="ch">\n</span><span class="st">&quot;</span>))
+                              }
+                            }
+                          }
+                          
+
+
+
+<span class="kw">checkPackage</span>(packages) <span class="co"># running check </span></code></pre></div>
+<pre><code>## [ tidyverse ] is present. 
+## [ readxl ] is present. 
+## [ scales ] is present. 
+## [ mice ] is present. 
+## [ randomForest ] is present. 
+## [ MASS ] is present. 
+## [ caret ] is present. 
+## [ klaR ] is present. 
+## [ xlsx ] is present. 
+## [ modelr ] is present. 
+## [ kernlab ] is present.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load packages</span>
+
+<span class="kw">library</span>(<span class="st">&#39;MASS&#39;</span>)
+<span class="kw">library</span>(<span class="st">&#39;readxl&#39;</span>) <span class="co"># Reading data</span>
+<span class="kw">library</span>(<span class="st">&#39;scales&#39;</span>) <span class="co"># visualization</span>
+<span class="kw">library</span>(<span class="st">&#39;dplyr&#39;</span>) <span class="co"># data manipulation (already loaded with Tidyverse)</span>
+<span class="kw">library</span>(<span class="st">&#39;mice&#39;</span>) <span class="co"># needed for possible imputation</span>
+<span class="kw">library</span>(<span class="st">&#39;randomForest&#39;</span>) <span class="co"># RF classification algorithm</span>
+<span class="kw">library</span>(<span class="st">&#39;tidyverse&#39;</span>) <span class="co"># Data manipulation + Visualization</span>
+<span class="kw">library</span>(<span class="st">&#39;klaR&#39;</span>) <span class="co"># for partimat function for plotting discriminant analysis plots</span>
+<span class="kw">library</span>(<span class="st">&#39;xlsx&#39;</span>) <span class="co"># writing to xlsx format</span>
+<span class="kw">library</span>(<span class="st">&#39;modelr&#39;</span>) <span class="co"># for partitioning function</span>
+<span class="kw">library</span>(<span class="st">&#39;caret&#39;</span>)
+<span class="kw">library</span>(<span class="st">&#39;kernlab&#39;</span>) <span class="co">#Gaussian Process Classification Function</span></code></pre></div>
+</div>
+</div>
+<div id="data-collation-and-feature-selection" class="section level1">
+<h1><span class="header-section-number">2</span> Data collation and Feature Selection:</h1>
+<p>Before any feature selection can begin setting a base definition about what constitutes as an ANALYTICAL and what aspects might influence the nature of an occupation will be good.</p>
+<p>Solutions can be reached by clear-cut, methodical approaches or more creative and lateral angles, depending on the objective. Both ways of solving a problem require analytical skills. Analytical skills might sound technical, but we use these skills in everyday work when detecting patterns, brainstorming, observing, interpreting data, integrating new information, theorizing, and making decisions based on multiple factors and options available.</p>
+<p>therefore features that could capture the analytical nature of an occupation would have descriptions strongly correlating to aspects in :</p>
+<ul>
+<li>Communication.</li>
+<li>Creativity.</li>
+<li>Critical Thinking &amp; Pattern analysis.</li>
+<li>Information Processing.</li>
+<li>Analytics</li>
+<li>Research.</li>
+</ul>
+<p>etc.</p>
+<p>Therefore after systematically observing all tables int the ONET Content model and correlating features by using the Content Model Reference, Various variables from multiple tables such as Ablities, Skills, Work Activities , Interests were identified and further reduced to avoid repeated or correlating features.</p>
+<p>Thus the final feature list was identified as below :</p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="25%" />
+<col width="69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>SOC Code</th>
+<th>Selected Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.A.1.b.2</td>
+<td>Originality</td>
+<td>The ability to come up with unusual or clever ideas about a given topic or situation, or to develop creative ways to solve a problem.</td>
+</tr>
+<tr class="even">
+<td>1.A.1.b.3</td>
+<td>Problem Sensitivity</td>
+<td>The ability to tell when something is wrong or is likely to go wrong. It does not involve solving the problem, only recognizing there is a problem.</td>
+</tr>
+<tr class="odd">
+<td>1.A.1.b.5</td>
+<td>Inductive Reasoning</td>
+<td>The ability to combine pieces of information to form general rules or conclusions (includes finding a relationship among seemingly unrelated events).</td>
+</tr>
+<tr class="even">
+<td>1.C.7.a</td>
+<td>Innovation</td>
+<td>Job requires creativity and alternative thinking to develop new ideas for and answers to work-related problems.</td>
+</tr>
+<tr class="odd">
+<td>1.C.7.b</td>
+<td>Analytical Thinking</td>
+<td>Job requires analyzing information and using logic to address work-related issues and problems.</td>
+</tr>
+<tr class="even">
+<td>2.A.2.a</td>
+<td>Critical Thinking</td>
+<td>Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions or approaches to problems.</td>
+</tr>
+<tr class="odd">
+<td>2.A.2.b</td>
+<td>Active Learning</td>
+<td>Understanding the implications of new information for both current and future problem-solving and decision-making.</td>
+</tr>
+<tr class="even">
+<td>2.B.2.i</td>
+<td>Complex Problem Solving</td>
+<td>Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions.</td>
+</tr>
+<tr class="odd">
+<td>4.A.2.a.1</td>
+<td>Judging the Qualities of Things, Services, or People</td>
+<td>Assessing the value, importance, or quality of things or people.</td>
+</tr>
+<tr class="even">
+<td>4.A.2.a.4</td>
+<td>Analyzing Data or Information</td>
+<td>Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.</td>
+</tr>
+<tr class="odd">
+<td>4.A.2.b.1</td>
+<td>Making Decisions and Solving Problems</td>
+<td>Analyzing information and evaluating results to choose the best solution and solve problems.</td>
+</tr>
+<tr class="even">
+<td>4.A.2.b.3</td>
+<td>Updating and Using Relevant Knowledge</td>
+<td>Keeping up-to-date technically and applying new knowledge to your job.</td>
+</tr>
+<tr class="odd">
+<td>4.A.2.b.4</td>
+<td>Developing Objectives and Strategies</td>
+<td>Establishing long-range objectives and specifying the strategies and actions to achieve them.</td>
+</tr>
+</tbody>
+</table>
+<p>12 variables have been identified that describe analytical attributes. These features do a pretty good job of encompassing the analytical nature of an occupation title from various aspects or facets mentioned in our base definition/assumption.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Loading data (make sure the tables re in the same fold as the rmd)</span>
+ 
+script_folder &lt;-<span class="st">  </span><span class="kw">getwd</span>() <span class="co"># Retrieving the path from where the rmd is being accessed (To eliminate locating files and paths, if run from the Task folder since default behaviour for getwd in a rmd is to give the working directory of the rmd not the global setting)</span>
+
+
+occupation_rawdata &lt;-<span class="st"> </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Occupation Data.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># loading Occupation table</span>
+
+skills_rawdata &lt;-<span class="st">  </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Skills.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))  <span class="co"># loading Skills table</span>
+
+scale_ref &lt;-<span class="st">  </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Scales Reference.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># loading Scales ref table</span>
+
+blsdata &lt;-<span class="st">  </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/national_M2017_dl.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># national BLS data for general EDA</span>
+
+abilities_rawdata &lt;-<span class="st">  </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Abilities.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># loading abilities table</span>
+
+workactivities_rawdata &lt;-<span class="st"> </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Work Activities.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># loading work activity table</span>
+
+interests_rawdata &lt;-<span class="st"> </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Interests.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># loading interests table</span>
+
+workstyles_rawdata &lt;-<span class="st"> </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Work Styles.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>))
+
+CMR &lt;-<span class="st">  </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Content Model Reference.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) <span class="co"># Content model Reference details</span>
+
+blsdatamay18 &lt;-<span class="st"> </span>blsdata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="dt">OCC_CODE =</span> <span class="kw">paste</span>(OCC_CODE,<span class="st">&quot;.00&quot;</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>)) <span class="co"># BLS data for possible EDA</span>
+
+
+
+
+
+<span class="kw">str</span>(skills_rawdata)</code></pre></div>
+<pre><code>## Classes &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;:    67690 obs. of  15 variables:
+##  $ O*NET-SOC Code    : chr  &quot;11-1011.00&quot; &quot;11-1011.00&quot; &quot;11-1011.00&quot; &quot;11-1011.00&quot; ...
+##  $ Title             : chr  &quot;Chief Executives&quot; &quot;Chief Executives&quot; &quot;Chief Executives&quot; &quot;Chief Executives&quot; ...
+##  $ Element ID        : chr  &quot;2.A.1.a&quot; &quot;2.A.1.a&quot; &quot;2.A.1.b&quot; &quot;2.A.1.b&quot; ...
+##  $ Element Name      : chr  &quot;Reading Comprehension&quot; &quot;Reading Comprehension&quot; &quot;Active Listening&quot; &quot;Active Listening&quot; ...
+##  $ Scale ID          : chr  &quot;IM&quot; &quot;LV&quot; &quot;IM&quot; &quot;LV&quot; ...
+##  $ Scale Name        : chr  &quot;Importance&quot; &quot;Level&quot; &quot;Importance&quot; &quot;Level&quot; ...
+##  $ Data Value        : num  4.12 4.75 4.12 4.88 4 4.38 4.38 4.88 3.25 3.62 ...
+##  $ N                 : num  8 8 8 8 8 8 8 8 8 8 ...
+##  $ Standard Error    : num  0.13 0.16 0.13 0.23 0 0.18 0.18 0.13 0.16 0.26 ...
+##  $ Lower CI Bound    : num  3.88 4.43 3.88 4.43 4 4.02 4.02 4.63 2.93 3.11 ...
+##  $ Upper CI Bound    : num  4.37 5.07 4.37 5.32 4 4.73 4.73 5.12 3.57 4.14 ...
+##  $ Recommend Suppress: chr  &quot;N&quot; &quot;N&quot; &quot;N&quot; &quot;N&quot; ...
+##  $ Not Relevant      : chr  NA &quot;N&quot; NA &quot;N&quot; ...
+##  $ Date              : chr  &quot;07/2014&quot; &quot;07/2014&quot; &quot;07/2014&quot; &quot;07/2014&quot; ...
+##  $ Domain Source     : chr  &quot;Analyst&quot; &quot;Analyst&quot; &quot;Analyst&quot; &quot;Analyst&quot; ...</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
+
+skills &lt;-<span class="st"> </span>skills_rawdata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">O*NET-SOC Code</span><span class="st">`</span>,Title,<span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)<span class="op">%&gt;%</span>
+<span class="st">                              </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span> <span class="op">==</span><span class="st"> &quot;LV&quot;</span>)<span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">                                </span><span class="kw">spread</span>(<span class="dt">key =</span> <span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>, <span class="dt">value =</span> <span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)
+
+
+abilities &lt;-<span class="st"> </span>abilities_rawdata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">O*NET-SOC Code</span><span class="st">`</span>,Title,<span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)<span class="op">%&gt;%</span><span class="st">                                  </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span> <span class="op">==</span><span class="st"> &quot;LV&quot;</span>)<span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">                                  </span><span class="kw">spread</span>(<span class="dt">key =</span> <span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>, <span class="dt">value =</span> <span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)
+
+activities &lt;-<span class="st"> </span>workactivities_rawdata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">O*NET-SOC Code</span><span class="st">`</span>,Title,<span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)<span class="op">%&gt;%</span><span class="st">                                  </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span> <span class="op">==</span><span class="st"> &quot;LV&quot;</span>)<span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">                             </span><span class="kw">spread</span>(<span class="dt">key =</span> <span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>, <span class="dt">value =</span> <span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)
+
+interests &lt;-<span class="st"> </span>interests_rawdata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">O*NET-SOC Code</span><span class="st">`</span>,Title,<span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)<span class="op">%&gt;%</span><span class="st">                                  </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span> <span class="op">==</span><span class="st"> &quot;OI&quot;</span>)<span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">                             </span><span class="kw">spread</span>(<span class="dt">key =</span> <span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>, <span class="dt">value =</span> <span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)
+
+styles &lt;-<span class="st"> </span>workstyles_rawdata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">select</span>(<span class="st">`</span><span class="dt">O*NET-SOC Code</span><span class="st">`</span>,Title,<span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)<span class="op">%&gt;%</span><span class="st">                                  </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">Scale ID</span><span class="st">`</span> <span class="op">==</span><span class="st"> &quot;IM&quot;</span>)<span class="op">%&gt;%</span><span class="st">  </span>
+<span class="st">                             </span><span class="kw">spread</span>(<span class="dt">key =</span> <span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span>, <span class="dt">value =</span> <span class="st">`</span><span class="dt">Data Value</span><span class="st">`</span>)
+
+
+
+
+
+merged_features_data &lt;-<span class="st"> </span>skills <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">left_join</span>(abilities,<span class="dt">by =</span><span class="kw">c</span>(<span class="st">&quot;O*NET-SOC Code&quot;</span>,<span class="st">&quot;Title&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">left_join</span>(activities,<span class="dt">by =</span><span class="kw">c</span>(<span class="st">&quot;O*NET-SOC Code&quot;</span>,<span class="st">&quot;Title&quot;</span>))  <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">left_join</span>(styles,<span class="dt">by =</span><span class="kw">c</span>(<span class="st">&quot;O*NET-SOC Code&quot;</span>,<span class="st">&quot;Title&quot;</span>))  <span class="co"># Joining tables with SOC code as the primary key (title is is redundant but kept.)</span>
+
+
+
+<span class="co">#-------------------------------------------------------------------------------------------------</span>
+
+features &lt;-<span class="st">  </span><span class="kw">c</span>(<span class="st">&quot;O*NET-SOC Code&quot;</span>,<span class="st">&quot;Title&quot;</span>,
+               <span class="st">&quot;Originality&quot;</span>,
+               <span class="st">&quot;Problem Sensitivity&quot;</span>,
+               <span class="st">&quot;Inductive Reasoning&quot;</span>,
+               <span class="st">&quot;Innovation&quot;</span>,
+               <span class="st">&quot;Analytical Thinking&quot;</span>,
+               <span class="st">&quot;Critical Thinking&quot;</span>,
+               <span class="st">&quot;Active Learning&quot;</span>,
+               <span class="st">&quot;Complex Problem Solving&quot;</span>,
+               <span class="st">&quot;Judging the Qualities of Things, Services, or People&quot;</span>,
+               <span class="st">&quot;Making Decisions and Solving Problems&quot;</span>,
+               <span class="st">&quot;Updating and Using Relevant Knowledge&quot;</span>,
+               <span class="st">&quot;Developing Objectives and Strategies&quot;</span>)  <span class="co"># Defining a vector of chosen features </span>
+
+
+
+
+
+main_features &lt;-<span class="st"> </span>merged_features_data <span class="op">%&gt;%</span><span class="st"> </span>dplyr<span class="op">::</span><span class="kw">select</span>(<span class="kw">one_of</span>(features)) <span class="co"># picking cols/features of interest. </span>
+
+
+<span class="kw">head</span>(main_features,<span class="dv">10</span>)</code></pre></div>
+<pre><code>## # A tibble: 10 x 14
+##    `O*NET-SOC Code` Title Originality `Problem Sensit~ `Inductive Reas~ Innovation `Analytical Thi~
+##    &lt;chr&gt;            &lt;chr&gt;       &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;      &lt;dbl&gt;            &lt;dbl&gt;
+##  1 11-1011.00       Chie~        4.25             5                5          4.27             4.45
+##  2 11-1011.03       Chie~        4                4.25             4.25       4.38             4.31
+##  3 11-1021.00       Gene~        3.38             3.88             3.38       3.65             4.03
+##  4 11-2011.00       Adve~        3.88             4                3.88       3.99             3.88
+##  5 11-2021.00       Mark~        4                3.88             3.88       4.15             4   
+##  6 11-2022.00       Sale~        3.88             3.88             4          4.13             4.14
+##  7 11-2031.00       Publ~        4                4                3.75       3.68             3.79
+##  8 11-3011.00       Admi~        3.12             3.75             3.38       3.85             4.04
+##  9 11-3021.00       Comp~        3.5              4                4          3.7              4.25
+## 10 11-3031.01       Trea~        3.38             4.75             4.12       3.57             4.63
+## # ... with 7 more variables: `Critical Thinking` &lt;dbl&gt;, `Active Learning` &lt;dbl&gt;, `Complex Problem
+## #   Solving` &lt;dbl&gt;, `Judging the Qualities of Things, Services, or People` &lt;dbl&gt;, `Making
+## #   Decisions and Solving Problems` &lt;dbl&gt;, `Updating and Using Relevant Knowledge` &lt;dbl&gt;,
+## #   `Developing Objectives and Strategies` &lt;dbl&gt;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">write_csv</span>(main_features,<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/TrainingFeatures.csv&quot;</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))</code></pre></div>
+<p>Thus we have obtained a clean feature matrix with each row forming a feature vector <span class="math inline">\(\hat{x}\)</span> <span class="math inline">\(\in\)</span> <span class="math inline">\({\rm I\!R}^{12}\)</span> for <span class="math inline">\(n\)</span> = 967 occupation titles</p>
+</div>
+<div id="generating-lables-for-training" class="section level1">
+<h1><span class="header-section-number">3</span> Generating Lables for Training</h1>
+<p>Our feature matrix is missing the binary response variable <span class="math inline">\(y\)</span> <span class="math inline">\(\in\)</span> <span class="math inline">\({0,1}\)</span> which denotes whether a particular job is <code>Analytical</code></p>
+<p>Therefore the response variable was manually generated by hand-labeling. The subjective assessment was done with randomly sampling occupations and comparing them to a psuedo-rubric consisting the base assumption/definition and the attributes that are indicative of the analytical nature of an occupation.</p>
+<p>I surmised that the procedure would best carried out together with a cohort of MSDS students (a group of 5 Friends) at Northeastern University in order to mitigate the unavoidable subjective bias in the data which was natrually bound to arise. (hand-labelled 167 occupations, assigning 1 if analytical, and 0 if not). The resulting DF contained the response variable <code>ANALYTICAL</code> <span class="math inline">\(\in\)</span> <span class="math inline">\({0,1}\)</span> otherwise <code>NA</code> for unlablled points.</p>
+<div id="loading-labled-data" class="section level2">
+<h2><span class="header-section-number">3.1</span> Loading Labled data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">Labled_original_data &lt;-<span class="st">  </span><span class="kw">read_csv</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/LabledTrainingFeatures.csv&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>), <span class="dt">na =</span> <span class="st">&quot;NA&quot;</span>)</code></pre></div>
+<pre><code>## Parsed with column specification:
+## cols(
+##   `O*NET-SOC Code` = col_character(),
+##   Title = col_character(),
+##   ANALYTICAL = col_double(),
+##   Originality = col_double(),
+##   `Problem Sensitivity` = col_double(),
+##   `Inductive Reasoning` = col_double(),
+##   Innovation = col_double(),
+##   `Analytical Thinking` = col_double(),
+##   `Critical Thinking` = col_double(),
+##   `Active Learning` = col_double(),
+##   `Complex Problem Solving` = col_double(),
+##   `Judging the Qualities of Things, Services, or People` = col_double(),
+##   `Making Decisions and Solving Problems` = col_double(),
+##   `Updating and Using Relevant Knowledge` = col_double(),
+##   `Developing Objectives and Strategies` = col_double()
+## )</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">model_data &lt;-<span class="st"> </span>Labled_original_data
+<span class="kw">names</span>(model_data)&lt;-<span class="kw">str_replace_all</span>(<span class="kw">names</span>(model_data), <span class="kw">c</span>(<span class="st">&quot; &quot;</span> =<span class="st"> &quot;.&quot;</span>, <span class="st">&quot;,&quot;</span> =<span class="st"> &quot;&quot;</span>))<span class="co"># renaming cols and removing spaces and commas</span>
+
+<span class="kw">str</span>(model_data)</code></pre></div>
+<pre><code>## Classes &#39;spec_tbl_df&#39;, &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;: 967 obs. of  15 variables:
+##  $ O*NET-SOC.Code                                    : chr  &quot;11-1011.00&quot; &quot;11-1011.03&quot; &quot;11-1021.00&quot; &quot;11-2011.00&quot; ...
+##  $ Title                                             : chr  &quot;Chief Executives&quot; &quot;Chief Sustainability Officers&quot; &quot;General and Operations Managers&quot; &quot;Advertising and Promotions Managers&quot; ...
+##  $ ANALYTICAL                                        : num  1 1 1 NA NA NA NA NA 1 NA ...
+##  $ Originality                                       : num  4.25 4 3.38 3.88 4 3.88 4 3.12 3.5 3.38 ...
+##  $ Problem.Sensitivity                               : num  5 4.25 3.88 4 3.88 3.88 4 3.75 4 4.75 ...
+##  $ Inductive.Reasoning                               : num  5 4.25 3.38 3.88 3.88 4 3.75 3.38 4 4.12 ...
+##  $ Innovation                                        : num  4.27 4.38 3.65 3.99 4.15 4.13 3.68 3.85 3.7 3.57 ...
+##  $ Analytical.Thinking                               : num  4.45 4.31 4.03 3.88 4 4.14 3.79 4.04 4.25 4.63 ...
+##  $ Critical.Thinking                                 : num  4.75 4.12 4 4.12 4.25 4 4 3.88 4 4.5 ...
+##  $ Active.Learning                                   : num  4.75 3.75 3.62 4.12 4.12 3.88 3.5 3.38 3.88 4.25 ...
+##  $ Complex.Problem.Solving                           : num  5 4.25 3.75 3.88 3.88 3.88 3.88 3.12 3.88 4.12 ...
+##  $ Judging.the.Qualities.of.Things.Services.or.People: num  5.39 4.27 4.43 3.66 3.53 3.96 4.09 3.94 4.79 4.38 ...
+##  $ Making.Decisions.and.Solving.Problems             : num  6.18 5.4 4.48 4.18 4.67 5.26 4.6 4.67 5.16 6.1 ...
+##  $ Updating.and.Using.Relevant.Knowledge             : num  4.92 5.54 4.53 4.49 4.52 4.87 4.93 4.99 5.35 5.3 ...
+##  $ Developing.Objectives.and.Strategies              : num  5.68 5.12 3.77 3.9 4.17 4.78 4.8 3.34 4.63 5.34 ...
+##  - attr(*, &quot;spec&quot;)=
+##   .. cols(
+##   ..   `O*NET-SOC Code` = col_character(),
+##   ..   Title = col_character(),
+##   ..   ANALYTICAL = col_double(),
+##   ..   Originality = col_double(),
+##   ..   `Problem Sensitivity` = col_double(),
+##   ..   `Inductive Reasoning` = col_double(),
+##   ..   Innovation = col_double(),
+##   ..   `Analytical Thinking` = col_double(),
+##   ..   `Critical Thinking` = col_double(),
+##   ..   `Active Learning` = col_double(),
+##   ..   `Complex Problem Solving` = col_double(),
+##   ..   `Judging the Qualities of Things, Services, or People` = col_double(),
+##   ..   `Making Decisions and Solving Problems` = col_double(),
+##   ..   `Updating and Using Relevant Knowledge` = col_double(),
+##   ..   `Developing Objectives and Strategies` = col_double()
+##   .. )</code></pre>
+</div>
+</div>
+<div id="modelling." class="section level1">
+<h1><span class="header-section-number">4</span> Modelling.</h1>
+<div id="randomforest." class="section level2">
+<h2><span class="header-section-number">4.1</span> Randomforest.</h2>
+<p>As a non-parametric modelling technique <code>randomForest</code> theoretically should and does perform well on classifcation problems and since its easy to implement its a great way to build a preliminary model to test initial accuracy and gather more information on importance of the selected features.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># RandomForest Analysis</span>
+
+rfdata &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">drop_na</span>() <span class="co"># doriiping NA rows basically gives us the part of the data that we manually labled.</span>
+
+<span class="kw">set.seed</span>(<span class="dv">55</span>)  <span class="co"># for reproducibitlity</span>
+
+partitions &lt;-<span class="st"> </span><span class="kw">resample_partition</span>(rfdata,<span class="kw">c</span>(<span class="dt">train =</span> <span class="fl">0.7</span>,<span class="dt">test=</span><span class="fl">0.3</span>)) <span class="co"># partitioning labeled data for training &amp; test </span>
+
+train_df &lt;-<span class="st"> </span><span class="kw">as.tibble</span>(partitions<span class="op">$</span>train) <span class="op">%&gt;%</span><span class="st"> </span>dplyr<span class="op">::</span><span class="kw">select</span>(<span class="op">-</span><span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>,<span class="op">-</span><span class="st">`</span><span class="dt">Title</span><span class="st">`</span>) <span class="co"># removing title and code from training</span></code></pre></div>
+<pre><code>## Warning: `as.tibble()` is deprecated, use `as_tibble()` (but mind the new semantics).
+## This warning is displayed once per session.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">test_df &lt;-<span class="st"> </span><span class="kw">as.tibble</span>(partitions<span class="op">$</span>test)  <span class="co"># coercing to tibble if train/test need to be viewed.</span>
+
+rf1 &lt;-<span class="st"> </span><span class="kw">randomForest</span>(<span class="kw">as.factor</span>(ANALYTICAL) <span class="op">~</span><span class="st"> </span>. , <span class="dt">data =</span> train_df, <span class="dt">mtry=</span><span class="dv">12</span> , <span class="dt">ntree =</span> <span class="dv">250</span>, <span class="dt">keep.forest=</span><span class="ot">TRUE</span>) 
+rf1</code></pre></div>
+<pre><code>## 
+## Call:
+##  randomForest(formula = as.factor(ANALYTICAL) ~ ., data = train_df,      mtry = 12, ntree = 250, keep.forest = TRUE) 
+##                Type of random forest: classification
+##                      Number of trees: 250
+## No. of variables tried at each split: 12
+## 
+##         OOB estimate of  error rate: 4.31%
+## Confusion matrix:
+##    0  1 class.error
+## 0 77  2  0.02531646
+## 1  3 34  0.08108108</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(rf1)</code></pre></div>
+<p><img src="BGT_TASK_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">importance</span>(rf1)</code></pre></div>
+<pre><code>##                                                    MeanDecreaseGini
+## Originality                                              0.09589807
+## Problem.Sensitivity                                      0.85456702
+## Inductive.Reasoning                                      5.64588497
+## Innovation                                               0.21223543
+## Analytical.Thinking                                      1.99927346
+## Critical.Thinking                                        1.59110887
+## Active.Learning                                          2.12232543
+## Complex.Problem.Solving                                 34.44832829
+## Judging.the.Qualities.of.Things.Services.or.People       0.81493694
+## Making.Decisions.and.Solving.Problems                    1.23524875
+## Updating.and.Using.Relevant.Knowledge                    0.83692841
+## Developing.Objectives.and.Strategies                     0.08333333</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Calculating predictions from train/test of labled data for randomForest</span>
+
+model_test_pred &lt;-<span class="st"> </span>test_df <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Prediction&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,test_df),<span class="dt">scientific =</span> <span class="ot">FALSE</span>))
+
+model_test_pred_classwise &lt;-<span class="st"> </span>test_df <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Pred Prob for (0)&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,test_df,<span class="dt">type =</span> <span class="st">&quot;prob&quot;</span>)[,<span class="dv">1</span>],<span class="dt">scientific =</span> <span class="ot">FALSE</span>),
+                                   <span class="st">&quot;Pred Prob for (1)&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,test_df,<span class="dt">type =</span> <span class="st">&quot;prob&quot;</span>)[,<span class="dv">2</span>],<span class="dt">scientific =</span> <span class="ot">FALSE</span>)) <span class="co"># adding class probabilities </span>
+
+
+
+model_test_pred &lt;-<span class="st"> </span><span class="kw">subset</span>(model_test_pred, <span class="dt">select=</span><span class="kw">c</span>(<span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>, <span class="st">`</span><span class="dt">Title</span><span class="st">`</span>,<span class="st">`</span><span class="dt">ANALYTICAL</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Prediction</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Originality</span><span class="st">`</span><span class="op">:</span><span class="st">`</span><span class="dt">Developing.Objectives.and.Strategies</span><span class="st">`</span>)) <span class="co"># reordering columns</span>
+
+model_test_pred_classwise &lt;-<span class="st"> </span><span class="kw">subset</span>(model_test_pred_classwise, <span class="dt">select=</span><span class="kw">c</span>(<span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>, <span class="st">`</span><span class="dt">Title</span><span class="st">`</span>,<span class="st">`</span><span class="dt">ANALYTICAL</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Pred Prob for (0)</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Pred Prob for (1)</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Originality</span><span class="st">`</span><span class="op">:</span><span class="st">`</span><span class="dt">Developing.Objectives.and.Strategies</span><span class="st">`</span>)) <span class="co"># reordering columns</span>
+
+
+
+
+<span class="co"># Displaying Confusion Matrix</span>
+
+Cmatrix1 &lt;-<span class="st"> </span><span class="kw">confusionMatrix</span>(<span class="kw">as.factor</span>(model_test_pred<span class="op">$</span>Prediction),<span class="kw">as.factor</span>(model_test_pred<span class="op">$</span>ANALYTICAL), <span class="dt">dnn =</span> <span class="kw">c</span>(<span class="st">&quot;Prediction&quot;</span>, <span class="st">&quot;Reference&quot;</span>),<span class="dt">positive=</span><span class="st">&#39;1&#39;</span>)
+Cmatrix1</code></pre></div>
+<pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction  0  1
+##          0 27  4
+##          1  2 18
+##                                           
+##                Accuracy : 0.8824          
+##                  95% CI : (0.7613, 0.9556)
+##     No Information Rate : 0.5686          
+##     P-Value [Acc &gt; NIR] : 1.29e-06        
+##                                           
+##                   Kappa : 0.7575          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 0.6831          
+##                                           
+##             Sensitivity : 0.8182          
+##             Specificity : 0.9310          
+##          Pos Pred Value : 0.9000          
+##          Neg Pred Value : 0.8710          
+##              Prevalence : 0.4314          
+##          Detection Rate : 0.3529          
+##    Detection Prevalence : 0.3922          
+##       Balanced Accuracy : 0.8746          
+##                                           
+##        &#39;Positive&#39; Class : 1               
+## </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">&quot;The Accuracy is&quot;</span>,Cmatrix1<span class="op">$</span>overall[<span class="st">&quot;Accuracy&quot;</span>])</code></pre></div>
+<pre><code>## The Accuracy is 0.8823529</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Predicting values for original partially-labled data </span>
+
+model_full_pred &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Prediction&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,model_data),<span class="dt">scientific =</span> <span class="ot">FALSE</span>)) <span class="co"># predicting on unlabled data</span>
+ 
+model_full_pred_classwise &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Pred Prob for (0)&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,model_data,<span class="dt">type =</span> <span class="st">&quot;prob&quot;</span>)[,<span class="dv">1</span>],<span class="dt">scientific =</span> <span class="ot">FALSE</span>),
+                                   <span class="st">&quot;Pred Prob for (1)&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,model_data,<span class="dt">type =</span> <span class="st">&quot;prob&quot;</span>)[,<span class="dv">2</span>],<span class="dt">scientific =</span> <span class="ot">FALSE</span>)) <span class="co"># adding class probabilities </span>
+
+
+
+model_full_pred &lt;-<span class="st"> </span><span class="kw">subset</span>(model_full_pred, <span class="dt">select=</span><span class="kw">c</span>(<span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>, <span class="st">`</span><span class="dt">Title</span><span class="st">`</span>,<span class="st">`</span><span class="dt">ANALYTICAL</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Prediction</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Originality</span><span class="st">`</span><span class="op">:</span><span class="st">`</span><span class="dt">Developing.Objectives.and.Strategies</span><span class="st">`</span>)) <span class="co"># reordering columns</span>
+
+model_full_pred_classwise &lt;-<span class="st"> </span><span class="kw">subset</span>(model_full_pred_classwise, <span class="dt">select=</span><span class="kw">c</span>(<span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>, <span class="st">`</span><span class="dt">Title</span><span class="st">`</span>,<span class="st">`</span><span class="dt">ANALYTICAL</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Pred Prob for (0)</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Pred Prob for (1)</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Originality</span><span class="st">`</span><span class="op">:</span><span class="st">`</span><span class="dt">Developing.Objectives.and.Strategies</span><span class="st">`</span>)) <span class="co"># reordering columns</span>
+
+
+<span class="kw">write.xlsx</span>(model_full_pred,<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/rfPredResult.xlsx&quot;</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))
+<span class="kw">write.xlsx</span>(model_full_pred_classwise,<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/rfPredResult(classwise).xlsx&quot;</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))</code></pre></div>
+<p>The model obtained an 88% accuracy against the test data and the importance function indicates that the <code>Complex Problem Solving</code> feature/attribute is the most influential variable in the model indicated by its highest meandecreaseGINI where the scale is irrelevant: only the relative values matter.</p>
+<p>(note: the results with predictions and class probs are saved in the cwd)</p>
+</div>
+<div id="quadratic-discriminant-analysis." class="section level2">
+<h2><span class="header-section-number">4.2</span> Quadratic Discriminant Analysis.</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Quadratic Discriminant Analysis.</span>
+
+qdadata &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">drop_na</span>()
+
+qda.model &lt;-<span class="st"> </span><span class="kw">qda</span>(ANALYTICAL <span class="op">~</span><span class="st"> </span>. , train_df)
+qda.model</code></pre></div>
+<pre><code>## Call:
+## qda(ANALYTICAL ~ ., data = train_df)
+## 
+## Prior probabilities of groups:
+##         0         1 
+## 0.6810345 0.3189655 
+## 
+## Group means:
+##   Originality Problem.Sensitivity Inductive.Reasoning Innovation Analytical.Thinking
+## 0    2.072658            2.924810            2.756709   3.309747            3.324937
+## 1    3.605135            4.075135            4.192973   3.850000            4.530270
+##   Critical.Thinking Active.Learning Complex.Problem.Solving
+## 0          2.859367        2.328608                2.391899
+## 1          4.189459        3.963243                3.932703
+##   Judging.the.Qualities.of.Things.Services.or.People Making.Decisions.and.Solving.Problems
+## 0                                           2.912025                              3.402405
+## 1                                           4.171081                              5.215676
+##   Updating.and.Using.Relevant.Knowledge Developing.Objectives.and.Strategies
+## 0                              3.402532                             2.151646
+## 1                              5.447568                             4.057297</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">partimat</span>(<span class="kw">as.factor</span>(ANALYTICAL) <span class="op">~</span><span class="st"> </span>Problem.Sensitivity<span class="op">+</span>Analytical.Thinking<span class="op">+</span>Complex.Problem.Solving<span class="op">+</span>Inductive.Reasoning, <span class="dt">data =</span> train_df, <span class="dt">method=</span><span class="st">&quot;qda&quot;</span>)</code></pre></div>
+<p><img src="BGT_TASK_files/figure-html/Quadratic%20Discriminant%20Analysis.-1.png" width="960" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">qda.test &lt;-<span class="st"> </span><span class="kw">predict</span>(qda.model,test_df)
+test_df<span class="op">$</span>qda &lt;-<span class="st"> </span>qda.test<span class="op">$</span>class
+
+
+Cmatrix2 &lt;-<span class="st"> </span><span class="kw">confusionMatrix</span>(<span class="kw">as.factor</span>(test_df<span class="op">$</span>qda),<span class="kw">as.factor</span>(test_df<span class="op">$</span>ANALYTICAL), <span class="dt">dnn =</span> <span class="kw">c</span>(<span class="st">&quot;Prediction&quot;</span>, <span class="st">&quot;Reference&quot;</span>))
+Cmatrix2</code></pre></div>
+<pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction  0  1
+##          0 28  3
+##          1  1 19
+##                                           
+##                Accuracy : 0.9216          
+##                  95% CI : (0.8112, 0.9782)
+##     No Information Rate : 0.5686          
+##     P-Value [Acc &gt; NIR] : 2.904e-08       
+##                                           
+##                   Kappa : 0.8384          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 0.6171          
+##                                           
+##             Sensitivity : 0.9655          
+##             Specificity : 0.8636          
+##          Pos Pred Value : 0.9032          
+##          Neg Pred Value : 0.9500          
+##              Prevalence : 0.5686          
+##          Detection Rate : 0.5490          
+##    Detection Prevalence : 0.6078          
+##       Balanced Accuracy : 0.9146          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">&quot;The Accuracy is&quot;</span>,Cmatrix2<span class="op">$</span>overall[<span class="st">&quot;Accuracy&quot;</span>])</code></pre></div>
+<pre><code>## The Accuracy is 0.9215686</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Predicting values for original partially-labled data </span>
+
+model_full_pred2 &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Prediction&quot;</span> =<span class="st"> </span>(<span class="kw">predict</span>(qda.model,model_data))<span class="op">$</span>class) <span class="co"># predicting on unlabled data</span></code></pre></div>
+<pre><code>## Warning in FUN(newX[, i], ...): no non-missing arguments to min; returning Inf</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">model_full_pred2 &lt;-<span class="st"> </span><span class="kw">subset</span>(model_full_pred2, <span class="dt">select=</span><span class="kw">c</span>(<span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>, <span class="st">`</span><span class="dt">Title</span><span class="st">`</span>,<span class="st">`</span><span class="dt">ANALYTICAL</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Prediction</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Originality</span><span class="st">`</span><span class="op">:</span><span class="st">`</span><span class="dt">Developing.Objectives.and.Strategies</span><span class="st">`</span>)) <span class="co"># reordering columns</span>
+
+
+<span class="kw">write.xlsx</span>(model_full_pred2,<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/QDAPredResult.xlsx&quot;</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))</code></pre></div>
+<p>The model obtained an 92% accuracy which is an improvement over our rF model. The <code>partimat()</code> fucntion provides a multiple figure array which shows the classification of observations based on classification methods (lda, qda, rpart, naiveBayes, rda, sknn and svmlight) for every combination of two variables. Moreover, the classification boundaries are displayed and the apparent error rates are given in each title.</p>
+</div>
+<div id="gaussian-process-classifier." class="section level2">
+<h2><span class="header-section-number">4.3</span> Gaussian Process Classifier.</h2>
+<p>Now we get to the main part of this excercise and implement a <code>Gaussian Process Classifier</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Gaussian Process Classifier.</span>
+
+gpc_model &lt;-<span class="st"> </span><span class="kw">gausspr</span>(<span class="kw">as.factor</span>(ANALYTICAL) <span class="op">~</span><span class="st"> </span>., <span class="dt">data =</span> train_df, <span class="dt">type=</span> <span class="st">&#39;classification&#39;</span>, <span class="dt">kernel=</span><span class="st">&quot;anovadot&quot;</span>,
+          <span class="dt">kpar=</span><span class="st">&quot;automatic&quot;</span>, <span class="dt">var=</span><span class="dv">1</span>, <span class="dt">variance.model =</span> <span class="ot">FALSE</span>, <span class="dt">tol=</span><span class="fl">0.0005</span>,
+          <span class="dt">cross=</span><span class="dv">0</span>, <span class="dt">fit=</span><span class="ot">TRUE</span>, <span class="dt">na.action =</span> na.omit)</code></pre></div>
+<pre><code>##  Setting default kernel parameters</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(gpc_model)</code></pre></div>
+<pre><code>## Gaussian Processes object of class &quot;gausspr&quot; 
+## Problem type: classification 
+## 
+## Anova RBF kernel function. 
+##  Hyperparameter : sigma =  1 degree =  1 
+## 
+## Number of training instances learned : 116 
+## Train error : 0.017241379</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">gpc_data_test &lt;-<span class="st"> </span><span class="kw">as.tibble</span>(test_df) 
+
+gpc_data_test<span class="op">$</span>Pred &lt;-<span class="st"> </span><span class="kw">predict</span>(gpc_model,gpc_data_test[,<span class="op">-</span><span class="dv">3</span>]) <span class="co"># need to remove the response variable from test set before predicting.</span>
+
+<span class="co"># class probabilities </span>
+
+Cmatrix3 &lt;-<span class="st"> </span><span class="kw">confusionMatrix</span>(gpc_data_test<span class="op">$</span>Pred,<span class="kw">as.factor</span>(gpc_data_test<span class="op">$</span>ANALYTICAL), <span class="dt">dnn =</span> <span class="kw">c</span>(<span class="st">&quot;Prediction&quot;</span>, <span class="st">&quot;Reference&quot;</span>))
+Cmatrix3</code></pre></div>
+<pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction  0  1
+##          0 27  0
+##          1  2 22
+##                                           
+##                Accuracy : 0.9608          
+##                  95% CI : (0.8654, 0.9952)
+##     No Information Rate : 0.5686          
+##     P-Value [Acc &gt; NIR] : 2.425e-10       
+##                                           
+##                   Kappa : 0.9209          
+##                                           
+##  Mcnemar&#39;s Test P-Value : 0.4795          
+##                                           
+##             Sensitivity : 0.9310          
+##             Specificity : 1.0000          
+##          Pos Pred Value : 1.0000          
+##          Neg Pred Value : 0.9167          
+##              Prevalence : 0.5686          
+##          Detection Rate : 0.5294          
+##    Detection Prevalence : 0.5294          
+##       Balanced Accuracy : 0.9655          
+##                                           
+##        &#39;Positive&#39; Class : 0               
+## </code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cat</span>(<span class="st">&quot;The Accuracy is&quot;</span>,Cmatrix3<span class="op">$</span>overall[<span class="st">&quot;Accuracy&quot;</span>])</code></pre></div>
+<pre><code>## The Accuracy is 0.9607843</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Predicting values for original partially-labled data </span>
+
+model_full_pred3 &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Prediction&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,model_data),<span class="dt">scientific =</span> <span class="ot">FALSE</span>)) <span class="co"># predicting on unlabled data</span>
+ 
+model_full_pred_classwise &lt;-<span class="st"> </span>model_data <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">mutate</span>(<span class="st">&quot;Pred Prob for (0)&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,model_data,<span class="dt">type =</span> <span class="st">&quot;prob&quot;</span>)[,<span class="dv">1</span>],<span class="dt">scientific =</span> <span class="ot">FALSE</span>),
+                                   <span class="st">&quot;Pred Prob for (1)&quot;</span> =<span class="st"> </span><span class="kw">format</span>(<span class="kw">predict</span>(rf1,model_data,<span class="dt">type =</span> <span class="st">&quot;prob&quot;</span>)[,<span class="dv">2</span>],<span class="dt">scientific =</span> <span class="ot">FALSE</span>)) <span class="co"># adding class probabilities </span>
+
+
+
+model_full_pred3 &lt;-<span class="st"> </span><span class="kw">subset</span>(model_full_pred3, <span class="dt">select=</span><span class="kw">c</span>(<span class="st">`</span><span class="dt">O*NET-SOC.Code</span><span class="st">`</span>, <span class="st">`</span><span class="dt">Title</span><span class="st">`</span>,<span class="st">`</span><span class="dt">ANALYTICAL</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Prediction</span><span class="st">`</span>,<span class="st">`</span><span class="dt">Originality</span><span class="st">`</span><span class="op">:</span><span class="st">`</span><span class="dt">Developing.Objectives.and.Strategies</span><span class="st">`</span>)) <span class="co"># reordering columns</span>
+
+
+
+<span class="kw">write.xlsx</span>(model_full_pred3,<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/GPCPredResult.xlsx&quot;</span>,<span class="dt">sep=</span><span class="st">&quot;&quot;</span>))
+
+<span class="kw">ggplot</span>(<span class="dt">data =</span> <span class="kw">filter</span>(model_full_pred3, <span class="op">!</span><span class="kw">is.na</span>(model_full_pred3<span class="op">$</span>Prediction)))<span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">x=</span>Prediction,<span class="dt">fill =</span> <span class="kw">as.factor</span>(Prediction)))</code></pre></div>
+<p><img src="BGT_TASK_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># some data analysis</span>
+
+edadata &lt;-<span class="st">  </span>model_full_pred3
+
+feature_level_ref &lt;-<span class="st">  </span><span class="kw">read_xlsx</span>(<span class="kw">paste</span>(<span class="kw">getwd</span>(),<span class="st">&quot;/Level Scale Anchors.xlsx&quot;</span>,<span class="dt">sep =</span> <span class="st">&quot;&quot;</span>)) 
+
+feature_level_ref &lt;-<span class="st">  </span>feature_level_ref <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(<span class="st">`</span><span class="dt">Element Name</span><span class="st">`</span> <span class="op">%in%</span>(features))
+
+edadata<span class="op">$</span>Prediction &lt;-<span class="st"> </span><span class="kw">as.integer</span>(edadata<span class="op">$</span>Prediction)</code></pre></div>
+<pre><code>## Warning: NAs introduced by coercion</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">inaccurate &lt;-<span class="st"> </span>edadata <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(ANALYTICAL<span class="op">!=</span><span class="st"> </span>Prediction <span class="op">&amp;</span><span class="st"> </span><span class="op">!</span><span class="kw">is.na</span>(ANALYTICAL))
+inaccurate</code></pre></div>
+<pre><code>## # A tibble: 6 x 16
+##   `O*NET-SOC.Code` Title ANALYTICAL Prediction Originality Problem.Sensiti~ Inductive.Reaso~
+##   &lt;chr&gt;            &lt;chr&gt;      &lt;dbl&gt;      &lt;int&gt;       &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+## 1 11-9031.00       Educ~          0          1        3.5              4                3.88
+## 2 13-2011.01       Acco~          1          0        3                3.75             3.88
+## 3 27-3021.00       Broa~          1          0        3.5              4                3.88
+## 4 29-1161.00       Nurs~          0          1        3                5                4.12
+## 5 29-2011.01       Cyto~          1          0        2.62             4.12             4.12
+## 6 41-3031.02       Sale~          1          0        2.88             3.62             3.5 
+## # ... with 9 more variables: Innovation &lt;dbl&gt;, Analytical.Thinking &lt;dbl&gt;, Critical.Thinking &lt;dbl&gt;,
+## #   Active.Learning &lt;dbl&gt;, Complex.Problem.Solving &lt;dbl&gt;,
+## #   Judging.the.Qualities.of.Things.Services.or.People &lt;dbl&gt;,
+## #   Making.Decisions.and.Solving.Problems &lt;dbl&gt;, Updating.and.Using.Relevant.Knowledge &lt;dbl&gt;,
+## #   Developing.Objectives.and.Strategies &lt;dbl&gt;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> <span class="kw">filter</span>(edadata, <span class="op">!</span><span class="kw">is.na</span>(model_full_pred3<span class="op">$</span>Prediction)))<span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="kw">aes</span>(<span class="dt">x=</span>Prediction,<span class="dt">fill =</span> <span class="kw">as.factor</span>(Prediction)))
+
+<span class="kw">library</span>(plotly) <span class="co"># comment it out if needed</span></code></pre></div>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot</code></pre>
+<pre><code>## The following object is masked from &#39;package:MASS&#39;:
+## 
+##     select</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<pre><code>## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">inaccurate_pred &lt;-<span class="st"> </span>inaccurate <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">inner_join</span>(occupation_rawdata, <span class="dt">by =</span> <span class="kw">c</span>(<span class="st">&quot;O*NET-SOC.Code&quot;</span>=<span class="st">&quot;O*NET-SOC Code&quot;</span>,<span class="st">&quot;Title&quot;</span>))
+
+<span class="kw">select</span>(inaccurate_pred,Title,Complex.Problem.Solving)</code></pre></div>
+<pre><code>## # A tibble: 6 x 2
+##   Title                                                            Complex.Problem.Solving
+##   &lt;chr&gt;                                                                              &lt;dbl&gt;
+## 1 Education Administrators, Preschool and Childcare Center/Program                    3.5 
+## 2 Accountants                                                                         3.12
+## 3 Broadcast News Analysts                                                             3   
+## 4 Nurse Midwives                                                                      3.62
+## 5 Cytogenetic Technologists                                                           3.25
+## 6 Sales Agents, Financial Services                                                    3.12</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">test &lt;-<span class="st"> </span>inaccurate <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">gather</span>(<span class="st">&quot;Feature&quot;</span>, <span class="st">&quot;Value&quot;</span>, <span class="dv">5</span><span class="op">:</span><span class="dv">16</span>) <span class="co"># reshaping the df for plotting </span>
+
+
+<span class="kw">ggplot</span>(<span class="dt">data=</span> <span class="kw">filter</span>(test, Feature <span class="op">==</span><span class="st"> &quot;Complex.Problem.Solving&quot;</span>),<span class="kw">aes</span>(<span class="dt">x=</span>Title,<span class="dt">y=</span>Value))<span class="op">+</span><span class="st">  </span>
+<span class="st">         </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>,<span class="dt">color=</span><span class="st">&quot;orange&quot;</span>)<span class="op">+</span>
+<span class="st">        </span><span class="kw">aes</span>(stringr<span class="op">::</span><span class="kw">str_wrap</span>(Title, <span class="dv">15</span>)) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="ot">NULL</span>) <span class="op">+</span>
+<span class="st">        </span><span class="kw">ylab</span>(<span class="st">&quot;Complex Problem Solving&quot;</span>)</code></pre></div>
+<p><img src="BGT_TASK_files/figure-html/unnamed-chunk-6-1.png" width="960" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data=</span> <span class="kw">filter</span>(test, Feature <span class="op">==</span><span class="st"> &quot;Making.Decisions.and.Solving.Problems&quot;</span>),<span class="kw">aes</span>(<span class="dt">x=</span>Title,<span class="dt">y=</span>Value))<span class="op">+</span>
+<span class="st">         </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&quot;identity&quot;</span>,<span class="dt">fill=</span><span class="st">&quot;orange&quot;</span>)<span class="op">+</span>
+<span class="st">        </span><span class="kw">aes</span>(stringr<span class="op">::</span><span class="kw">str_wrap</span>(Title, <span class="dv">15</span>)) <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="ot">NULL</span>) <span class="op">+</span>
+<span class="st">        </span><span class="kw">ylab</span>(<span class="st">&quot;Making.Decisions.and.Solving.Problems&quot;</span>)</code></pre></div>
+<p><img src="BGT_TASK_files/figure-html/unnamed-chunk-6-2.png" width="960" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#plotting all feature values </span>
+
+<span class="kw">ggplot</span>(dplyr<span class="op">::</span><span class="kw">group_by</span>(test,Title), <span class="kw">aes</span>(<span class="dt">y=</span>Value, <span class="dt">x=</span>Feature ,<span class="dt">color=</span>Feature)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="dt">show.legend =</span> <span class="ot">FALSE</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">facet_wrap</span>(.<span class="op">~</span>Title)<span class="op">+</span>
+<span class="st">  </span><span class="kw">coord_flip</span>()</code></pre></div>
+<p><img src="BGT_TASK_files/figure-html/unnamed-chunk-6-3.png" width="960" /></p>
+<p>The gaussian classifier is far outperforming our other models with 96% accuracy while there should be more analysis done before we can concretely state anything but it does confirm Gaussian Process as a well known powerful and highly flexible classifier.</p>
+<p>The Gaussian process (GP) directly captures the model uncertainty.e.g for regression GP directly gives you a distribution for the prediction value, rather than just one value as the prediction. This uncertainty is not directly captured in neural networks.</p>
+<p>It :</p>
+<p><em>Can learn the kernel parameters automatically from data, no matter how flexible we wish to make the kernel. </em>Can learn the regularization parameter C without cross-validation. <em>Can incorporate interpretable noise models and priors over functions, and can sample from prior to get intuitions about the model assumptions. </em>We can combine automatic feature selection with learning using ARD.</p>
+</div>
+</div>
+<div id="conclusions" class="section level1">
+<h1><span class="header-section-number">5</span> Conclusions:</h1>
+<p>ONET as a database has proven be a very informative and resourceful for occupation classification. It contains rich and detailed feature information on occupations and serves as a great repository fo analyses.</p>
+<div id="q2b.-evaluation-of-the-results.-do-they-make-sense-what-occupations-came-up-as-analytical-that-surprised-you-what-occupations-did-you-expect-to-be-analytical-and-didnt-come-up-what-other-sources-of-data-could-be-included-to-make-the-model-more-accurate" class="section level2">
+<h2><span class="header-section-number">5.1</span> Q2b. Evaluation of the results. Do they make sense? What occupations came up as analytical that surprised you? What occupations did you expect to be analytical and didn’t come up? What other sources of data could be included to make the model more accurate?</h2>
+<p>Answer - Most of the occupations are in accordance with our base definition and are predicted resonably accurately,and the barlpot indicates there are more non-analytical jobs than analytical in the ONET database, and Surprisingly jobs such as “Brodcast News Analyst” &amp; “Cytogenetic Technician” are marked non analytical while “Nurse Midwives” are analytical which is a strech thus there could be some correlation or features we could be missing.</p>
+</div>
+<div id="q2c.-the-assumptions-you-made-and-anything-you-would-consider-going-back-and-changing-in-the-model." class="section level2">
+<h2><span class="header-section-number">5.2</span> Q2c. The assumptions you made and anything you would consider going back and changing in the model.</h2>
+<p>Answer - The models can be tuned further and maybe a different choice of kernel can be used for GPC but i would invest more time into feature analysis, selection and generation to improve the models.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "BGT_TASK_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

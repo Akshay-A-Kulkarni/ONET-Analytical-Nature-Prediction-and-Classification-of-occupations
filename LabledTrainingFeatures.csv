@@ -1,0 +1,968 @@
+O*NET-SOC Code,Title,ANALYTICAL,Originality,Problem Sensitivity,Inductive Reasoning,Innovation,Analytical Thinking,Critical Thinking,Active Learning,Complex Problem Solving,"Judging the Qualities of Things, Services, or People",Making Decisions and Solving Problems,Updating and Using Relevant Knowledge,Developing Objectives and Strategies
+11-1011.00,Chief Executives,1,4.25,5,5,4.27,4.45,4.75,4.75,5,5.39,6.18,4.92,5.68
+11-1011.03,Chief Sustainability Officers,1,4,4.25,4.25,4.38,4.31,4.12,3.75,4.25,4.27,5.4,5.54,5.12
+11-1021.00,General and Operations Managers,1,3.38,3.88,3.38,3.65,4.03,4,3.62,3.75,4.43,4.48,4.53,3.77
+11-2011.00,Advertising and Promotions Managers,NA,3.88,4,3.88,3.99,3.88,4.12,4.12,3.88,3.66,4.18,4.49,3.9
+11-2021.00,Marketing Managers,NA,4,3.88,3.88,4.15,4,4.25,4.12,3.88,3.53,4.67,4.52,4.17
+11-2022.00,Sales Managers,NA,3.88,3.88,4,4.13,4.14,4,3.88,3.88,3.96,5.26,4.87,4.78
+11-2031.00,Public Relations and Fundraising Managers,NA,4,4,3.75,3.68,3.79,4,3.5,3.88,4.09,4.6,4.93,4.8
+11-3011.00,Administrative Services Managers,NA,3.12,3.75,3.38,3.85,4.04,3.88,3.38,3.12,3.94,4.67,4.99,3.34
+11-3021.00,Computer and Information Systems Managers,1,3.5,4,4,3.7,4.25,4,3.88,3.88,4.79,5.16,5.35,4.63
+11-3031.01,Treasurers and Controllers,NA,3.38,4.75,4.12,3.57,4.63,4.5,4.25,4.12,4.38,6.1,5.3,5.34
+11-3031.02,"Financial Managers, Branch or Department",NA,3.75,4,3.75,3.33,3.87,4,4,3.5,4,4.77,4.66,3.77
+11-3051.00,Industrial Production Managers,NA,3.88,4,4,3.85,4.12,4.12,4,3.75,4.71,5.24,4.7,4.03
+11-3051.01,Quality Control Systems Managers,NA,3.38,4.25,4,3.84,4.64,4.12,4,4,4.32,5.42,5.21,4.03
+11-3051.02,Geothermal Production Managers,NA,3.25,4.12,3.38,4.35,4.41,3.88,3.25,3.62,4.92,5.02,4.85,3.76
+11-3051.03,Biofuels Production Managers,NA,3.5,3.75,3.88,4.06,4.29,3.88,3.62,3.75,4.46,5,4.76,3.26
+11-3051.04,Biomass Power Plant Managers,NA,3.5,4.62,3.62,4.08,4.22,4,3.38,3.75,3.95,4.55,4.44,4.01
+11-3051.06,Hydroelectric Production Managers,NA,3.25,4.12,3.75,3.68,4.19,4,3.62,3.75,4.33,5.1,4.81,4.12
+11-3061.00,Purchasing Managers,NA,3.75,3.88,3.88,3.67,4.29,4,3.88,3.25,3.81,5.1,4.62,4.38
+11-3071.01,Transportation Managers,NA,3.5,4,3.75,3.67,3.82,4,3.62,3.5,4.09,4.85,4.4,3.65
+11-3071.02,Storage and Distribution Managers,NA,3.12,3.88,3.75,3.88,4.17,4,3.25,3.12,4.26,4.88,4.61,4.21
+11-3071.03,Logistics Managers,NA,3.38,4.12,3.88,3.67,4.23,4.25,4.12,3.88,4.23,4.87,4.8,4.33
+11-3111.00,Compensation and Benefits Managers,NA,3.12,3.25,3.38,3.62,4.57,4,3.75,3.25,4.29,4.95,5.24,4.38
+11-3121.00,Human Resources Managers,NA,3.88,4,4,3.58,4.12,4.12,4,3.75,4.96,5.46,5.38,4.54
+11-3131.00,Training and Development Managers,NA,4,3.88,4,3.67,3.89,4,4.25,4,4.33,4.81,5.3,4.44
+11-9013.01,Nursery and Greenhouse Managers,NA,3.38,3.88,3.63,3.92,4.41,3.88,3.25,3,4.57,5.21,4.92,4.11
+11-9013.02,Farm and Ranch Managers,NA,3.38,4.12,3.88,4.06,3.64,4.12,3.5,3.5,3,4.9,4.65,4.91
+11-9013.03,Aquacultural Managers,NA,3.25,4,3.88,3.95,3.9,3.62,3.5,3.25,3.2,4.63,4.53,3.63
+11-9021.00,Construction Managers,NA,3.5,4,4,3.16,3.92,4,3.88,3.88,4.04,5.12,4.8,4.2
+11-9031.00,"Education Administrators, Preschool and Childcare Center/Program",0,3.5,4,3.88,3.97,3.56,4,3.88,3.5,3.74,4.49,4.23,3.56
+11-9032.00,"Education Administrators, Elementary and Secondary School",NA,4,4.5,4.12,4.17,4.38,4.38,4.12,4.25,4.56,5.51,4.68,4.75
+11-9033.00,"Education Administrators, Postsecondary",NA,4,3.88,4.12,3.97,4.18,4.25,4,4,4.86,5.53,5.34,4.71
+11-9039.01,Distance Learning Coordinators,NA,3.62,3.62,3.88,4.36,4.14,4.12,4.38,3.5,4.33,5.45,5.82,4.64
+11-9039.02,Fitness and Wellness Coordinators,NA,3.75,3.88,3.5,3.83,3.46,3.88,3.5,3.12,3.88,4.29,4.62,3.5
+11-9041.00,Architectural and Engineering Managers,NA,4.12,4.38,4.38,3.67,4.39,4.25,4.25,4.12,4.01,5.25,5.27,3.9
+11-9041.01,Biofuels/Biodiesel Technology and Product Development Managers,NA,4.12,4,4.12,3.7,4.42,4.12,3.75,3.88,4.62,5.28,5.56,4.57
+11-9051.00,Food Service Managers,NA,3,3.75,3,3.59,3.64,3.75,3.75,3,2.5,2.37,2.91,1.93
+11-9061.00,Funeral Service Managers,NA,2.62,3.38,3.12,3.36,3.33,3.62,3,3,3.46,4.04,3.82,2.2
+11-9071.00,Gaming Managers,NA,3,3.88,3.88,3.71,3.77,4,3.62,3.25,4.12,4.75,4.31,3.05
+11-9081.00,Lodging Managers,NA,3.62,3.75,3.25,4.09,4.52,3.88,3.88,3.25,3.22,5.05,3.6,4.07
+11-9111.00,Medical and Health Services Managers,NA,3.5,4,4,3.88,4.19,4,4,3.38,4.65,5.32,5.68,4.58
+11-9121.00,Natural Sciences Managers,NA,4.12,4.12,4.75,3.88,4.33,4.38,4.88,4.25,4.42,4.9,6,4.44
+11-9121.01,Clinical Research Coordinators,NA,3.38,4.12,3.88,3.2,3.66,4,4.12,3.75,3.31,5.74,5.67,3.22
+11-9121.02,Water Resource Specialists,NA,3.38,3.75,4,3.41,4.46,4,3.75,3.88,4.28,5.69,5.55,4.83
+11-9131.00,Postmasters and Mail Superintendents,NA,3,3.38,3.12,3.77,4.06,3.88,3.12,3.12,3.78,4.62,4.03,3.82
+11-9141.00,"Property, Real Estate, and Community Association Managers",NA,3,3.75,3.62,3.46,4.04,4,3.38,3.12,3.85,5.04,4.85,4.19
+11-9151.00,Social and Community Service Managers,NA,3.75,4,3.88,3.89,4.17,4.12,3.88,4.12,3.54,4.42,4.71,4.04
+11-9161.00,Emergency Management Directors,1,3.88,4.5,4.25,3.76,4.28,4.38,4.38,5.25,4.29,5.92,5.24,5.16
+11-9199.01,Regulatory Affairs Managers,NA,3.38,3.88,3.5,3.45,4.12,4.12,3.62,3.38,3.48,4.74,5.42,4.33
+11-9199.02,Compliance Managers,NA,3,4.38,4.12,3.03,4.41,4.25,3.88,3.5,4.21,4.75,5.31,3.76
+11-9199.03,Investment Fund Managers,1,3.5,4.25,4.12,3.35,4.79,4,3.88,3.88,4.85,5.49,5.2,4.17
+11-9199.04,Supply Chain Managers,NA,3.25,4,3.88,3.9,4.33,4,3.75,4,4.05,5.19,5,4.81
+11-9199.07,Security Managers,NA,3.62,4.38,4.12,3.7,4.1,4,3.38,3.75,4.6,5.25,5.05,4
+11-9199.08,Loss Prevention Managers,NA,3.5,4.12,3.88,3.75,4.25,4,3.62,3.62,4.44,4.58,4.79,4.44
+11-9199.09,Wind Energy Operations Managers,NA,3.38,3.88,3.62,3.56,4.17,3.88,3.5,3.5,4.44,4.86,4.87,4.05
+11-9199.10,Wind Energy Project Managers,NA,3.25,4,4,3.47,3.79,4.25,4,3.25,4.69,5.32,4.95,3.96
+11-9199.11,Brownfield Redevelopment Specialists and Site Managers,NA,3.62,4.5,4.25,3.54,4.32,4.12,3.62,4.12,3.88,5.04,4.8,4.38
+13-1011.00,"Agents and Business Managers of Artists, Performers, and Athletes",NA,3.25,3.75,3.88,4.03,3.98,3.75,3.12,2.88,4.17,4.57,4.23,3.37
+13-1021.00,"Buyers and Purchasing Agents, Farm Products",NA,3,3.12,3.38,3.08,4.27,3.75,3.12,3,3.73,4.65,4.77,3.95
+13-1022.00,"Wholesale and Retail Buyers, Except Farm Products",NA,3.12,3.5,3.38,3.58,3.83,4,3.88,3.12,3.35,4.42,4.72,3.12
+13-1023.00,"Purchasing Agents, Except Wholesale, Retail, and Farm Products",NA,3,3.75,4,3.65,4.1,4.12,4.12,3.88,4.33,4.58,4.45,3.7
+13-1031.01,"Claims Examiners, Property and Casualty Insurance",NA,2.75,3.5,4,3.52,4.2,4,3.38,3.12,4.23,4.82,4.77,3.14
+13-1031.02,"Insurance Adjusters, Examiners, and Investigators",NA,2.25,3.5,3.75,2.89,4.06,4.25,3.38,3,4.15,4.01,4.46,1.63
+13-1032.00,"Insurance Appraisers, Auto Damage",NA,2.62,3.62,3.5,2.99,3.12,3.75,3,2.88,4.15,4.38,4.55,2.62
+13-1041.01,Environmental Compliance Inspectors,NA,2.88,4.88,4.62,2.71,4.29,4.25,4.12,4,3.52,4.24,5.19,3.1
+13-1041.02,Licensing Examiners and Inspectors,NA,3,3.62,3.88,3.34,4.23,3.88,3,3,2.99,4.44,4.11,3.02
+13-1041.03,Equal Opportunity Representatives and Officers,NA,3.5,4.12,4,3.13,4.48,4.5,4,3.62,4.54,5.15,5.08,3.24
+13-1041.04,Government Property Inspectors and Investigators,NA,3,4.25,4.25,3.43,3.81,4.12,3.38,3.38,4.04,4.73,4.31,4.01
+13-1041.06,Coroners,NA,3,4,4.5,3.68,4.26,4.12,3.75,3.25,3.87,4.74,5.23,3.52
+13-1041.07,Regulatory Affairs Specialists,NA,3.38,4.12,3.88,3.5,4.38,4.38,3.75,3.62,3.7,4.55,5.3,4.03
+13-1051.00,Cost Estimators,1,3,3.25,4,3.59,4.73,4.25,3.88,3.62,3.91,4.86,5.18,3.45
+13-1071.00,Human Resources Specialists,NA,3.12,3.62,3.62,3.84,3.94,4,3.25,3.12,4,4.17,4.15,3.46
+13-1074.00,Farm Labor Contractors,NA,2,3.25,2.88,2.97,3.31,3.25,2.38,2.75,2.83,2.92,1.82,1.57
+13-1075.00,Labor Relations Specialists,NA,3.75,4,3.75,3.9,4.5,4,3.88,3.62,4.6,5.35,4.9,4.42
+13-1081.00,Logisticians,NA,3.88,4.12,4,3.62,4.25,4.12,3.5,3.88,3.5,5.12,4.78,4.38
+13-1081.01,Logistics Engineers,NA,4,4.12,4.12,3.68,4.27,4.12,4,3.88,3.9,4.95,5.14,4.18
+13-1081.02,Logistics Analysts,1,3.88,3.88,3.75,3.88,4.44,4,4,3.75,4.08,5.15,5,4.58
+13-1111.00,Management Analysts,1,3.5,4.12,4.12,4.31,4.81,4.12,3.75,4,5.31,5.81,5.54,5.5
+13-1121.00,"Meeting, Convention, and Event Planners",NA,3.62,4,3.38,4.07,3.81,3.88,3.12,3.5,4.04,4.12,4.33,3.65
+13-1131.00,Fundraisers,NA,3.5,3.25,3.62,3.45,3.78,3.88,3.25,3.25,4.12,4.68,4.56,4.53
+13-1141.00,"Compensation, Benefits, and Job Analysis Specialists",1,3.25,3.75,3.75,3.71,4.62,4,3.62,3.75,3.58,5.04,5.29,3.71
+13-1151.00,Training and Development Specialists,NA,3.88,3.62,3.5,3.97,3.94,4,3.75,3.12,4.08,5.06,5.53,4.33
+13-1161.00,Market Research Analysts and Marketing Specialists,1,3.38,3.88,4.25,3.83,4.96,4,4,3.75,4.18,5.39,5.78,4.7
+13-1199.01,Energy Auditors,NA,3.12,3.88,3.88,3.36,4.32,3.75,3.25,3.25,3.23,4.32,4.59,2.59
+13-1199.02,Security Management Specialists,NA,3.38,4.12,4,3.5,4.23,3.88,3.38,3.62,4.38,4.84,5.65,4.27
+13-1199.03,Customs Brokers,NA,3,3.12,3.12,2.95,3.68,3.88,3.62,3.12,3.11,4.26,5,3.26
+13-1199.04,Business Continuity Planners,NA,3.88,4.62,4,3.36,4.09,4.5,3.75,4.75,3.86,4.64,4.68,4.45
+13-1199.05,Sustainability Specialists,NA,3.5,3.62,3.62,3.89,4.25,3.88,3.25,3.62,3.89,4.68,5.18,4.41
+13-1199.06,Online Merchants,NA,2.88,3,3.38,3.82,3.92,3.88,3.12,3,4.31,5.14,4.63,3.37
+13-2011.01,Accountants,1,3,3.75,3.88,2.99,4.21,3.75,3.25,3.12,3.13,4.42,4.09,3.78
+13-2011.02,Auditors,NA,3.38,4.12,4.38,3.14,4.67,4,3.75,4,3.9,5.62,5.86,3.95
+13-2021.01,Assessors,1,3,3.12,3.62,3.08,3.97,4,3.38,3.12,5.26,4.34,5.26,3.23
+13-2021.02,"Appraisers, Real Estate",NA,2.62,3.25,3.88,2.8,4.35,3.88,3.38,3,4.25,4.55,4.4,2.65
+13-2031.00,Budget Analysts,1,2.88,3.88,3.88,3.02,4.59,3.88,3.38,3.5,2.7,4.42,4.94,3.32
+13-2041.00,Credit Analysts,1,2.75,4.25,4,2.6,4.43,4.38,3.88,3.38,3.33,4.23,3.93,2.33
+13-2051.00,Financial Analysts,1,3.12,4,3.88,3.69,4.99,4.12,3.88,3.62,4.16,5.17,4.91,3.55
+13-2052.00,Personal Financial Advisors,NA,3,4,3.88,3.14,4.32,4,3.38,3.5,4.29,5.92,5.23,5.43
+13-2053.00,Insurance Underwriters,NA,2.75,3.75,3.88,2.7,4.57,3.88,3.38,3.12,3.87,4.67,4.47,2.38
+13-2061.00,Financial Examiners,NA,3.5,4.25,4.12,3,4.64,4.5,4,4,4.44,5.48,5.24,4.04
+13-2071.00,Credit Counselors,NA,3.25,4,3.62,3.06,3.84,3.75,3.5,3.25,2.18,3.66,4.7,3.15
+13-2071.01,Loan Counselors,NA,3,3.62,3.62,2.86,3.4,4,3.62,3,3.41,2.87,3.95,2.5
+13-2072.00,Loan Officers,NA,2.12,3.38,3.62,3.65,4.24,4,3.12,3.25,3.04,4.37,4.65,2.86
+13-2081.00,"Tax Examiners and Collectors, and Revenue Agents",NA,2.75,3.12,3.75,3.77,4.38,3.62,3.62,3,3.5,5.07,4.91,2.86
+13-2082.00,Tax Preparers,NA,2.62,3,3.12,2.55,3.9,3.62,3.12,3.12,3.15,3.68,5.16,2.4
+13-2099.01,Financial Quantitative Analysts,1,3.5,4.12,4.75,3.96,4.91,4.62,4,4.12,3.78,5.65,5.57,4.7
+13-2099.02,Risk Management Specialists,NA,3.38,4.75,4.25,3.76,4.52,4.25,3.75,3.88,4.52,4.71,4.86,4.1
+13-2099.04,"Fraud Examiners, Investigators and Analysts",1,3.12,3.88,4.12,3.84,4.5,4.12,3.5,3.5,4.48,4.96,5.36,4
+15-1111.00,Computer and Information Research Scientists,1,4,4.5,4.38,4.06,4.14,4.25,4.88,4,4.34,5.87,6.13,3.94
+15-1121.00,Computer Systems Analysts,1,3.75,4.12,4.12,3.72,4.71,4.25,4.12,3.88,3.32,4.75,5.25,3.22
+15-1121.01,Informatics Nurse Specialists,NA,4.12,4,4,4,4.45,4.25,4.62,4.12,4.3,5.45,5.8,4.35
+15-1122.00,Information Security Analysts,1,3.25,4.12,4.12,3.7,4.44,4.12,3.88,3.62,3.67,4.62,5.73,3.62
+15-1131.00,Computer Programmers,1,3.25,3.75,3.88,4,4.74,3.88,3.25,3.88,3.75,4.98,5.44,3.86
+15-1132.00,"Software Developers, Applications",NA,3.88,4,4,4.35,4.85,4,3.62,4.12,3.02,4.48,5.79,3.68
+15-1133.00,"Software Developers, Systems Software",NA,3.5,4,3.88,4.1,4.57,3.75,3,3.38,2.36,5.23,5.92,3.5
+15-1134.00,Web Developers,NA,3.62,3.75,3.38,3.92,4.17,3.88,3.62,3.62,3.5,4.96,5.5,3.83
+15-1141.00,Database Administrators,NA,3.75,4,3.88,3.76,4.56,4.12,3.88,4,3.49,4.85,5.42,3.93
+15-1142.00,Network and Computer Systems Administrators,NA,3.62,4,4,3.95,4.5,3.88,3.75,4,3.05,4.79,5.47,3.36
+15-1143.00,Computer Network Architects,1,3.5,3.75,4,3.86,4.59,4.25,3.62,4.12,4.09,5.64,5.86,4.27
+15-1143.01,Telecommunications Engineering Specialists,NA,3.25,3.75,3.5,4.09,4.39,3.5,3.62,3.5,4.13,4.78,5.86,3.55
+15-1151.00,Computer User Support Specialists,NA,3,3.5,3.62,3.39,4.38,4,3.25,3.25,2.83,3.89,5.52,2.75
+15-1152.00,Computer Network Support Specialists,NA,3.12,3.5,3.62,3.88,4.51,3.75,3.38,3.25,3.06,3.86,5.84,2.81
+15-1199.01,Software Quality Assurance Engineers and Testers,NA,3.25,3.75,4,3.5,4.65,3.88,3,3.25,3.7,4.56,5.59,3.59
+15-1199.02,Computer Systems Engineers/Architects,NA,4,4.12,4,4.37,4.67,3.88,4,4,4.76,5.48,6.28,4.48
+15-1199.03,Web Administrators,1,3.25,4,3.88,4,4.5,4.12,3.75,3.88,2.75,5,5.65,3.9
+15-1199.04,Geospatial Information Scientists and Technologists,NA,3.25,3.88,4,3.74,4.39,4,3.75,3.88,4.22,5.3,5.87,4.13
+15-1199.05,Geographic Information Systems Technicians,1,3.25,3.38,3.62,4.6,4.72,3.88,3.62,3.5,3.76,4.31,5.83,4.13
+15-1199.06,Database Architects,1,3.5,4,3.88,3.92,4.88,4.25,3.62,4,3.79,5.5,5.67,4.71
+15-1199.07,Data Warehousing Specialists,1,3.25,3.5,3.88,3.96,4.91,3.88,3.25,3.5,3.13,4.91,5.52,3.74
+15-1199.08,Business Intelligence Analysts,1,3.5,3.62,4.5,3.87,4.87,4.38,4,3.75,4.5,4.96,5.96,4.75
+15-1199.09,Information Technology Project Managers,NA,3.38,3.75,3.62,3.32,4.13,4.25,3.62,3.75,4.26,4.97,5.06,4.1
+15-1199.10,Search Marketing Strategists,1,3.88,3.5,3.75,4.22,4.7,3.75,3.75,4,2.87,4.87,5.52,4.22
+15-1199.11,Video Game Designers,NA,4.12,3.62,3.88,4.67,4.48,3.88,3.62,3.62,3.71,5.24,5.29,3.81
+15-1199.12,Document Management Specialists,NA,3.38,3.5,3.5,3.76,4.32,3.75,3.38,3.5,3.48,4.25,5.28,3.33
+15-2011.00,Actuaries,NA,3.5,4.38,4.62,3.22,4.81,4.75,4.12,4.62,3.72,5.84,5.5,4.42
+15-2021.00,Mathematicians,NA,5,3.75,4.88,4.48,4.91,5,5.25,4.62,3.42,5.54,5.71,4.21
+15-2031.00,Operations Research Analysts,1,4,4.12,4.38,4.35,5,4.38,4.12,4.38,3.1,5.65,5.95,4.2
+15-2041.00,Statisticians,1,3.62,3.88,4.5,3.68,4.76,4.5,4.38,3.88,3.48,5.44,5.32,3.56
+15-2041.01,Biostatisticians,1,3.88,4.38,4.88,3.8,4.8,4.88,4.62,4.38,4.16,5.24,6.16,3.68
+15-2041.02,Clinical Data Managers,1,3.38,3.88,3.88,3.15,4.1,4.25,4,3.62,3.85,4.55,5.1,3.85
+15-2091.00,Mathematical Technicians,NA,2.6,3.4,2.8,NA,NA,5,4.83,4.23,3.16,4.66,4.66,2.33
+17-1011.00,"Architects, Except Landscape and Naval",NA,4.38,4.62,4.12,4.04,4.44,4.62,4.25,4.12,4.37,5.48,5.44,4.59
+17-1012.00,Landscape Architects,NA,3.88,3.88,4,4.18,3.86,3.75,3.75,3.75,4.07,5.43,5.18,4.11
+17-1021.00,Cartographers and Photogrammetrists,0,3,3.38,4,3.85,3.59,3.75,3.38,3.12,3.38,4.17,5.35,3.36
+17-1022.00,Surveyors,NA,2.88,3.62,4,3.33,4.47,4,3.38,3.25,3.68,5.39,4.87,3.61
+17-1022.01,Geodetic Surveyors,NA,3.12,3.75,4.12,3.35,4.5,4,3.88,3.88,4.5,5.45,5.75,3.75
+17-2011.00,Aerospace Engineers,NA,4.12,4.12,4.25,3.97,4.51,4.62,3.88,4.25,4.5,5.84,6.02,3.58
+17-2021.00,Agricultural Engineers,NA,3.5,4.25,4.12,4.04,4.46,4.25,3.88,4.38,4.12,5.31,5.62,4.35
+17-2031.00,Biomedical Engineers,NA,4.75,4.75,4.75,4.13,4.37,4.75,4.75,4.62,4.43,5.83,6.03,4.73
+17-2041.00,Chemical Engineers,NA,4.12,4.62,4.62,4.19,4.86,4.88,4.5,4.38,4.32,5.23,5.73,3.82
+17-2051.00,Civil Engineers,NA,4,4.88,4.12,3.65,4.13,4.5,4.5,4.12,4.39,5.55,5.27,4.45
+17-2051.01,Transportation Engineers,NA,3.88,4.5,4.12,3.59,4.55,4.12,4,4.12,3.59,5.59,5.14,3.77
+17-2061.00,Computer Hardware Engineers,NA,3.62,4,4,4.05,4.62,4,3.88,4.25,3.95,5,5.9,3.15
+17-2071.00,Electrical Engineers,NA,3.38,4.25,4,3.56,4.43,4,3.38,3.75,3.91,5.23,5.41,3.45
+17-2072.00,"Electronics Engineers, Except Computer",NA,3.88,4.12,4,4.3,4.53,4,3.75,4.12,4.14,4.76,5.85,3.53
+17-2072.01,Radio Frequency Identification Device Specialists,NA,3.12,3.5,3.75,4.14,4.39,3.88,3.5,3.62,3.85,5.58,5.65,4.52
+17-2081.00,Environmental Engineers,NA,3.88,4.5,4.5,3.81,4.63,4.38,4.12,4.25,4.81,5.62,5.73,4.8
+17-2081.01,Water/Wastewater Engineers,NA,3.88,4.38,4.25,3.76,4.66,4.38,4.38,4.62,4.71,5.75,5.5,4.68
+17-2111.01,Industrial Safety and Health Engineers,NA,3.88,5,4.88,3.65,4.16,4.25,4.38,4.12,3.77,5.07,4.84,3.9
+17-2111.02,Fire-Prevention and Protection Engineers,NA,4,4.38,4,3.5,4.32,4.12,4,4,4.04,5.36,5.36,3.96
+17-2111.03,Product Safety Engineers,NA,3.12,4.5,4.25,3.5,4.18,4.12,3.38,3.5,4.68,5.18,5.41,3.77
+17-2112.00,Industrial Engineers,NA,3.5,4,4,4.14,4.45,4.12,3.62,4,3.84,5.02,5.02,3.19
+17-2112.01,Human Factors Engineers and Ergonomists,NA,3.88,4.5,4.5,4.04,4.79,4.38,4,4.12,3.79,5.48,5.71,4.04
+17-2121.01,Marine Engineers,NA,4,4.25,4.5,3.7,4.17,4.38,4.38,4.12,4.3,4.96,5.35,3.22
+17-2121.02,Marine Architects,NA,4.12,4.38,4.25,3.91,4.64,4.38,4.5,4.25,3.45,4.81,4.9,3.16
+17-2131.00,Materials Engineers,NA,4.12,4.25,4.38,4.15,4.64,4.38,4.5,4,4.67,5.26,5.64,4.38
+17-2141.00,Mechanical Engineers,NA,4,4.12,4.12,4.64,4.78,4.25,4.38,4.75,3.95,4.64,4.99,3.22
+17-2141.01,Fuel Cell Engineers,NA,3.75,4.25,4.12,4.33,4.46,4.12,3.75,3.5,4.12,5.09,5.67,4.62
+17-2141.02,Automotive Engineers,NA,4.5,4.25,4.75,3.87,4.61,4.5,4.62,4.38,4.45,5.43,5.61,4.48
+17-2151.00,"Mining and Geological Engineers, Including Mining Safety Engineers",NA,3.88,4.5,4.62,3.57,4.77,4.5,4.12,4.38,4.17,5.27,5.25,4.04
+17-2161.00,Nuclear Engineers,NA,3.62,4.88,4.25,2.93,4.59,4.75,4.12,4.38,4.7,5.41,4.81,3.62
+17-2171.00,Petroleum Engineers,NA,3.62,4.12,4.25,4.05,4.51,4.25,3.75,4.12,4.79,5.02,5.2,3.9
+17-2199.01,Biochemical Engineers,NA,4,4.62,4.88,4,4.44,4.12,4.12,4,4.8,5.36,5.68,4.8
+17-2199.02,Validation Engineers,NA,3.12,4.12,4.12,2.9,4.3,4.12,3.62,4,4.65,5.05,5.26,3.55
+17-2199.03,Energy Engineers,NA,3.62,4.12,4.12,4.18,4.73,4.12,3.88,4,4.14,5.45,5.23,4.27
+17-2199.04,Manufacturing Engineers,NA,4.12,4.38,4.38,3.92,4.42,4,4.5,4.25,4.31,5,4.92,3.8
+17-2199.05,Mechatronics Engineers,NA,4,4.25,4.38,4.52,4.35,4.12,3.88,4.12,2.85,4.94,5.57,3.31
+17-2199.06,Microsystems Engineers,NA,4,4.25,4.38,4.32,4.66,4.12,3.88,4.25,3.02,4.94,5.5,3.73
+17-2199.07,Photonics Engineers,NA,4.62,4.12,4.5,4,4.57,4.75,5,4,3.35,5.39,5.39,3.65
+17-2199.08,Robotics Engineers,NA,4.62,4.5,4.5,4.2,4.5,4.62,4.5,4.12,3.87,5.03,5.87,4
+17-2199.09,Nanosystems Engineers,1,4.25,4.38,4.88,4.33,4.54,4.5,5,4.25,4.29,5.62,6,4.46
+17-2199.10,Wind Energy Engineers,NA,3.62,3.75,3.88,4.01,4.63,4.5,3.75,4,3.73,4.83,4.95,3.57
+17-2199.11,Solar Energy Systems Engineers,NA,3.75,4,4,3.73,4.05,3.88,3.62,3.5,3.76,4.48,5.1,3.14
+17-3011.01,Architectural Drafters,NA,3.5,3.88,3.62,4.09,3.98,3.88,3.5,3.5,3.25,4.06,5.08,3.12
+17-3011.02,Civil Drafters,NA,3,3.12,3.12,3.43,3.9,3.38,2.88,3.12,2.48,4.33,5.38,2.95
+17-3012.01,Electronic Drafters,NA,3,3.38,3.5,3.86,3.96,3.62,3.25,3,2.19,4.02,4.18,2.47
+17-3012.02,Electrical Drafters,NA,3,3.5,3.5,3.38,3.95,3.38,3,3.25,1.84,3.22,4.98,2.17
+17-3013.00,Mechanical Drafters,NA,3.38,3.5,3.5,4.02,4.34,3.25,3.62,3.12,3,3.83,4.55,2.52
+17-3021.00,Aerospace Engineering and Operations Technicians,NA,3,4,3.75,4.14,4.44,3.62,3.25,3.38,4.44,4.5,5.59,3.34
+17-3022.00,Civil Engineering Technicians,NA,2.88,3.88,3.75,3.74,4.08,3.62,3,3.25,3.1,4.21,4.68,2.4
+17-3023.01,Electronics Engineering Technicians,NA,3,3.88,3.88,3.62,4.17,3.38,3,3.12,3.73,4.17,4.56,2.51
+17-3023.03,Electrical Engineering Technicians,NA,3,3.88,3.62,3.79,4.24,3.88,3.25,3.25,3.52,4.53,4.98,2.81
+17-3024.00,Electro-Mechanical Technicians,NA,2.5,3.75,3.5,3.54,4.23,3.75,3,3.12,2.53,4.17,4.25,2.34
+17-3024.01,Robotics Technicians,NA,3.25,4,4,3.68,4.32,4,3.62,3.62,3.86,4.45,4.82,2.82
+17-3025.00,Environmental Engineering Technicians,NA,3,4.12,4,2.98,3.8,4,3.88,3.38,3.35,3.88,3.9,2.85
+17-3026.00,Industrial Engineering Technicians,NA,3.62,3.88,4,3.75,4.3,3.88,3.62,3.88,3.26,4.84,4.58,3.18
+17-3027.00,Mechanical Engineering Technicians,NA,3.25,4,3.75,3.46,4.24,3.75,3.25,3.25,3.81,5.33,5.4,3.55
+17-3027.01,Automotive Engineering Technicians,NA,3.25,3.75,3.5,3.89,4.11,3.38,3.12,3.25,3.3,4.19,5.15,2.74
+17-3029.01,Non-Destructive Testing Specialists,NA,2.75,4.12,4,3,3.8,3.5,3.5,3.12,4,4.4,4.55,2.4
+17-3029.02,Electrical Engineering Technologists,NA,3,3.75,3.75,3.76,4.54,3.88,3.5,3.75,4.09,5.11,5.38,3.62
+17-3029.03,Electromechanical Engineering Technologists,NA,3.38,4.12,3.75,3.72,4.43,3.88,3.88,3.5,3.37,4.13,5.09,2.6
+17-3029.04,Electronics Engineering Technologists,NA,3.12,3.88,4.12,3.45,4.29,4,3.75,3.88,3.62,4.88,5.72,2.91
+17-3029.05,Industrial Engineering Technologists,NA,3.62,3.75,3.62,4.12,4.01,4,3.25,3.62,4.05,4.31,4.2,2.82
+17-3029.06,Manufacturing Engineering Technologists,NA,4,4,4.12,4.18,4.41,4.12,4.12,4.12,4,4.68,5.59,3.67
+17-3029.07,Mechanical Engineering Technologists,NA,3,3.88,3.75,4.05,4.42,3.5,3.25,3.12,3.19,4.65,4.84,2.81
+17-3029.08,Photonics Technicians,NA,2.88,3.5,2.88,3.56,3.84,3.62,3.25,3.5,3.28,4.21,4.62,2.84
+17-3029.09,Manufacturing Production Technicians,NA,2.88,3.75,3.12,3.74,4.22,3.12,3,3,3.35,4.52,4.74,3
+17-3029.11,Nanotechnology Engineering Technologists,NA,3.25,3.88,3.75,4.05,4.48,3.88,3.38,3.5,4.57,5.36,5.86,3.95
+17-3029.12,Nanotechnology Engineering Technicians,NA,3.12,3.5,3.5,3.42,4.21,3.38,3.25,3.38,3.42,3.92,4.54,2.83
+17-3031.01,Surveying Technicians,NA,3,3.38,3,2.88,4,3.12,2.88,3,2.58,3.88,4.29,2.25
+17-3031.02,Mapping Technicians,NA,3,3.12,3.25,3.21,4.04,3.12,3,3,2.86,3.69,4.55,2.89
+19-1011.00,Animal Scientists,NA,3.5,4.12,4.88,4.22,4.54,4.25,4.38,4.12,4.78,5.52,6.04,4.73
+19-1012.00,Food Scientists and Technologists,NA,3.62,4.12,4.38,3.85,4.31,4.25,3.88,4,4.27,5.19,5.19,4.19
+19-1013.00,Soil and Plant Scientists,NA,4.12,4.25,4.75,3.96,4.27,4.25,4.25,4.25,3.89,5.26,5.74,4.26
+19-1020.01,Biologists,NA,3.88,4.25,5,3.28,4.39,4.5,4.62,4.25,4.34,5.26,5.97,4.97
+19-1021.00,Biochemists and Biophysicists,NA,4.62,4.88,5.12,4.32,4.64,4.75,5.25,4,4.5,5.82,6.18,4.77
+19-1022.00,Microbiologists,NA,4.62,5,5.25,3.35,4.57,4.5,4.5,4,3.91,4.74,5.78,3.96
+19-1023.00,Zoologists and Wildlife Biologists,NA,3.12,3.88,4,3.21,3.91,4.12,3.75,3.75,3.82,5.11,5.59,4.86
+19-1029.01,Bioinformatics Scientists,1,4.25,4.62,4.62,4.23,4.85,4.38,4.25,4.25,4.49,5.52,6.19,4.34
+19-1029.02,Molecular and Cellular Biologists,NA,4.5,4.5,5.5,4.09,4.65,5,5.25,4.12,2.91,5.17,5.43,3.91
+19-1029.03,Geneticists,1,4.25,4.5,5,3.9,4.62,4.25,3.88,3.88,3.53,5.5,6.07,3.9
+19-1031.01,Soil and Water Conservationists,NA,3.88,4.12,4.12,3.48,4,4,3.75,3.75,4.05,4.9,4.9,3.29
+19-1031.02,Range Managers,NA,3.75,4.25,3.88,3.74,3.83,3.88,3.62,4.12,4.56,5.48,5.46,4.92
+19-1031.03,Park Naturalists,NA,3.38,3.25,3.12,3.72,4,3.88,3.12,3,3.47,3.86,4.68,3.34
+19-1032.00,Foresters,NA,4,4.12,3.88,3.34,3.89,4.25,3.62,4.12,4.49,4.36,4.8,3.91
+19-1041.00,Epidemiologists,NA,3.88,4.75,4.88,3.8,4.73,4.75,4.62,4.38,3.66,5.63,5.53,4.5
+19-1042.00,"Medical Scientists, Except Epidemiologists",NA,3.88,5,5.5,4.22,4.67,4.62,4.5,4.5,5,5.08,6.19,4.41
+19-2011.00,Astronomers,NA,4,4,4.62,4.48,4.85,4.25,4.88,3.62,3.94,6,6.27,5.15
+19-2012.00,Physicists,1,5.5,5,5.5,4.1,4.71,4.88,5.62,4.75,4.26,6.15,5.72,4.87
+19-2021.00,Atmospheric and Space Scientists,NA,3.12,4,4.12,3.46,4.36,4,4.25,3.88,3.32,4.93,5.75,3.5
+19-2031.00,Chemists,NA,3.5,4,4.5,3.54,4.4,4.12,4.12,4,4.13,4.53,5.2,3.06
+19-2032.00,Materials Scientists,NA,4,4.12,4.12,4.27,4.71,4,3.88,4.12,4.15,5.35,6.04,4.47
+19-2041.00,"Environmental Scientists and Specialists, Including Health",NA,3.62,4.62,4.62,3.36,4.36,4.12,4,4,4.42,5.09,5.47,3.72
+19-2041.01,Climate Change Analysts,1,3.5,3.88,4.12,3.93,4.68,4.25,4.12,4,3.86,5.11,5.61,4.5
+19-2041.02,Environmental Restoration Planners,NA,3.62,4,4.12,3.76,4,4,3.62,3.75,4,5.19,4.86,4.57
+19-2041.03,Industrial Ecologists,1,4,4.5,4.5,4,4.83,4.38,4.12,4.12,4.46,5.17,5.88,4.5
+19-2042.00,"Geoscientists, Except Hydrologists and Geographers",NA,3.25,4.12,4.38,3.92,4.58,4.12,3.62,4.12,4,5.62,5.71,4.58
+19-2043.00,Hydrologists,NA,4.12,4.25,4.62,3.65,4.52,4.5,4.38,4.12,4.14,5.45,5.5,4.5
+19-2099.01,Remote Sensing Scientists and Technologists,NA,3.62,4,4.38,4.07,4.67,4.25,3.88,4,3.64,4.79,5.86,4.25
+19-3011.00,Economists,NA,3.25,3.88,4.12,3.87,4.87,4.5,4.12,4.12,4.12,5.83,6.04,3.96
+19-3011.01,Environmental Economists,1,3.62,4.12,4.12,4.37,5,4.25,3.88,3.75,5.11,5.25,5.93,4.04
+19-3022.00,Survey Researchers,NA,3.5,3.5,4.12,3.59,4.65,4.12,3.75,3.88,4.5,5.27,5.81,4.42
+19-3031.01,School Psychologists,NA,3.5,4.25,4.38,3.33,4.37,4,3.75,3.75,4.62,4.93,5.2,3.77
+19-3031.02,Clinical Psychologists,1,3.62,5,4.62,3.71,4.58,4,4.12,4,6.08,5.05,5.59,4.44
+19-3031.03,Counseling Psychologists,NA,4,4.62,4.62,3.57,4.21,4.12,4,4,4.58,5.48,5.98,4.65
+19-3032.00,Industrial-Organizational Psychologists,1,4,4.12,4,4.2,4.77,4.25,4.12,4,5.41,5.22,5.03,4.47
+19-3039.01,Neuropsychologists and Clinical Neuropsychologists,NA,3.75,5.75,5.62,3.15,4.85,4.88,5.12,4.12,3.77,5.52,6.08,3.54
+19-3041.00,Sociologists,NA,3.88,3.75,4.12,4.09,4.95,4.25,4.12,3.75,4.36,4.91,5.86,3.86
+19-3051.00,Urban and Regional Planners,NA,4,4,4,3.97,4.49,4.25,4,4,4.31,5.33,5.08,5.89
+19-3091.01,Anthropologists,NA,3.75,3.88,4.88,3.89,4.64,4.5,4.38,4,4.54,5.11,5.61,4.54
+19-3091.02,Archeologists,NA,4,4,4.62,3.55,4.58,4.12,4,3.88,4.73,5.24,5.45,4.3
+19-3092.00,Geographers,NA,3.62,3.88,4.12,3.65,4.48,4,3.88,3.88,4.09,4.83,5.26,3.74
+19-3093.00,Historians,NA,3.12,3.5,3.88,3.49,3.53,4.12,3.75,3.12,4.07,4.53,4.6,3.74
+19-3094.00,Political Scientists,1,3.62,3.75,4,3.6,4.87,4.5,3.88,3.88,4.2,5.1,5.53,3.87
+19-3099.01,Transportation Planners,NA,3.75,4,3.88,3.96,4.5,4.25,3.75,3.88,3.12,5.79,5.25,5.08
+19-4011.01,Agricultural Technicians,NA,3,3.75,3.62,3.93,4.37,4,3,3.5,4.07,4.29,5.15,3.4
+19-4011.02,Food Science Technicians,NA,2.38,3.25,3.5,3.14,3.8,3.62,3.25,3,3.64,4.45,4.83,3.47
+19-4021.00,Biological Technicians,NA,3.12,4,4.12,3.63,4.13,4,3.88,3.5,1.79,4.54,5.2,3.13
+19-4031.00,Chemical Technicians,NA,3,3.88,3.75,2.66,3.07,4,3.12,3.12,4.31,4.88,4.61,3.6
+19-4041.01,Geophysical Data Technicians,1,2.63,3.13,3.13,3.87,4,3,2.62,3,3.39,3.12,4.84,2.51
+19-4041.02,Geological Sample Test Technicians,NA,3,3.75,4,2.85,3.81,3.75,3.12,3,3.38,3.48,4.38,2.65
+19-4051.01,Nuclear Equipment Operation Technicians,NA,2.12,4,4,2.48,3.99,3.62,3.12,3,3.2,4.27,5.4,2.65
+19-4051.02,Nuclear Monitoring Technicians,NA,3,4.25,4,2.87,3.66,4,3.12,3.12,3.43,4.75,5.08,3.16
+19-4061.00,Social Science Research Assistants,NA,3,3.5,3.5,3.87,4.54,3.75,3.5,3.25,3.78,4.02,4.81,3.52
+19-4061.01,City and Regional Planning Aides,NA,3.38,3.5,3.25,3.25,4.15,3.5,3.12,3.12,3.35,4.7,4.8,4.42
+19-4091.00,"Environmental Science and Protection Technicians, Including Health",NA,3,3.88,3.88,3,4.19,3.75,3.12,3.38,4.05,4.43,4.86,2.95
+19-4092.00,Forensic Science Technicians,NA,3.38,4.25,4.12,3.77,4.47,4,3.62,3.62,2.27,3.9,5.21,2.46
+19-4093.00,Forest and Conservation Technicians,NA,2.88,3.75,3.25,3.29,3.7,3.38,3,3,3.51,4.92,4.87,4.45
+19-4099.01,Quality Control Analysts,1,3,3.62,3.38,3.02,3.88,3.5,3.25,3.38,3.76,4.03,3.71,2.01
+19-4099.02,Precision Agriculture Technicians,NA,3.12,3.88,4,3.54,4.23,3.62,3.75,3.25,3.56,4.56,5.3,3.15
+19-4099.03,Remote Sensing Technicians,NA,3.38,3.75,3.75,3.74,4.22,3.88,3.5,3.38,3.55,4.2,5.17,3.26
+21-1011.00,Substance Abuse and Behavioral Disorder Counselors,NA,3.25,4.38,4,3.6,4.09,4,3.75,3.25,3.89,4.38,4.9,3.41
+21-1012.00,"Educational, Guidance, School, and Vocational Counselors",NA,3.75,4.38,4,3.84,4.1,4,3.88,3.75,4.41,5.42,5.34,4.9
+21-1013.00,Marriage and Family Therapists,NA,3.38,4.25,4.25,3.25,3.52,4,4,4.12,3.74,5.5,5.01,4.78
+21-1014.00,Mental Health Counselors,NA,4,5,5.12,4.09,4.02,4.5,4.12,3.88,1.95,4.39,5.05,4.06
+21-1015.00,Rehabilitation Counselors,NA,3.5,4,4,3.71,3.85,3.88,3.38,3.75,3.13,3.64,4.05,3.22
+21-1021.00,"Child, Family, and School Social Workers",NA,3.38,4.38,3.88,3.29,3.53,4.25,3.75,3.5,3.2,4.44,4.27,3.68
+21-1022.00,Healthcare Social Workers,NA,3.62,4.38,4,3.72,3.88,4.12,3.88,3.62,3.76,4.68,4.84,3.52
+21-1023.00,Mental Health and Substance Abuse Social Workers,NA,3.88,4.62,4.12,3.63,3.95,4.12,4,3.75,3.98,4.74,5.01,3.89
+21-1091.00,Health Educators,NA,3.38,3.38,3.75,3.89,3.7,4,3.38,3.38,3.24,4.51,4.81,4.33
+21-1092.00,Probation Officers and Correctional Treatment Specialists,NA,3.12,4.25,3.75,3.9,4.19,4,3.12,3.12,4.01,4.83,4.26,3.72
+21-1093.00,Social and Human Service Assistants,NA,3,3.88,3.25,3.6,3.85,3.75,3.12,3,4.1,4.63,4.6,3.66
+21-1094.00,Community Health Workers,NA,3,3.75,3.75,4.32,4.07,3.75,3.62,3.5,4.1,3.61,5.65,4.79
+21-2011.00,Clergy,NA,3.75,4.5,3.88,4.01,3.77,4.12,4.12,3.75,3.96,4.53,3.9,3.58
+21-2021.00,"Directors, Religious Activities and Education",NA,3.25,3.62,3.62,4.05,3.03,3.88,3.75,3.75,4.53,5.45,5.11,4.62
+23-1011.00,Lawyers,NA,3.75,4,4.25,3.35,4.64,4.88,4.25,4,4.33,5.5,5.37,3.45
+23-1012.00,Judicial Law Clerks,NA,2.88,3.75,3.88,3.05,4.65,4.25,4,3.75,3.29,4.74,4.68,1.5
+23-1021.00,"Administrative Law Judges, Adjudicators, and Hearing Officers",1,3.12,4.12,4.75,3.45,4.39,5.12,4.25,4.12,5.57,5.91,5.28,2.75
+23-1022.00,"Arbitrators, Mediators, and Conciliators",NA,3.5,4,4.12,4.07,4.32,4.62,3.75,3.5,4.15,4.68,4.5,3.43
+23-1023.00,"Judges, Magistrate Judges, and Magistrates",1,3.12,4.12,5,3.26,4.55,5.62,4.88,4.75,4.68,6.26,5.94,2.8
+23-2011.00,Paralegals and Legal Assistants,NA,2.88,3.25,3.25,2.95,3.59,3.5,3.25,3,2.98,4.4,5.01,2.35
+23-2091.00,Court Reporters,NA,0.88,2.88,2.62,2.58,2.43,3,2.88,2.25,1.59,2.98,4.7,1.72
+23-2093.00,"Title Examiners, Abstractors, and Searchers",NA,1.88,2.88,3.12,2.82,3.79,3.62,3.12,3,2.69,4.35,4.09,2.58
+25-1011.00,"Business Teachers, Postsecondary",NA,3.5,3.25,4.12,4.33,4.61,4.5,4.25,3.62,4.84,4.77,5.32,4.16
+25-1021.00,"Computer Science Teachers, Postsecondary",NA,3.5,3.5,4,4.25,4.45,4.5,4.38,4,3.73,4.44,6.09,3.54
+25-1022.00,"Mathematical Science Teachers, Postsecondary",NA,3.5,3.25,4.12,3.45,4.48,4.38,4,3.75,3.69,4.52,5.18,4.67
+25-1031.00,"Architecture Teachers, Postsecondary",NA,4.12,3.75,4,4.4,4.68,4.5,4.38,4.25,4.85,4.92,5.28,5.24
+25-1032.00,"Engineering Teachers, Postsecondary",NA,3.88,3.88,4,4.62,4.84,4.12,3.75,3.38,3.75,4.71,5.82,4.51
+25-1041.00,"Agricultural Sciences Teachers, Postsecondary",NA,3.62,3.38,4.12,4.46,4.78,4.12,4.5,3.5,4.84,5.52,6.24,5.37
+25-1042.00,"Biological Science Teachers, Postsecondary",NA,3.75,3.5,4.12,4.19,4.6,4.12,4.25,3.75,4.46,4.76,5.7,4.14
+25-1043.00,"Forestry and Conservation Science Teachers, Postsecondary",NA,3.75,3.62,4.12,4.37,4.58,4.12,4.25,4,4.45,4.88,5.57,4.19
+25-1051.00,"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",NA,3.75,3.75,4,4.46,4.74,4.12,4,3.88,4.21,5.9,6.14,5.32
+25-1052.00,"Chemistry Teachers, Postsecondary",NA,3.62,3.75,4.5,4.26,4.81,4.38,4.38,4,3.71,5.15,5.69,4.55
+25-1053.00,"Environmental Science Teachers, Postsecondary",NA,3.5,3.38,4,4.32,4.91,4.12,4,4.12,4.86,5.56,5.37,4.42
+25-1054.00,"Physics Teachers, Postsecondary",NA,3.5,3.5,4.38,4.78,4.91,4.5,4.38,4,5.3,5.52,6.38,4.91
+25-1061.00,"Anthropology and Archeology Teachers, Postsecondary",NA,3.75,3.88,4,3.96,4.74,4,4.12,3.88,5.44,4.43,5.63,3.7
+25-1062.00,"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",NA,3.75,3.12,4,3.81,4.69,4.25,4,3.75,4.3,4.31,5.27,3.59
+25-1063.00,"Economics Teachers, Postsecondary",NA,3.12,4,4,4.34,4.79,3.88,4,3.5,4.48,4.48,5.58,3.88
+25-1064.00,"Geography Teachers, Postsecondary",NA,3.62,3.38,4,4.45,4.61,4.12,4.25,3.62,4.42,5,5.73,3.98
+25-1065.00,"Political Science Teachers, Postsecondary",NA,3.12,3.38,4,3.91,4.64,4.12,4.12,3.75,4.38,4.6,5.72,3.77
+25-1066.00,"Psychology Teachers, Postsecondary",NA,3.5,3.62,4.12,4.06,4.28,4.25,4.5,3.62,3.35,3.99,5.57,4.1
+25-1067.00,"Sociology Teachers, Postsecondary",NA,3.12,3.5,3.88,4.36,4.73,4.12,4.38,3.75,5.02,4.61,5.01,4.29
+25-1071.00,"Health Specialties Teachers, Postsecondary",NA,3.62,3.62,4,4,4.65,4.38,4.12,4,4.65,5.25,5.56,3.7
+25-1072.00,"Nursing Instructors and Teachers, Postsecondary",NA,3.5,4.38,4.25,4.2,4.06,4.38,4.38,4,4.4,5.71,6.03,4.74
+25-1081.00,"Education Teachers, Postsecondary",NA,3.25,3.62,4,4.28,4.75,4,4,3.88,5.02,5.15,6.2,5.38
+25-1082.00,"Library Science Teachers, Postsecondary",NA,3.5,3.5,4,3.96,4.59,4.12,4.12,3.75,5.41,5.57,6.37,4.76
+25-1111.00,"Criminal Justice and Law Enforcement Teachers, Postsecondary",NA,3.25,3.5,4,4.04,4.06,4.12,4,3.62,4.47,5.14,5.83,4.33
+25-1112.00,"Law Teachers, Postsecondary",NA,3.62,3.75,4.38,3.73,4.7,4.88,4.75,3.75,4.57,4.81,5.96,4.52
+25-1113.00,"Social Work Teachers, Postsecondary",NA,3.75,3.75,4.12,4.17,4.62,4.25,4.5,3.75,5.02,5.31,6.3,4.88
+25-1121.00,"Art, Drama, and Music Teachers, Postsecondary",NA,4,3.12,3.75,4.42,4.17,4,4,3.38,3.87,3.83,4.59,3.36
+25-1122.00,"Communications Teachers, Postsecondary",NA,3.38,3.5,4,4.28,4.53,4.25,4.25,3.62,4.11,4.78,5.3,4.21
+25-1123.00,"English Language and Literature Teachers, Postsecondary",1,4,3.62,4,4.31,4.59,4.12,3.88,3.62,4.84,4.78,5.41,4.52
+25-1124.00,"Foreign Language and Literature Teachers, Postsecondary",NA,3.5,3.5,3.75,4,4.12,4,4.12,3.5,4.4,4.23,5.58,3.75
+25-1125.00,"History Teachers, Postsecondary",NA,3.12,3.25,4.12,3.95,4.49,4,4.12,3.5,4.88,4.46,5.15,3.89
+25-1126.00,"Philosophy and Religion Teachers, Postsecondary",NA,3.38,3.38,4.12,4.06,4.64,4.38,4.25,3.62,4.1,4.07,4.28,3.83
+25-1191.00,Graduate Teaching Assistants,NA,3.25,3.12,3.38,3.56,3.62,3.38,3.12,3.12,3.6,3.77,4.07,2.9
+25-1192.00,"Home Economics Teachers, Postsecondary",NA,3.25,3.38,3.88,4.2,4.38,4,4.12,3.38,3.76,4.91,5.98,4.89
+25-1193.00,"Recreation and Fitness Studies Teachers, Postsecondary",NA,3.25,3.25,3.75,4.25,4.3,4,4,3.38,4.77,5,5.49,4.82
+25-1194.00,"Vocational Education Teachers, Postsecondary",NA,3.25,3.38,3.25,4.15,4.04,3.88,3.75,3.25,4.02,4.28,4.6,3.02
+25-2011.00,"Preschool Teachers, Except Special Education",NA,3.5,3.75,3,4.06,3.37,3.25,3,3.12,3.16,4.08,3.84,3.2
+25-2012.00,"Kindergarten Teachers, Except Special Education",NA,3.38,3.62,3.62,4.18,4.09,3.75,3.12,3.12,2.96,4.52,4.79,4.49
+25-2021.00,"Elementary School Teachers, Except Special Education",NA,3.88,4,3.75,4.02,3.93,4,3.88,3.38,3.29,4.31,4.63,3.82
+25-2022.00,"Middle School Teachers, Except Special and Career/Technical Education",NA,3.12,3.62,3.75,4.15,4.27,3.62,3.88,3.12,3.65,4.72,4.99,4.41
+25-2023.00,"Career/Technical Education Teachers, Middle School",NA,3.38,4,3.5,4.08,3.9,3.88,3.5,3,3.45,4.2,4.75,3.57
+25-2031.00,"Secondary School Teachers, Except Special and Career/Technical Education",NA,3.75,4,3.62,3.98,4.18,3.88,3.75,3.5,3.42,4.45,5.01,4.65
+25-2032.00,"Career/Technical Education Teachers, Secondary School",NA,3.62,4,3.88,3.83,3.85,3.88,3.75,3.38,3.47,5.2,5.54,4.25
+25-2052.00,"Special Education Teachers, Kindergarten and Elementary School",NA,3.62,3.88,3.75,3.74,4.06,3.62,3.75,3.25,2.42,4.64,4.83,4.58
+25-2053.00,"Special Education Teachers, Middle School",NA,3.88,3.88,3.88,4.18,4.31,3.88,3.88,3.12,3.61,4.39,5.09,4.36
+25-2054.00,"Special Education Teachers, Secondary School",NA,3.75,3.88,3.88,3.76,3.9,4,3.88,3.25,4.18,4.8,4.95,4.21
+25-2059.01,Adapted Physical Education Specialists,NA,3.38,3.62,3.38,4.44,3.94,3.62,3.62,3.12,4.16,5.03,5.09,4.91
+25-3011.00,Adult Basic and Secondary Education and Literacy Teachers and Instructors,NA,3.12,3.5,3.62,3.72,3.75,3.5,3.25,3,3.27,3.87,4.26,3.71
+25-3021.00,Self-Enrichment Education Teachers,NA,3.25,3,3,4.2,3.72,3.25,3.12,2.75,3.26,3.88,3.68,2.73
+25-3099.02,Tutors,NA,3.38,3.62,3.25,3.38,3.62,3.62,3.5,3.25,2.65,3.68,4.73,3.24
+25-4011.00,Archivists,NA,3,3.12,3.25,3.38,4.28,3.75,3.12,3.25,4.47,4.55,5.48,4.31
+25-4012.00,Curators,1,4.12,4.12,4,4.06,4.26,4.38,4.12,3.62,5.16,4.37,4.87,4.1
+25-4013.00,Museum Technicians and Conservators,NA,3.12,3.5,3.5,4.03,4.16,3.38,3.12,3,3.97,3.96,3.89,3.17
+25-4021.00,Librarians,NA,3,3.38,3.75,3.9,4.02,3.75,3.25,3.12,3.55,4.1,4.99,3.7
+25-4031.00,Library Technicians,NA,2.12,3,2.88,3.46,3.74,3.25,2.88,2,2.79,2.85,3.43,1.61
+25-9011.00,Audio-Visual and Multimedia Collections Specialists,NA,3.25,3.5,3.25,3.94,3.92,3.88,3.5,3,3.38,4.19,5.17,3.01
+25-9021.00,Farm and Home Management Advisors,NA,4.12,4.12,4.25,3.9,4.14,4.12,4.5,3.88,3.83,4.9,5.55,4.36
+25-9031.00,Instructional Coordinators,NA,3.75,4,4.12,4.24,4.12,4.12,4.12,3.88,4.18,5.12,5.33,4.72
+25-9031.01,Instructional Designers and Technologists,NA,3.88,4,4,4.52,4.52,4.12,4.12,3.75,3.78,4.83,5.91,4.65
+25-9041.00,Teacher Assistants,NA,2.75,3.25,2.88,3.66,3.27,3,3.12,2.5,1.49,2.38,2.4,1.65
+27-1011.00,Art Directors,NA,4.38,3.62,3.75,4.44,3.8,4,3.75,3.62,4.73,4.85,4.42,4.06
+27-1012.00,Craft Artists,NA,3.88,2.5,2.75,4.24,3.6,3.12,2.62,2.88,3.08,3.8,3.8,2.96
+27-1013.00,"Fine Artists, Including Painters, Sculptors, and Illustrators",NA,4.62,3,3,4,3.61,3.25,3.38,2.88,2.77,3.67,4.36,1.31
+27-1014.00,Multimedia Artists and Animators,NA,3.75,3.5,3.5,3.75,3.43,3.62,3.38,3.25,3.85,4.81,5.68,3.86
+27-1021.00,Commercial and Industrial Designers,NA,4.88,4.12,4.12,4.79,4.52,4.12,4.25,3.88,2.86,3.74,4.12,2.43
+27-1022.00,Fashion Designers,NA,4.38,3.25,3.38,4.69,3.89,3.62,3.38,3.38,5.26,5.74,5.32,5.11
+27-1023.00,Floral Designers,NA,3.12,2.75,2.88,3.87,3.51,3.38,2.88,2.62,3.54,2.46,3.41,2.5
+27-1024.00,Graphic Designers,NA,3.88,3.12,3.12,4.46,3.85,3.62,3.12,3,3.31,4.19,5.54,3.27
+27-1025.00,Interior Designers,NA,4,3.75,3.25,4.52,3.86,4,3.25,3.5,3.71,4.71,4.9,3.67
+27-1026.00,Merchandise Displayers and Window Trimmers,NA,3.25,3,3,4.09,3.71,3.38,3,2.88,2.41,3.16,2.93,2.12
+27-1027.00,Set and Exhibit Designers,NA,4.12,3.5,3.5,4.48,3.91,3.75,3.25,3.5,3.86,5,5.41,4
+27-2011.00,Actors,0,3.38,3.12,3,4.06,3.25,3,2.62,2.62,1.97,2.19,2.03,1.41
+27-2012.01,Producers,NA,3.88,3.88,3.75,3.86,3.35,4,4,3.75,4.04,4.69,4.47,3.04
+27-2012.02,"Directors- Stage, Motion Pictures, Television, and Radio",NA,4.12,3.62,3.75,4.04,4.31,3.62,3.25,3.12,3.5,4.36,5.04,2.68
+27-2012.03,Program Directors,NA,3.88,4,4,4.39,4.38,4,3.88,3.75,4.57,5.37,5.88,4.84
+27-2012.04,Talent Directors,NA,3.38,3.38,3.5,3.78,3.61,3.62,3.25,3.25,4.62,4.88,4.37,3.89
+27-2012.05,Technical Directors/Managers,NA,3.75,4.25,3.5,4.02,3.56,4,3.38,3.5,4.2,4.28,5.21,3.02
+27-2021.00,Athletes and Sports Competitors,NA,3,3,3.12,3.09,3.27,3.12,3,2.88,3.91,4.8,4.37,4.83
+27-2022.00,Coaches and Scouts,NA,3.88,4,4,4.08,4.14,4.12,3.88,3.88,4.34,4.14,3.61,3.51
+27-2023.00,"Umpires, Referees, and Other Sports Officials",NA,2.12,3.5,3.12,2.64,3.52,3.62,3.12,2.88,3.91,4.79,4.39,2.3
+27-2031.00,Dancers,0,3.5,2.88,2.5,3.63,3.01,2.5,3,2.38,2.04,3.24,3.36,2.37
+27-2032.00,Choreographers,NA,4.25,3.62,3.25,4.71,4,3.5,3.25,3.12,4.89,5.38,4.71,4.43
+27-2041.01,Music Directors,NA,3.88,3.88,3.12,4.12,3.82,3.88,3.38,3.38,4.51,4.71,4.17,3.82
+27-2041.04,Music Composers and Arrangers,NA,4,3.25,3.25,4.8,3.97,3.25,2.75,3.12,4.09,5.1,5,2.94
+27-2042.01,Singers,0,3.5,2.75,2.5,3.56,2.87,2.88,2.88,2.38,3.02,3.33,3.32,2.63
+27-2042.02,"Musicians, Instrumental",NA,3.62,3.12,3.12,3.39,3.5,3.12,3,2.88,4.12,4.7,4.63,3.48
+27-3011.00,Radio and Television Announcers,NA,3.62,3.38,3.38,3.73,3.76,3.88,3.25,3,3.59,4.26,4.98,2.66
+27-3012.00,Public Address System and Other Announcers,NA,2.75,2.88,2.88,3.54,2.58,2.88,2.88,2.75,2.53,3.35,3.88,1.75
+27-3021.00,Broadcast News Analysts,1,3.5,4,3.88,3.8,3.61,4,3.75,3,3.14,3.71,5.16,2.66
+27-3022.00,Reporters and Correspondents,NA,3.75,3.75,4,3.5,4.18,4.12,3.75,3.38,3.27,3.41,4.5,2.29
+27-3031.00,Public Relations Specialists,NA,3.75,3.88,3.88,3.79,3.92,4,3.62,3.38,3.83,4.83,5.25,4.88
+27-3041.00,Editors,NA,3.88,3.38,3.62,4,3.84,4,3.88,3.12,3.4,3.92,4.71,2.74
+27-3042.00,Technical Writers,NA,3,3.12,3.12,3.54,3.83,3.88,3.62,3,3.44,3.47,5.35,3.01
+27-3043.04,Copy Writers,0,3.75,3.38,3.38,4.61,3.53,3.62,3.12,3,3.1,4.08,4.91,3.24
+27-3043.05,"Poets, Lyricists and Creative Writers",NA,4.75,3.5,3.62,4.65,3.69,3.88,3.88,3.38,3.32,4.22,4.89,4.15
+27-3091.00,Interpreters and Translators,NA,2.88,3.5,3,3.6,3.84,3.75,3.12,3,3.04,4.39,5.35,3.33
+27-4011.00,Audio and Video Equipment Technicians,0,2.88,3.75,3.62,3.85,3.92,3.75,3,3,3.71,3.86,5.31,2.55
+27-4012.00,Broadcast Technicians,NA,3,3.75,3.25,3.59,3.93,3.38,3.12,3.12,2.16,3.8,4.83,2.4
+27-4013.00,Radio Operators,NA,2.5,3.5,3.38,4,4.25,3.25,2.75,2.88,3.44,4.58,5.41,2.49
+27-4014.00,Sound Engineering Technicians,NA,3.38,3.12,3.12,4.16,3.78,3.5,3.25,3.12,3.81,4.72,5.44,3.1
+27-4021.00,Photographers,NA,3.75,3.62,3.25,4.08,3.35,3,3,3,3.24,4.35,5.12,3.54
+27-4031.00,"Camera Operators, Television, Video, and Motion Picture",NA,3.12,3,3,4.06,3.78,3.5,3.25,3.12,3.16,3.23,4.33,1.83
+27-4032.00,Film and Video Editors,NA,3.5,3.25,3.5,3.84,3.61,3.25,3.12,3.12,3.29,3.62,4.54,2.11
+29-1011.00,Chiropractors,NA,3.12,4.75,4.38,3.76,4.2,4.12,3.88,3.62,4.15,5.48,4.85,4.35
+29-1021.00,"Dentists, General",NA,3.88,5.12,5.25,3.25,3.78,4.38,4.5,4.12,4.71,5.34,6.02,3.97
+29-1022.00,Oral and Maxillofacial Surgeons,NA,3.75,5.25,5,3.95,4.57,4.75,4.5,4.38,5.03,5.56,6,3.94
+29-1023.00,Orthodontists,NA,3.25,4.88,4,3.69,4.44,4,3.88,3.62,3.79,5.27,5.48,3.71
+29-1024.00,Prosthodontists,NA,3,4,3.88,4.27,4.52,4,3.25,3.75,4.8,5.83,4.96,3.9
+29-1031.00,Dietitians and Nutritionists,NA,3.88,4,4,3.65,4.17,4,4,4,3.59,4.64,4.86,3.36
+29-1041.00,Optometrists,NA,3,5.12,5.12,3.22,4.39,4.38,3.88,3.62,3.45,5.39,5.48,3.67
+29-1051.00,Pharmacists,NA,3.25,4.12,4.12,2.85,3.7,4.38,3.88,3.5,4.05,4.58,5.77,2.86
+29-1061.00,Anesthesiologists,NA,3,5.5,4.75,3.34,4.29,4.38,4.12,4,4.57,6.37,5.86,3.83
+29-1062.00,Family and General Practitioners,NA,3.38,5.38,5.12,3.11,4.61,4.38,4,4.12,4.23,5.36,5.32,3.64
+29-1063.00,"Internists, General",NA,3.5,5.5,5.62,3.6,4.71,4.62,4.38,4.12,4.11,6.4,6.4,4.93
+29-1064.00,Obstetricians and Gynecologists,NA,3.25,5.75,5.12,3.8,4.43,4.5,4.12,4,4.44,6,5.95,3.62
+29-1065.00,"Pediatricians, General",NA,3.38,5.38,5.25,3.98,4.48,4.38,4.12,3.75,3.76,5.28,5.01,2.66
+29-1066.00,Psychiatrists,1,3.62,4.88,4.75,3.64,4.38,4.62,4.38,4.25,4.7,6.12,5.87,3.94
+29-1067.00,Surgeons,1,4.25,6,5.62,3.75,4.31,4.88,5,4.75,4.37,6.53,6.21,4.16
+29-1069.01,Allergists and Immunologists,NA,3.5,5.12,4.88,3.33,4.58,4.25,4.62,4.38,4.55,6.25,6.31,4.95
+29-1069.02,Dermatologists,NA,3.5,5,5.5,3.78,4.42,4.25,4.12,3.62,3.74,5.09,5.16,2.66
+29-1069.03,Hospitalists,NA,3.5,5.25,5.25,2.84,4.24,4.5,4.5,4.12,3.88,5.64,5.68,3.32
+29-1069.04,Neurologists,NA,3.88,5.75,5.5,3.77,4.49,4.88,4.62,4.62,5.56,6.48,6.12,4.86
+29-1069.05,Nuclear Medicine Physicians,NA,3.88,5.5,5.38,3.09,4.48,4.88,4.62,4.25,4.35,5.45,5.83,3.48
+29-1069.06,Ophthalmologists,NA,3.75,5.5,5.5,3.7,4.46,4.88,4.38,4.25,4.7,6.32,6.19,4.45
+29-1069.07,Pathologists,NA,3.88,5.62,5.88,3.56,4.89,4.62,4.62,4.5,4.13,6.28,6,3.72
+29-1069.08,Physical Medicine and Rehabilitation Physicians,NA,3.88,5,5,3.89,4.54,4.62,4.25,4.12,5.27,5.89,5.99,4.41
+29-1069.09,Preventive Medicine Physicians,NA,4,5.75,5.62,3.61,4.64,5,4.88,4.88,4.04,5.74,5.93,4.82
+29-1069.10,Radiologists,NA,3.25,4.88,4.5,3.51,4.28,4.5,4,4,5.21,5.88,6.21,4.18
+29-1069.11,Sports Medicine Physicians,0,3.5,5.12,4.88,3.83,4.35,4.5,4.38,4,4.75,6.6,6.03,3.78
+29-1069.12,Urologists,NA,3.25,5.25,5.12,4.08,4.91,4.12,3.88,4.38,4.26,5.78,5.68,3.82
+29-1071.00,Physician Assistants,NA,3.12,4.88,4.62,3.3,4.25,4.5,4.12,3.62,3.7,6.1,5.8,3.8
+29-1071.01,Anesthesiologist Assistants,NA,2.62,4.12,3.88,3.33,4.06,3.75,3.62,3.38,4.44,5.35,5.34,3.38
+29-1081.00,Podiatrists,NA,3.5,5.38,5.12,3.71,4.29,4.25,4.75,4,3.39,5.37,5.23,3.59
+29-1122.00,Occupational Therapists,NA,4,4,4,3.9,4.1,4.12,4,3.62,3.57,4.9,4.71,4.05
+29-1122.01,"Low Vision Therapists, Orientation and Mobility Specialists, and Vision Rehabilitation Therapists",NA,3.38,4,3.88,4.12,3.88,4,3.75,3.25,3.28,4.46,4.62,4.48
+29-1123.00,Physical Therapists,NA,3.38,4.25,4.38,3.84,4.53,3.88,3.38,3.38,3.89,4.81,5.08,3.65
+29-1124.00,Radiation Therapists,NA,2.62,3.88,3.25,3.69,4.11,3.75,3,3,4.56,5.25,5.72,2.75
+29-1125.00,Recreational Therapists,NA,3.88,4,4,4.42,3.88,4,3.38,3.5,3.54,4.46,4.96,4.04
+29-1125.01,Art Therapists,NA,3.75,4.12,3.88,3.86,3.52,4.12,3.88,3.5,3.62,4.33,4.67,3.9
+29-1125.02,Music Therapists,NA,3.88,4.12,3.88,4.2,3.89,4,3.5,3.38,3.36,4.43,4.57,3.73
+29-1126.00,Respiratory Therapists,NA,3,4,3.88,3.82,4.45,4,3.62,3.12,3.83,4.83,5.6,3.32
+29-1127.00,Speech-Language Pathologists,NA,4,4.25,4.25,3.72,3.95,4,4,3.75,3.25,4.61,5,4.45
+29-1128.00,Exercise Physiologists,NA,3.62,4.38,4.5,3.57,3.79,4,3.75,3.5,3.57,4.58,5.38,3.79
+29-1131.00,Veterinarians,NA,3.12,5.12,4.75,3.44,4.34,4.25,4,3.38,3.68,5.61,5.76,3.39
+29-1141.00,Registered Nurses,NA,3.12,5,4.88,3.72,4.3,4,3.75,3.25,4.18,4.9,5.44,2.99
+29-1141.01,Acute Care Nurses,NA,3,4.75,4,3.5,4.11,4,3.88,3.75,3.48,5.48,5.15,3.63
+29-1141.02,Advanced Practice Psychiatric Nurses,NA,3.25,4.75,4.25,4,4.48,4,4,3.38,4.86,5.72,6,4.52
+29-1141.03,Critical Care Nurses,NA,3.25,4.88,4,3.65,4.5,4,4,3.38,3.4,5.05,5.05,2.89
+29-1141.04,Clinical Nurse Specialists,NA,3.38,4.38,4,4.19,4.15,4.12,4,3.5,5.04,5.54,6.19,4.84
+29-1151.00,Nurse Anesthetists,NA,3.12,5,4.12,3.93,4.65,4,3.62,4,3.69,6.23,5.73,3.55
+29-1161.00,Nurse Midwives,0,3,5,4.12,3.14,4.31,4.25,4.12,3.62,4.08,5.7,5.76,3.86
+29-1171.00,Nurse Practitioners,NA,3.25,5.12,4.88,3.6,4.47,4.38,4.12,4,4.2,5.43,6,3.52
+29-1181.00,Audiologists,NA,3.25,5,4.75,2.87,3.83,4.25,4.38,3.75,3.37,4.66,5.77,3.07
+29-1199.01,Acupuncturists,0,2.88,4,4.25,3.79,3.95,3.88,3.5,3.25,3.48,4.59,4.29,3.31
+29-1199.04,Naturopathic Physicians,NA,3.5,5.25,5.25,3.62,4.33,4.38,4.38,3.88,3.38,5.33,5.48,3.65
+29-1199.05,Orthoptists,NA,3,4.88,4.62,3.55,4.2,4,3.88,3.88,2.7,5.15,5.3,2.63
+29-2011.00,Medical and Clinical Laboratory Technologists,NA,2.88,4.12,4,3.06,4.57,4,3.88,3.38,4.16,4.68,5.16,2.81
+29-2011.01,Cytogenetic Technologists,1,2.62,4.12,4.12,2.8,3.96,3.62,3.38,3.25,3.5,4.4,5.04,2.27
+29-2011.02,Cytotechnologists,NA,2.25,4.12,3.88,2.62,4,3.62,3.5,3.12,3.58,4.81,5.04,2.19
+29-2011.03,Histotechnologists and Histologic Technicians,NA,2.12,3.88,3,3.35,3.88,3.25,3,3.12,3.12,4.15,4.72,2.55
+29-2012.00,Medical and Clinical Laboratory Technicians,NA,2.88,3.75,3.12,3.26,4.43,3.38,3.12,3,3.4,5.3,5.57,3.25
+29-2021.00,Dental Hygienists,NA,2.38,4,3.5,3.27,3.3,3.38,3.12,3,3.31,4.1,5.41,3.19
+29-2031.00,Cardiovascular Technologists and Technicians,NA,2.62,4.12,3.88,3.3,3.88,3.75,3.38,3.12,3.39,3.99,4.69,2.75
+29-2032.00,Diagnostic Medical Sonographers,NA,2.88,3.5,3.38,3.64,4.04,3.5,3.12,3,3.09,4.51,5.54,2.79
+29-2033.00,Nuclear Medicine Technologists,NA,2.75,3.88,3.5,3.57,4.06,3.62,3.12,3,3.39,3.92,5.16,2.53
+29-2034.00,Radiologic Technologists,NA,2.75,4,3.38,3.62,3.64,3.62,3,2.88,3.37,4.41,5.61,2.91
+29-2035.00,Magnetic Resonance Imaging Technologists,NA,3,3.25,3.62,3.52,3.78,3.62,3,3.12,3.38,4.31,5.08,2.69
+29-2041.00,Emergency Medical Technicians and Paramedics,NA,3,4.12,4,3.7,4.18,4,4,3.25,3.65,5.06,5.49,3.06
+29-2051.00,Dietetic Technicians,NA,3,3.12,3.12,2.99,3,3.25,3,3,4.37,3.58,3.93,2.92
+29-2052.00,Pharmacy Technicians,NA,2.12,3.12,3,3.1,3.36,3.62,3,2.62,2.33,3.61,4.59,2.05
+29-2053.00,Psychiatric Technicians,NA,3,4,3.88,3.31,3.54,3.88,3.25,3.25,3.65,4.58,5.14,3.56
+29-2054.00,Respiratory Therapy Technicians,NA,2.88,4,3.75,3.63,3.83,3.62,3.62,2.88,4.52,5.54,5.7,4.3
+29-2055.00,Surgical Technologists,NA,2.5,3.75,3.12,3.75,3.82,3.12,3,3,4.23,4.39,5.01,3.13
+29-2056.00,Veterinary Technologists and Technicians,NA,2.88,4,3.88,3.45,3.55,3.88,3.12,3,2.71,3.85,5.17,2.07
+29-2057.00,Ophthalmic Medical Technicians,NA,2.12,3.5,3.25,3.22,3.83,3.12,3,2.62,2.78,4.43,5.35,2.48
+29-2061.00,Licensed Practical and Licensed Vocational Nurses,NA,2.88,4,3.75,3.73,4.16,4,3.12,3.12,3.72,4.84,5.5,3.58
+29-2071.00,Medical Records and Health Information Technicians,NA,2.5,2.88,2.88,3.47,3.9,2.88,2.5,2.62,2.14,3.34,5.02,1.38
+29-2081.00,"Opticians, Dispensing",NA,2.75,3,3.12,3.69,3.96,3.62,2.88,2.88,4.04,4.48,5.15,2.89
+29-2091.00,Orthotists and Prosthetists,NA,3.5,4,4,4.03,4.28,4,4.12,3.88,4.12,4.91,5.36,3.64
+29-2092.00,Hearing Aid Specialists,NA,2.75,3.38,3.38,3.92,4.15,3.75,3.38,3.25,3.81,5.1,5.92,4.21
+29-2099.01,Neurodiagnostic Technologists,NA,2.88,4,3.88,3.38,4.18,3.88,3.38,3,3.71,4.62,5.29,3.06
+29-2099.05,Ophthalmic Medical Technologists,NA,2.5,3.75,3.62,2.89,3.44,3.75,3,2.75,2.48,4,5,2.67
+29-2099.06,Radiologic Technicians,NA,2.88,3.62,3.25,3.78,3.67,3.12,3.12,2.88,3.22,3.45,5.07,2.42
+29-2099.07,Surgical Assistants,NA,2.88,3.88,3.62,3.68,4.1,3.5,3.12,3.12,4.51,5.25,5.49,3.15
+29-9011.00,Occupational Health and Safety Specialists,NA,3.12,4.62,4,3.45,4.42,4,4,3.75,4.12,4.94,5.3,4
+29-9012.00,Occupational Health and Safety Technicians,NA,3,3.88,3.75,3.27,3.96,3.88,3.25,3.25,3.81,4.42,4.81,3.23
+29-9091.00,Athletic Trainers,NA,3.25,4.5,4.38,3.75,4.23,4,4,3.38,4.16,5.2,5.14,3.51
+29-9092.00,Genetic Counselors,NA,3.12,4,4.62,3,4.13,4.12,3.88,3.75,3.52,4.7,6.04,2.91
+29-9099.01,Midwives,0,3.12,5.12,4.38,3.88,4.22,4.12,3.38,3.25,4.57,6.13,5.7,4.06
+31-1011.00,Home Health Aides,NA,2.88,3.5,3.12,3.29,3.33,3.25,3,3,3.03,3.74,4.16,2.32
+31-1013.00,Psychiatric Aides,NA,2.75,4,3.12,3.8,3.76,3.25,3,3,3.45,3.59,3.8,2.43
+31-1014.00,Nursing Assistants,NA,2.25,3.38,2.88,3.83,3.81,3,2.5,2.38,3.13,3.41,3.34,2.43
+31-1015.00,Orderlies,NA,2,2.75,2.5,2.77,2.89,2.12,1.88,1.62,2.86,2.85,3.23,1.6
+31-2011.00,Occupational Therapy Assistants,NA,3,4,3.38,3.82,3.78,3.25,3,3.12,3.72,4.18,5.27,3.16
+31-2012.00,Occupational Therapy Aides,NA,2.75,3.5,3.12,3.65,3.57,3.5,3,3,3.65,4.21,4.63,2.58
+31-2021.00,Physical Therapist Assistants,NA,2.88,3.75,3.38,3.75,3.91,3.62,3.12,3,3.56,3.5,4.04,2.76
+31-2022.00,Physical Therapist Aides,NA,2,3,3,3.38,3.43,2.88,2.75,2.75,2.81,3.34,3.41,2.73
+31-9011.00,Massage Therapists,NA,2.75,3.25,3.12,3.63,3.83,3.25,3.12,2.75,2.63,4.23,4.4,3.3
+31-9091.00,Dental Assistants,0,2.38,3.25,3.12,3.4,3.59,3.25,3,2.88,3.89,4.01,4.54,2.33
+31-9092.00,Medical Assistants,NA,2.62,3.62,3.25,3.75,4.22,3.75,3.38,3,4.41,3.72,5.08,2.96
+31-9093.00,Medical Equipment Preparers,NA,2,3.12,2.62,3.63,3.93,2.88,3,2.5,5.14,5.36,5.5,2.81
+31-9094.00,Medical Transcriptionists,NA,1.62,3,3.12,2.83,2.86,2.88,2.5,2.5,1.89,2.67,4.34,1.34
+31-9095.00,Pharmacy Aides,NA,1.5,3,2.75,2.86,3.22,2.88,2.5,2.38,5.08,4.53,5,3.15
+31-9096.00,Veterinary Assistants and Laboratory Animal Caretakers,NA,2,3.75,3,3.27,3.31,3.12,3,2.38,2.98,4.12,4.4,2.57
+31-9097.00,Phlebotomists,NA,2.25,3.25,3.25,3.6,4,3.38,3,2.38,3.48,3.65,5,1.65
+31-9099.01,Speech-Language Pathology Assistants,NA,2.5,3.5,3.25,4.44,4.39,3.5,2.75,3.12,3.77,4.2,4.48,3.66
+31-9099.02,Endoscopy Technicians,NA,2,3.38,3,3.55,3.84,3.25,3,2.62,3.65,4.47,5.14,2.57
+33-1011.00,First-Line Supervisors of Correctional Officers,NA,3.25,4,3.88,3.67,3.9,4,3.12,3.12,4.13,5.13,4.52,3.53
+33-1012.00,First-Line Supervisors of Police and Detectives,NA,3.38,4,4,3.55,4.13,4.12,3.88,4,4.43,5.48,5.3,4.4
+33-1021.01,Municipal Fire Fighting and Prevention Supervisors,NA,3.75,4.38,4,3.73,4.06,4.25,3.88,4,5.13,6.15,5.9,5.04
+33-1021.02,Forest Fire Fighting and Prevention Supervisors,NA,3.25,4.38,4.12,3.48,4.18,4,3.88,4,4.09,5.72,4.95,4.62
+33-2011.01,Municipal Firefighters,NA,3,4,3.62,3.68,3.91,3.88,3,2.88,4.26,4.81,5.29,3.67
+33-2011.02,Forest Firefighters,NA,3,4,3.5,3.69,3.96,3.62,3,3,3.91,4.12,4.29,3.55
+33-2021.01,Fire Inspectors,NA,2.88,4.5,4,3.43,3.78,4,3.75,3.62,3.74,4.07,5.08,3.67
+33-2021.02,Fire Investigators,NA,3,4.25,4.38,3.68,4.42,4.12,3.5,3.38,4.81,5.74,5.74,3.48
+33-2022.00,Forest Fire Inspectors and Prevention Specialists,NA,3.25,4,3.63,3.08,2.19,3.62,3.25,3.25,4.4,4.8,5.36,5.37
+33-3011.00,Bailiffs,NA,0.88,3.5,2.88,2.9,3.54,3,2.12,2.25,3.58,3.8,3.22,1.83
+33-3012.00,Correctional Officers and Jailers,NA,2.38,4,3.88,3.31,3.83,3.62,3,2.75,3.26,4.71,4.65,2.08
+33-3021.01,Police Detectives,1,3.25,4.25,4.25,3.72,4,4.12,3.75,3.88,4.2,5.41,5.44,3.93
+33-3021.02,Police Identification and Records Officers,NA,2.88,3.5,4,3.61,4.17,4,3.25,3.12,4.25,5,5.7,2.67
+33-3021.03,Criminal Investigators and Special Agents,NA,3,4.25,4.12,3.69,4.08,4.12,3.62,3.88,4.58,5.18,4.81,2.92
+33-3021.05,Immigration and Customs Inspectors,NA,2.38,4.12,4,2.97,3.84,3.88,3.12,3,5.15,5.26,5.38,3.43
+33-3021.06,Intelligence Analysts,1,3.5,4.38,4.62,4.06,4.91,4.25,3.38,3.62,4.61,5.09,5.75,4.56
+33-3031.00,Fish and Game Wardens,NA,3,4.12,4,3.74,3.68,4,3.5,3.25,3.88,5.78,5.12,4.39
+33-3041.00,Parking Enforcement Workers,NA,2.25,3.12,2.75,3.44,3.34,3,2.38,2.38,4.44,3.47,3.58,2.97
+33-3051.01,Police Patrol Officers,NA,3,4,4,3.23,3.84,4,3.12,3.25,5.05,6.04,5.51,3.82
+33-3051.03,Sheriffs and Deputy Sheriffs,NA,3,4.12,4,3.14,3.91,3.88,3.25,3.62,4.45,4.99,4.72,3.6
+33-3052.00,Transit and Railroad Police,NA,3,4,3.88,3.32,4.03,3.38,3,3,2.69,4.07,4.8,3.42
+33-9011.00,Animal Control Workers,0,2.62,3.88,3.88,4.08,3.93,3.5,2.88,2.75,3.76,4.51,4.61,3.08
+33-9021.00,Private Detectives and Investigators,NA,3.12,4.12,4.12,3.64,4.16,4.12,3.38,3,4.27,4.35,5.11,3.39
+33-9031.00,Gaming Surveillance Officers and Gaming Investigators,NA,2.25,3.88,3.62,3.84,4.04,3.75,3,2.25,4.52,4.97,5.34,3.8
+33-9032.00,Security Guards,NA,2,3.5,3,2.59,2.59,2.88,2.5,2.25,4,4.63,4.21,2.94
+33-9091.00,Crossing Guards,0,0.88,3.12,2.62,2.63,3.13,2.5,1.62,1.88,2.35,2.79,2.53,2.23
+33-9092.00,"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",NA,2,4.12,3,2.61,3.18,3.38,2.75,2.62,2.43,3.45,2.78,1.39
+33-9093.00,Transportation Security Screeners,NA,2.38,3.88,3.5,2.5,2.63,3.5,3,2.75,2.85,3.89,4.19,2.26
+33-9099.02,Retail Loss Prevention Specialists,NA,2.75,3.62,3.5,3.68,4.17,3.62,3,2.88,4.07,5.23,4.79,3.52
+35-1011.00,Chefs and Head Cooks,NA,3.38,3.75,3.38,3.81,3.48,3.88,3.5,3,3.35,3.81,4.04,3.19
+35-1012.00,First-Line Supervisors of Food Preparation and Serving Workers,NA,3,3.12,3,3.29,3.54,4,3.25,3,2.89,3.62,3.59,2.4
+35-2011.00,"Cooks, Fast Food",0,1.62,2.75,2.38,2.48,2.36,2.25,2.12,1.75,2.86,2.71,2.81,2.08
+35-2012.00,"Cooks, Institution and Cafeteria",0,2.62,3,2.75,3.29,3.1,3,2.75,2.75,3.41,3.2,3.23,1.78
+35-2013.00,"Cooks, Private Household",0,3.38,3.12,3,3.88,3.33,3,3.12,2.88,2.5,2.46,3.04,1.75
+35-2014.00,"Cooks, Restaurant",0,3,3,2.88,3.67,3.22,3,2.75,2.12,2.89,3.23,4.07,2.89
+35-2015.00,"Cooks, Short Order",0,2.38,2.88,2.75,3.28,3.32,2.75,2.62,2.12,2.9,3.43,3.14,2.52
+35-2021.00,Food Preparation Workers,NA,2.12,2.25,2.12,2.99,3.17,2.12,2.12,2.12,3.11,3.19,3.27,2.32
+35-3011.00,Bartenders,0,2.75,3.25,3,3.58,3.41,2.88,3,2.62,2.34,2.6,3.03,2.08
+35-3021.00,"Combined Food Preparation and Serving Workers, Including Fast Food",NA,1.62,2.5,2,3.43,3.05,2.38,2,1.88,2.25,2.42,2.31,1.59
+35-3022.00,"Counter Attendants, Cafeteria, Food Concession, and Coffee Shop",0,2.38,2.75,2.12,2.96,3.38,2.5,2.12,2.5,1.76,1.72,1.47,0.79
+35-3022.01,Baristas,0,2.12,2.75,2.5,2.54,2.65,2.75,2.62,2.25,2.54,2.64,2.29,1.91
+35-3031.00,Waiters and Waitresses,0,2.12,2.88,2.25,2.86,2.86,2.75,2.12,2.12,2.98,2.7,3.03,1.61
+35-3041.00,"Food Servers, Nonrestaurant",0,1.75,2.5,2.38,2.86,2.8,2.12,1.75,1.62,2.42,2.33,2.2,1.26
+35-9011.00,Dining Room and Cafeteria Attendants and Bartender Helpers,0,1.75,2.12,2.12,2.66,2.91,2.12,1.62,1.75,3.14,2.66,3.13,2.45
+35-9021.00,Dishwashers,0,1.88,2,2,2.33,2.46,2.12,2,2,2.79,2.85,3.04,2.71
+35-9031.00,"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",0,1.75,2.88,2.62,2.23,2.46,2.62,2.38,1.75,2.21,2.77,2.34,1.42
+37-1011.00,First-Line Supervisors of Housekeeping and Janitorial Workers,NA,2.38,2.88,3,3.61,3.52,3.12,2.88,2.62,3.22,3.24,3.05,2.57
+37-1012.00,"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",NA,3.12,3.12,3.12,3.97,3.72,3.75,3,3.25,3.87,4.61,4.38,4.13
+37-2011.00,"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",NA,1.62,2.75,2.62,2.72,2.94,2.12,2,2,1.91,2.91,2.27,1.48
+37-2012.00,Maids and Housekeeping Cleaners,0,1.5,2.25,2.38,3.29,2.74,2.12,1.25,2,2.37,2.73,2.42,2.06
+37-2021.00,Pest Control Workers,NA,2.75,3,3,3.27,3.25,3.38,2.88,3,2.16,3.82,4.09,2.52
+37-3011.00,Landscaping and Groundskeeping Workers,0,1.88,2.88,2.5,3.05,3.2,1.88,2,2.12,2.72,3.41,3.6,1.87
+37-3012.00,"Pesticide Handlers, Sprayers, and Applicators, Vegetation",NA,2.12,2.88,2.88,3.17,3.5,2.88,2.38,2.88,3.33,4.16,4.45,3
+37-3013.00,Tree Trimmers and Pruners,NA,2.25,3.25,3,3.1,3.49,3,2.12,2.75,3.4,4.73,4.19,3.2
+39-1011.00,Gaming Supervisors,NA,3,4,3.62,2.9,3.52,3.88,3.5,3,2.45,3.11,3.37,1.68
+39-1012.00,Slot Supervisors,NA,2.12,3.12,3,2.55,2.88,3.75,2.25,2.88,3.81,3.62,4.51,2.41
+39-1021.00,First-Line Supervisors of Personal Service Workers,NA,3.12,3.88,3.25,4.15,4.08,3.75,3,3.12,3.59,3.83,3.79,2.01
+39-1021.01,Spa Managers,NA,3.38,3.62,3.5,4.03,3.88,4,3.88,3.12,4.53,4.8,5.11,3.41
+39-2011.00,Animal Trainers,0,3.25,4,3.25,3.79,3.77,3.38,3.12,2.75,4.04,4.99,3.99,3.61
+39-2021.00,Nonfarm Animal Caretakers,NA,1.75,3,2.62,3.61,3.34,2.75,2.12,2.38,3.05,3.48,3.37,1.62
+39-3011.00,Gaming Dealers,NA,2.25,3,3,2.35,2.74,2.88,2.5,2.38,3.45,3.41,2.95,1.81
+39-3012.00,Gaming and Sports Book Writers and Runners,NA,1.75,2.88,2.75,2.7,3.07,2.88,2.5,2.25,2.13,3.46,3.57,1.45
+39-3021.00,Motion Picture Projectionists,NA,2.13,3,2.88,2.6,2.77,2.75,2.25,2.38,2.17,3.41,2.8,1.53
+39-3031.00,"Ushers, Lobby Attendants, and Ticket Takers",0,2,2.88,2.25,2.66,2.44,2.62,2.12,2.12,2.18,2.42,2.65,1.59
+39-3091.00,Amusement and Recreation Attendants,0,1.75,3.12,2.38,2.57,2.4,2.62,1.75,1.88,3.11,3.23,3.19,1.04
+39-3092.00,Costume Attendants,NA,3.12,3,2.88,4.07,3.69,2.88,2.25,2.38,2.86,3.36,3.23,1.99
+39-3093.00,"Locker Room, Coatroom, and Dressing Room Attendants",0,0.88,2.88,2.38,2.96,2.6,2.75,2,2,2.25,2.23,1.89,0.69
+39-4011.00,Embalmers,0,2.5,3.25,3,3.67,3.94,3.38,3.12,2.88,3.68,4.61,5.06,2.38
+39-4021.00,Funeral Attendants,0,1.5,2.62,2.5,2.79,3,2.75,1.5,2,3.97,4.47,4.1,3.31
+39-4031.00,"Morticians, Undertakers, and Funeral Directors",NA,3,3.25,3.12,3.73,3.54,3.88,3.25,3.25,3.97,4.24,4.24,3.3
+39-5011.00,Barbers,0,2.62,2.88,2.88,3.49,3.29,2.75,2.5,2.12,3.26,3.91,3.91,2.63
+39-5012.00,"Hairdressers, Hairstylists, and Cosmetologists",0,3.12,3.12,3,3.93,3.23,3.5,3,2.88,2.31,4.09,4.87,2.35
+39-5091.00,"Makeup Artists, Theatrical and Performance",NA,3.88,3.12,3,4.22,3.65,3.25,3.25,2.75,2.38,3.86,4.91,2.73
+39-5092.00,Manicurists and Pedicurists,0,2.12,2.5,2.25,3.04,2.76,2.5,2.25,2,2.87,1.75,2.39,1.33
+39-5093.00,Shampooers,0,1.62,2.25,2.38,3.25,3.23,2.12,2,1.88,2.3,2.85,3.05,1.71
+39-5094.00,Skincare Specialists,NA,2.88,3,3,3.86,3.24,3,2.88,2.88,2.03,3.23,3.97,1.46
+39-6011.00,Baggage Porters and Bellhops,0,2,2.75,2.12,2.85,2.87,2.75,2.12,2.12,3.58,3.84,3.54,2.54
+39-6012.00,Concierges,NA,3,3.5,2.75,3.77,3.4,3.62,2.75,2.75,3.9,4.16,3.87,2.47
+39-7011.00,Tour Guides and Escorts,NA,2.5,3.12,2.88,3.37,3.24,3.25,2.25,2.12,2.72,2.69,3.34,2.2
+39-7012.00,Travel Guides,NA,3.38,3.38,3.25,4.03,3.34,3.5,2.88,3.12,3.86,3.71,3.26,2.12
+39-9011.00,Childcare Workers,NA,2.88,3.38,3,3.74,3.61,3,3,2.88,2.78,3.05,3.27,2.72
+39-9011.01,Nannies,0,3.12,4,3.12,3.52,3.65,3.25,3,3,2.14,3.14,3,1.65
+39-9021.00,Personal Care Aides,NA,1.88,3,3,3.46,3.5,3,2.75,2.38,2.41,2.89,2.61,1.21
+39-9031.00,Fitness Trainers and Aerobics Instructors,NA,3.12,2.88,2.88,3.96,3.28,3,2.88,2.75,2.08,3.08,4.56,2.84
+39-9032.00,Recreation Workers,NA,3.5,3.12,3,3.95,3.92,3.62,3.12,3,3.55,4.14,4.73,3.49
+39-9041.00,Residential Advisors,NA,3,3.62,3.12,3.51,3.37,4,3,3,4.58,5.07,4.47,3.24
+41-1011.00,First-Line Supervisors of Retail Sales Workers,NA,3.12,3.62,3,4.1,4.09,3.88,3.38,3.5,3.22,4.01,3.5,2.3
+41-1012.00,First-Line Supervisors of Non-Retail Sales Workers,NA,3.5,3.38,3.75,3.43,4.05,3.88,3.62,3.75,5.45,5.54,4.04,4.58
+41-2011.00,Cashiers,0,2.12,2.75,2.88,3.47,3.48,2.62,2.25,2.12,2.69,2.56,3.23,1.38
+41-2012.00,Gaming Change Persons and Booth Cashiers,NA,1.62,3,2.62,2.47,2.88,2.75,2,2.25,2.78,3.13,2.84,1.46
+41-2021.00,Counter and Rental Clerks,NA,2.25,2.88,2.75,2.64,2.79,2.88,2.25,2.38,2.58,3.18,3.39,1.86
+41-2022.00,Parts Salespersons,NA,2.38,3.12,2.88,3.07,3.59,3.12,3,3,4.37,4.49,4.99,3.1
+41-2031.00,Retail Salespersons,NA,2.62,3.25,2.88,3.07,3.16,3.12,2.88,2.5,3.12,2.91,3.6,2.4
+41-3011.00,Advertising Sales Agents,NA,3.38,3.12,3.25,3.78,3.63,3.75,3.62,3.12,3,4.31,4.68,3.32
+41-3021.00,Insurance Sales Agents,NA,3,3.5,3.25,3,3.96,3.88,3.38,3.12,3.4,3.94,4.13,3.38
+41-3031.01,"Sales Agents, Securities and Commodities",1,3.25,4.25,4,3.34,4.26,4.38,4.12,3.62,4.71,4.72,4.78,4.02
+41-3031.02,"Sales Agents, Financial Services",1,2.88,3.62,3.5,3.95,4.24,4,3.62,3.12,3.46,4.87,4.54,3.91
+41-3031.03,Securities and Commodities Traders,NA,2.88,3.62,4.12,2.93,3.61,4.25,3.5,3.38,3.46,4.33,4.98,3.47
+41-3041.00,Travel Agents,NA,3,2.88,3,2.35,3.26,3.75,3.12,2.88,3.77,4.06,4.45,2.43
+41-3099.01,Energy Brokers,NA,2.75,3.5,3.75,3.5,4.56,4.12,3.5,3.12,3.42,4.5,5.01,3.64
+41-4011.00,"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",NA,3.62,3.62,3.25,3.79,3.62,3.75,3.75,3.12,2.76,3.47,3.29,2.74
+41-4011.07,Solar Sales Representatives and Assessors,NA,3,3.38,3.38,2.96,3.41,3.75,3.38,3.12,3.79,4.68,4.72,3.23
+41-4012.00,"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",NA,3,3,3.12,3.43,3.77,4,3.12,3,3.44,3.97,4.08,3.6
+41-9011.00,Demonstrators and Product Promoters,NA,3,3,3,3.15,2.74,3,3,2.38,3.03,3.74,2.67,2.26
+41-9012.00,Models,0,2.25,1.88,2,3.08,1.61,2,1.75,1.88,0.26,1.14,1.86,0.86
+41-9021.00,Real Estate Brokers,NA,2.62,3.5,3.12,3.9,3.69,3.88,3.75,2.88,3.43,3.94,4.85,2.89
+41-9022.00,Real Estate Sales Agents,NA,2.62,3.5,3.25,3.68,3.57,3.88,3.38,3.12,3.68,4.25,5.04,3.36
+41-9031.00,Sales Engineers,NA,3.75,3.88,4,3.73,4.26,4,3.88,3.75,4.72,4.84,4.87,4.32
+41-9041.00,Telemarketers,NA,2.38,2.63,2.75,2.68,2.92,3.38,1.5,2.25,1.91,2.43,3.06,1.32
+41-9091.00,"Door-To-Door Sales Workers, News and Street Vendors, and Related Workers",0,3,2.88,2.88,2.38,2.42,3.12,2.62,2.25,2,2.21,2.62,2.39
+43-1011.00,First-Line Supervisors of Office and Administrative Support Workers,NA,3.38,3.62,3.25,3.62,4.03,3.88,3.75,3.25,3.85,4.21,4.2,3.31
+43-2011.00,"Switchboard Operators, Including Answering Service",NA,1.75,2.62,2.5,2.86,3.21,2.75,2.25,2.25,2.22,3.28,3.31,1.15
+43-2021.00,Telephone Operators,NA,2,2.88,2.88,3.4,3.4,3.25,2,2.62,3.75,3.27,5.34,3.66
+43-3011.00,Bill and Account Collectors,0,2.62,3,3.12,3.5,4.22,3.5,2.75,2.88,1.78,3.37,2.98,2.07
+43-3021.01,Statement Clerks,NA,2.12,3.12,3,3.5,3.76,3.12,2.38,2.25,3.94,4.09,3.56,1.87
+43-3021.02,"Billing, Cost, and Rate Clerks",NA,2.12,3,3,3.19,3.53,3.12,2.88,2.88,2.18,3.66,3.94,1.25
+43-3031.00,"Bookkeeping, Accounting, and Auditing Clerks",NA,1.75,3,3.25,3.37,3.53,3.25,3.12,2.88,2.29,3.9,4.08,2.75
+43-3041.00,Gaming Cage Workers,NA,1.5,3.25,3.12,2.54,2.96,3.25,2.25,2,2.37,2.9,3.47,1.22
+43-3051.00,Payroll and Timekeeping Clerks,NA,2.25,2.88,3,3.37,3.74,3.12,2.88,2.88,3.03,3.59,4.3,2.14
+43-3061.00,Procurement Clerks,NA,2.38,3.12,3.12,3.89,3.56,3.62,3.5,3,2.98,4.07,3.95,1.95
+43-3071.00,Tellers,NA,2.25,3.25,3.12,3.36,3.83,3.25,3,2.88,3.64,3.57,4.8,2.61
+43-4011.00,Brokerage Clerks,0,2.38,3.12,3.12,3.37,4.39,3.62,3,2.88,2.28,3.25,3.7,1.95
+43-4021.00,Correspondence Clerks,NA,2.75,3.38,3.12,3.62,3.81,3.75,2.75,2.88,2.48,3.69,3.87,2.71
+43-4031.01,Court Clerks,NA,1,3.12,3,2.5,2.85,3.62,2.88,3,2.28,3.88,4.48,2.7
+43-4031.02,Municipal Clerks,NA,1.88,2.88,2.88,3.63,3.74,3.62,3.12,2.75,2.72,4.02,4.05,2.16
+43-4031.03,License Clerks,0,2.12,2.88,3,3.08,3.66,3.12,3,2.38,1.4,2.89,3.88,1.39
+43-4041.01,Credit Authorizers,NA,2,3.5,3.5,3.72,3.74,3.5,3,3.25,2.23,3.35,4.45,2.72
+43-4041.02,Credit Checkers,NA,1.88,3.13,3.38,2.69,3.23,3.5,3,2.88,2.83,4.29,5.15,2.85
+43-4051.00,Customer Service Representatives,NA,2.75,3.12,3,3.02,3.61,3.25,2.88,3,3.3,4.41,4.69,2.28
+43-4051.03,Patient Representatives,NA,3.12,3.5,3.38,4.19,4.14,4,3.5,3,4.3,3.86,4.55,2.6
+43-4061.00,"Eligibility Interviewers, Government Programs",NA,2.75,3.5,3.75,3.11,3.56,3.75,3,3,2.48,3.66,4.53,2.04
+43-4071.00,File Clerks,0,2.75,3,2.88,3.27,3.56,3,2.25,2.25,2.89,3.65,4.03,2.22
+43-4081.00,"Hotel, Motel, and Resort Desk Clerks",NA,2.38,3,3,3.26,3.43,3.5,2.25,2.75,2.88,3.85,3.7,2.52
+43-4111.00,"Interviewers, Except Eligibility and Loan",NA,2.38,2.62,3,2.64,2.68,3.25,2.75,2.88,2.01,1.81,2.27,0.99
+43-4121.00,"Library Assistants, Clerical",0,2,2.88,2.75,3.37,3.33,2.88,2.12,2.12,2.8,3.19,4.32,2.25
+43-4131.00,Loan Interviewers and Clerks,NA,2.75,3.38,3.5,3.16,3.51,4,3.5,3,2.19,4.72,4.64,2.91
+43-4141.00,New Accounts Clerks,NA,2.12,3.12,3,3.81,4.05,3.5,2.62,2.62,3.64,3.78,4.64,2.58
+43-4151.00,Order Clerks,0,2,3,3,2.99,3.13,3.62,3,2.62,4.28,4.25,4.2,3.37
+43-4161.00,"Human Resources Assistants, Except Payroll and Timekeeping",NA,2.25,3.25,3,3.1,3.38,3.62,3.12,2.75,3.54,4.6,4.68,3.45
+43-4171.00,Receptionists and Information Clerks,NA,2.38,2.88,2.88,3.42,3.4,3.12,2.38,2.75,3.5,3.4,4.32,1.36
+43-4181.00,Reservation and Transportation Ticket Agents and Travel Clerks,NA,2.75,3,3,3.56,3.77,3.62,3,3,2.78,4.82,4.39,1.5
+43-5011.00,Cargo and Freight Agents,NA,2.38,3.25,3.12,3.05,3.42,3.62,2.88,3,3.45,4.77,4.49,2.97
+43-5011.01,Freight Forwarders,NA,2.75,3.38,3.25,3.41,3.74,3.38,3.12,3.12,3.53,4.26,4.21,3.1
+43-5021.00,Couriers and Messengers,NA,1.88,2.62,2.25,2.14,2.69,2.62,2.25,2.38,2.53,3.12,3.21,0.66
+43-5031.00,"Police, Fire, and Ambulance Dispatchers",NA,3,4,3.25,3.32,3.9,3.88,3,3.12,2.65,4.78,5.26,3.03
+43-5032.00,"Dispatchers, Except Police, Fire, and Ambulance",NA,2.88,3.25,3.38,3.25,3.82,3.88,3,3,3.62,4.48,4.4,3.17
+43-5041.00,"Meter Readers, Utilities",NA,2,2.88,2.75,3.33,3.54,2.75,2.12,2.62,2.56,3.06,3.45,2.01
+43-5051.00,Postal Service Clerks,NA,1.88,2.88,3,3.22,3.57,3.25,2,2.5,2.94,3.16,4.26,1.76
+43-5052.00,Postal Service Mail Carriers,0,1.38,2.75,2.75,2.84,3.06,2.75,2,2.12,1.84,2.43,2.48,0.89
+43-5053.00,"Postal Service Mail Sorters, Processors, and Processing Machine Operators",NA,1.62,2.62,2.5,2.84,2.9,2.62,2,2,2.67,2.62,2.48,1.48
+43-5061.00,"Production, Planning, and Expediting Clerks",NA,2.75,3.62,3.25,3.37,3.88,3.88,2.88,3,3.78,4.11,4.18,3
+43-5071.00,"Shipping, Receiving, and Traffic Clerks",NA,2.25,2.75,2.88,3.18,3.32,3,2.12,2.38,3.12,3.31,3.2,2.01
+43-5081.01,"Stock Clerks, Sales Floor",NA,2.25,3,2.62,2.68,2.77,3,2.5,2.12,2.55,2.71,2.78,1.87
+43-5081.02,Marking Clerks,0,1.75,2.38,2.63,3.46,3.13,2,2.12,2.25,2.05,2.3,2.87,1.4
+43-5081.03,"Stock Clerks- Stockroom, Warehouse, or Storage Yard",NA,1.12,2.62,2.75,2.43,2.53,2.88,2.12,2.38,1.47,1.64,2.32,1.11
+43-5081.04,"Order Fillers, Wholesale and Retail Sales",0,1,2.5,2.5,2.26,2.45,2.62,1.75,1.62,3.11,3.37,3.88,2.27
+43-5111.00,"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",NA,2.12,2.88,3,3.17,3.62,3,2.75,2.75,3.71,3.91,4.17,2.77
+43-6011.00,Executive Secretaries and Executive Administrative Assistants,0,3,3,3.12,3.51,3.52,3.75,3.12,3,3.2,3.81,4.94,2.79
+43-6012.00,Legal Secretaries,NA,2.25,3.12,2.88,3.07,3.81,3.12,2.75,2.62,2.04,2.65,4.11,2.16
+43-6013.00,Medical Secretaries,NA,2,3,3,3.52,3.7,3,2.38,2.62,1.49,3.57,3.98,2.23
+43-6014.00,"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",NA,2,3,3,3.2,3.63,3.75,3.12,2.75,2.58,3.42,3.5,2.22
+43-9011.00,Computer Operators,NA,2.88,3.88,3.12,3.63,4.16,3.75,3.12,3.25,3.8,3.86,4.58,2.35
+43-9021.00,Data Entry Keyers,NA,2,2.88,2.88,4.34,4.59,2.88,2.12,2.5,3.85,4.11,4.61,2.88
+43-9022.00,Word Processors and Typists,0,1.75,2.75,2.62,3.67,3.33,2.5,2,2,1.57,2.9,3.28,1.76
+43-9031.00,Desktop Publishers,NA,3.62,3.38,3.12,4.45,4.05,3.75,3.25,3.5,3.49,3.74,4.72,2.51
+43-9041.01,Insurance Claims Clerks,NA,1.75,3,3.12,3.11,3.67,3.5,2.5,2.88,2.04,3.58,4.31,1.61
+43-9041.02,Insurance Policy Processing Clerks,NA,1.88,3,3,2.71,3.28,3.5,2.75,2.75,2.84,3.82,4.18,1.9
+43-9051.00,"Mail Clerks and Mail Machine Operators, Except Postal Service",NA,2,3,2.75,2.93,2.75,2.88,2.12,1.88,2.69,2.05,1.9,0.94
+43-9061.00,"Office Clerks, General",NA,2,2.75,2.88,3,3.8,3,2.75,2.25,2.07,2.79,3.37,1.5
+43-9071.00,"Office Machine Operators, Except Computer",NA,2.12,2.75,2.5,2.71,2.97,2.62,2.62,2.5,2.71,3.06,3.63,1.87
+43-9081.00,Proofreaders and Copy Markers,0,1.62,3,2.62,3.07,2.9,3,2.38,2.38,1.04,2.31,4.3,0.89
+43-9111.00,Statistical Assistants,NA,3.12,3.38,3.38,3.2,4.43,3.88,3.75,3.38,1.7,4.26,4.91,3.01
+43-9111.01,Bioinformatics Technicians,1,3.25,3.88,3.88,3.72,4.16,3.75,3.88,3.38,4.63,5.62,6.1,3.13
+45-1011.05,First-Line Supervisors of Logging Workers,NA,3,4,3.88,3.21,3.5,3.62,3,3.75,3.84,4.45,3.95,2.95
+45-1011.06,First-Line Supervisors of Aquacultural Workers,NA,3.12,4.12,3.5,3.78,3.72,3.88,3.75,3.38,4.01,4.95,4.67,4.22
+45-1011.07,First-Line Supervisors of Agricultural Crop and Horticultural Workers,NA,2.5,3.75,3.12,4,4.04,3.12,3,3.12,3.91,4.19,3.96,3.41
+45-1011.08,First-Line Supervisors of Animal Husbandry and Animal Care Workers,NA,3,4,3.12,3.26,3.55,3.75,3.5,3,3.95,3.78,3.7,3.03
+45-2011.00,Agricultural Inspectors,NA,2.5,4,3.88,3.06,3.77,4,3.38,3.25,4.22,4.35,4.58,1.92
+45-2021.00,Animal Breeders,NA,1.88,3,3,3.14,3.12,3.25,2.75,2.88,3.32,3.46,2.78,2.53
+45-2041.00,"Graders and Sorters, Agricultural Products",NA,0.62,2.25,2,1.88,2.32,2.25,1.5,1.62,3.18,2.51,2.12,1.18
+45-2091.00,Agricultural Equipment Operators,0,1.25,3.13,2.88,2.6,4.01,2.88,1.88,2.38,1.86,3.43,2.66,2.18
+45-2092.01,Nursery Workers,NA,1.62,2.75,2.5,2.56,3.08,2.5,2.25,2,2.13,1.84,2.84,1.08
+45-2092.02,"Farmworkers and Laborers, Crop",0,1.75,2.88,2.5,2.75,2.31,2.75,2.38,2.5,1.38,1.38,2.26,1.89
+45-2093.00,"Farmworkers, Farm, Ranch, and Aquacultural Animals",NA,2,3.25,2.88,2.92,2.51,2.88,2.38,2.38,3.44,3.76,3.07,2.65
+45-3011.00,Fishers and Related Fishing Workers,NA,2.25,3,2.88,3.21,3.06,3,2.5,2.62,2.77,2.9,2.38,1.6
+45-3021.00,Hunters and Trappers,NA,2.25,2.88,3,3.96,3.57,2.88,1.88,2.75,2.18,3.95,3.78,3.05
+45-4011.00,Forest and Conservation Workers,NA,2.25,3.38,3.12,3.38,3.68,3.12,2.62,2.75,3.73,4.74,4.69,4.28
+45-4021.00,Fallers,0,1.75,3.13,2.75,3.18,3.31,3,2,2.5,2.45,3.94,2.59,1.92
+45-4022.00,Logging Equipment Operators,NA,2.12,2.88,2.38,3.2,3.27,2.75,2.12,2.12,4.04,4.77,3.78,3.5
+45-4023.00,Log Graders and Scalers,NA,2.12,3,3,3.31,3.4,3,2.75,2.75,4.19,4.75,3.53,3.13
+47-1011.00,First-Line Supervisors of Construction Trades and Extraction Workers,NA,3.12,3.25,3.25,3.81,4.01,3.25,3,3,3.83,4.39,4.23,3.67
+47-1011.03,Solar Energy Installation Managers,NA,3.38,3.75,3.5,3.68,4.1,3.75,3.25,3.5,4.67,4.54,5.47,3.46
+47-2011.00,Boilermakers,NA,2.38,3.38,3.25,3.53,3.39,3.12,3,3.12,4.06,4.33,4.6,4.27
+47-2021.00,Brickmasons and Blockmasons,0,2.12,3,2.75,3.57,3.61,3,2.12,2.25,3.77,4.5,4.3,3.3
+47-2022.00,Stonemasons,0,2.75,2.88,2.75,3.55,3.31,3,2.62,2.88,3.22,4.05,2.74,2
+47-2031.01,Construction Carpenters,NA,2.75,3,3.12,3.72,3.67,3.12,2.75,2.62,2.64,3.21,3.35,2.18
+47-2031.02,Rough Carpenters,NA,2.5,3.38,3.12,3.53,3.55,3.12,2.75,2.75,4.13,4.11,3.81,2.55
+47-2041.00,Carpet Installers,NA,2.12,2.88,2.75,3.46,3.81,2.88,2.12,2.75,3.3,3.73,4.36,2.14
+47-2042.00,"Floor Layers, Except Carpet, Wood, and Hard Tiles",NA,2.13,2.63,2.88,3.39,3.3,2.88,2.5,2.5,3.53,4.22,3.85,2.9
+47-2043.00,Floor Sanders and Finishers,NA,1.88,2.62,2.25,2.84,3.01,2.38,2.38,2.5,3.11,3.88,3.21,1.16
+47-2044.00,Tile and Marble Setters,NA,2.75,2.88,3,3.17,2.8,3.12,2.5,2.62,3.84,3.75,4.25,3.31
+47-2051.00,Cement Masons and Concrete Finishers,0,2,2.75,2.38,2.79,3.21,2.38,1.75,2.62,4.09,4.54,3.83,3.34
+47-2053.00,Terrazzo Workers and Finishers,NA,2,2.5,2.25,2.82,3.46,2.38,2.12,2.38,3.02,3.93,3.46,2.67
+47-2061.00,Construction Laborers,NA,2,2.88,2.75,2.71,2.8,2.38,2,2.62,3.3,3.9,4.08,2.7
+47-2071.00,"Paving, Surfacing, and Tamping Equipment Operators",NA,1.62,3,2.5,2.94,3.08,3,2.25,2.5,3.74,4.5,3.39,2.48
+47-2072.00,Pile-Driver Operators,NA,1.88,3,2.75,3.18,3.24,3,2,2.25,3.37,4.49,3.76,3.05
+47-2073.00,Operating Engineers and Other Construction Equipment Operators,NA,2,3.12,2.88,3.35,2.91,2.75,2.62,2.5,3.33,3.56,4.25,2.86
+47-2081.00,Drywall and Ceiling Tile Installers,NA,2.12,2.88,2.75,3.35,3.39,2.62,2,2.5,2.66,2.75,2.28,1.57
+47-2082.00,Tapers,NA,1.5,2.5,2.62,3.02,2.82,2.38,2,2.25,2.29,2.72,2.94,2.01
+47-2111.00,Electricians,NA,2.88,3.75,3.62,3.59,4.17,3.62,3.25,3.12,3.93,3.9,4.53,2.91
+47-2121.00,Glaziers,NA,1.75,2.88,2.88,3.44,3.35,2.88,2.12,2.38,3.09,3.48,2.53,1.95
+47-2131.00,"Insulation Workers, Floor, Ceiling, and Wall",NA,2.12,2.75,2.12,3.63,3.55,2.75,2.12,2.12,2.34,3.22,3.1,1.54
+47-2132.00,"Insulation Workers, Mechanical",NA,2.25,3.25,2.88,3.98,4.08,2.88,2.75,2.62,3.44,3.55,2.71,2.92
+47-2141.00,"Painters, Construction and Maintenance",0,2,2.5,2.88,3.85,3.65,3,2.25,2.12,2.69,3.79,3.31,2.51
+47-2142.00,Paperhangers,0,1.75,2.62,2.62,3.79,3.69,2.38,1.75,2.5,2.93,2.88,2.96,1.93
+47-2151.00,Pipelayers,NA,2,3,2.88,3.64,3.66,3,2.12,2.38,3.31,3.63,3.06,1.67
+47-2152.01,Pipe Fitters and Steamfitters,NA,2.88,3.25,3,3.84,3.75,3.12,3,3.12,3.41,3.68,3.97,2.67
+47-2152.02,Plumbers,NA,2.88,3.5,3.38,3.58,3.5,3.62,3,3.12,2.92,3.47,3.49,2.19
+47-2161.00,Plasterers and Stucco Masons,NA,2.12,2.75,2.75,3.27,3.08,2.62,2.12,2.25,3.84,3.95,3.63,3.22
+47-2171.00,Reinforcing Iron and Rebar Workers,NA,2,2.75,2.38,3.66,3.86,2.88,1.88,2.38,2.86,3.55,2.88,2.64
+47-2181.00,Roofers,NA,2.25,2.88,2.88,3.77,3.71,2.88,2.38,2.75,3.82,3.85,4.41,3.1
+47-2211.00,Sheet Metal Workers,NA,2.25,2.88,2.88,3.75,3.72,3,2.38,2.75,2.79,3.89,3.75,2.78
+47-2221.00,Structural Iron and Steel Workers,0,2.5,3,3,3.39,3.44,3.12,3,2.88,3,3.82,3.25,2.65
+47-2231.00,Solar Photovoltaic Installers,NA,2.5,3.25,3,3.22,3.31,3.5,3,3.12,2.86,3.77,4.44,2.02
+47-3011.00,"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",NA,1.75,2.5,2,3.03,2.56,2.38,2.12,2.38,3.33,4.59,3.87,2.91
+47-3012.00,Helpers--Carpenters,NA,2.38,3,2.25,4.1,3.78,2.75,2.12,2.12,3.1,3.72,3.85,2.23
+47-3013.00,Helpers--Electricians,NA,2,3,2.88,4.26,3.56,2.75,2.38,2.38,2.31,3.72,4.78,2.25
+47-3014.00,"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",NA,1.88,2.38,2.25,2.96,2.81,2.25,2,2.12,2.08,3.03,2.96,1.99
+47-3015.00,"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",NA,2,2.62,2.5,3.15,3.83,2.38,1.88,2,4.21,4.77,4.22,4.03
+47-3016.00,Helpers--Roofers,NA,1.75,2.88,2.38,3.05,3.29,2.25,2.12,2.62,2.99,4.78,4.82,3.29
+47-4011.00,Construction and Building Inspectors,NA,2.88,4.12,4,3.29,4.21,4,3.25,3.25,3.48,4.09,5.13,1.92
+47-4021.00,Elevator Installers and Repairers,NA,2.88,3.38,3.13,3.93,4.28,3,3,3.12,3.61,4.84,5.49,3.05
+47-4031.00,Fence Erectors,0,1.88,2.88,2.63,3.02,2.85,2.62,2.25,2.62,2.39,3.39,3.17,2.18
+47-4041.00,Hazardous Materials Removal Workers,NA,2.75,4,3.25,3.64,3.93,3.62,3,3,3.61,3.47,4.35,3.17
+47-4051.00,Highway Maintenance Workers,NA,2,3,2.88,2.97,3.17,2.75,2.12,2.75,3.7,3.02,4.04,3.32
+47-4061.00,Rail-Track Laying and Maintenance Equipment Operators,NA,2.12,3,2.88,3.49,3.31,3,2.38,2.38,2.81,4.18,4.09,2.59
+47-4071.00,Septic Tank Servicers and Sewer Pipe Cleaners,NA,2,3,3,2.99,3.42,3,2.62,3,2.3,3.44,3.72,2.08
+47-4091.00,Segmental Pavers,NA,2.75,2.88,2.88,3.04,3.17,3,2.5,2.75,2.84,3.79,3,2.25
+47-4099.02,Solar Thermal Installers and Technicians,NA,3,3.25,3.12,4.07,4.4,3.5,3.12,3,3.36,3.21,3.93,2.84
+47-4099.03,Weatherization Installers and Technicians,NA,2.5,3.12,3.25,3.48,3.79,3.12,2.75,2.38,2.86,4,4.03,2.56
+47-5011.00,"Derrick Operators, Oil and Gas",NA,2,3.38,2.88,3.52,3.57,3.12,2.62,2.88,3.01,3.47,2.99,1.88
+47-5012.00,"Rotary Drill Operators, Oil and Gas",NA,2.63,3.5,3.25,3.57,3.97,3.25,3,3.12,4.15,4.45,4.25,3.05
+47-5013.00,"Service Unit Operators, Oil, Gas, and Mining",NA,2.38,3.5,3.12,3.34,3.39,3.25,3,3,4.43,4.79,4.58,3.64
+47-5021.00,"Earth Drillers, Except Oil and Gas",NA,2.12,3.62,3.12,3.63,3.58,3,2.25,2.75,3.69,4.54,3.98,3.36
+47-5031.00,"Explosives Workers, Ordnance Handling Experts, and Blasters",NA,3,3.88,3.75,3.42,3.96,3.5,3.12,3.25,4.71,5.42,5.33,3.25
+47-5041.00,Continuous Mining Machine Operators,NA,2.25,3.62,3.12,3.39,3.28,3.12,2.5,3,3.3,4.92,3.98,2.81
+47-5042.00,Mine Cutting and Channeling Machine Operators,NA,2.13,3.13,2.63,3.11,3.54,2.5,2.25,2.75,2.76,3.99,3.89,2.75
+47-5051.00,"Rock Splitters, Quarry",0,1.88,2.75,2.75,3.17,3.13,2.62,2.12,2.5,2.95,3.2,3.04,2.7
+47-5061.00,"Roof Bolters, Mining",NA,2.12,3.38,2.88,3.09,3.13,3,2.88,2.38,3.63,4.67,4.29,2.51
+47-5071.00,"Roustabouts, Oil and Gas",NA,2,2.75,2.62,2.63,3.06,2.38,2.38,2.12,3.21,3.31,3.55,1.93
+47-5081.00,Helpers--Extraction Workers,NA,2.25,3,2.88,3.12,3.02,2.88,2.62,2.62,3.8,4.97,4.28,4.45
+49-1011.00,"First-Line Supervisors of Mechanics, Installers, and Repairers",NA,3.5,4,3.75,3.95,4.08,3.88,3.88,3.62,4.12,4.45,4.71,3.45
+49-2011.00,"Computer, Automated Teller, and Office Machine Repairers",NA,2.88,3,3.12,3.3,4.29,3.12,3,3.12,2.12,4.84,5.11,1.93
+49-2021.00,"Radio, Cellular, and Tower Equipment Installers and Repairers",NA,2.5,3.38,3.12,3.86,4.24,3.12,2.75,2.62,3.57,3.8,4.27,2.82
+49-2021.01,Radio Mechanics,NA,2.25,3.12,3.25,3.38,4.03,2.88,2.88,2.88,3.34,4.84,5.35,2.82
+49-2022.00,"Telecommunications Equipment Installers and Repairers, Except Line Installers",NA,2.88,3.25,3.25,3.3,4.07,3.75,3,3.25,3.1,3.97,4.87,2.58
+49-2091.00,Avionics Technicians,NA,2.75,3.88,3.75,3.67,4.22,3.75,3.12,3.5,3.96,4.57,5.55,2.95
+49-2092.00,"Electric Motor, Power Tool, and Related Repairers",NA,2.88,3.12,3.25,3.62,3.91,3.38,3.12,3,3.25,3.83,4.21,2.75
+49-2093.00,"Electrical and Electronics Installers and Repairers, Transportation Equipment",NA,2.13,3.38,3,3.32,3.54,3,2.25,3,2.34,3.49,5.45,1.84
+49-2094.00,"Electrical and Electronics Repairers, Commercial and Industrial Equipment",NA,3,3.88,3.62,3.97,4.25,3.62,3,3.5,3.61,4.39,4.82,2.96
+49-2095.00,"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",NA,3,3.25,3,3.96,4.61,3.38,3,3,3.83,4.66,5.08,2.28
+49-2096.00,"Electronic Equipment Installers and Repairers, Motor Vehicles",NA,2.88,3.12,3.12,3.68,3.89,3.12,2.38,3,3.04,4.73,5.72,2.39
+49-2097.00,Electronic Home Entertainment Equipment Installers and Repairers,NA,2.88,3.13,3,3.47,3.58,3.62,3.12,3.25,2.9,4.21,4.83,2.23
+49-2098.00,Security and Fire Alarm Systems Installers,NA,2.75,3.25,3.12,3.8,3.71,3.5,3,3,3.41,3.4,4.74,2.14
+49-3011.00,Aircraft Mechanics and Service Technicians,NA,2.88,4,3.88,3.48,3.78,4,3.12,3.88,4.43,4.77,5.45,3.51
+49-3021.00,Automotive Body and Related Repairers,0,2.38,2.88,2.75,3.1,3.21,3,2.38,2.62,2.83,2.63,3.94,1.86
+49-3022.00,Automotive Glass Installers and Repairers,0,2,2.75,2.75,3.34,2.99,2.75,2.38,2.5,2.93,3.17,3.68,1.03
+49-3023.01,Automotive Master Mechanics,NA,3,3.75,3.62,3.27,3.84,3.25,3,3.12,3.91,4.59,5.52,2.66
+49-3023.02,Automotive Specialty Technicians,NA,2.12,3.12,3.38,3.17,3.61,3.25,3,3,3.3,3.82,4.4,2.52
+49-3031.00,Bus and Truck Mechanics and Diesel Engine Specialists,0,2.5,3.25,3.25,3.67,3.99,3.25,3,3,3.52,3.97,4.72,2.63
+49-3041.00,Farm Equipment Mechanics and Service Technicians,NA,2.12,3.12,3.12,3.76,3.97,3.62,3,3,3.6,4.39,4.25,3.02
+49-3042.00,"Mobile Heavy Equipment Mechanics, Except Engines",NA,2.88,3.62,3.62,3.81,3.85,3.38,3,3.25,3.48,4.59,4.81,2.83
+49-3043.00,Rail Car Repairers,NA,2.38,3,2.88,3.17,2.51,3.38,2.5,2.5,3.03,3.04,3.6,2.23
+49-3051.00,Motorboat Mechanics and Service Technicians,NA,2,3.38,3.5,3.54,3.81,3.12,2.25,2.88,2.97,3.87,4.71,2.03
+49-3052.00,Motorcycle Mechanics,NA,2.88,3.12,3,3.65,4.18,3.12,3,3,2.37,3.41,3.87,1.65
+49-3053.00,Outdoor Power Equipment and Other Small Engine Mechanics,0,2.12,3,3.12,3.83,3.85,3,2.75,2.75,2.98,3.75,4.07,2.47
+49-3091.00,Bicycle Repairers,0,2.5,3,2.88,4.09,4.59,3.12,2.5,3,3.15,2.95,4.22,2.12
+49-3092.00,Recreational Vehicle Service Technicians,NA,2.62,3.5,3.38,3.35,3.6,3.5,3.12,2.88,3.72,3.64,4.12,2.58
+49-3093.00,Tire Repairers and Changers,0,2,2.88,2.12,3.6,3.43,2.38,2,2.25,3.53,4,3.75,2.47
+49-9011.00,Mechanical Door Repairers,NA,2.12,3,3,3.65,3.5,3,2.25,2.88,2.72,2.92,3.35,1.39
+49-9012.00,"Control and Valve Installers and Repairers, Except Mechanical Door",NA,2.75,3.12,3.12,3.41,3.65,3.12,3,3,4.12,4.64,5,3.21
+49-9021.01,Heating and Air Conditioning Mechanics and Installers,NA,2.75,3.62,3.38,3.85,4.36,3.25,3,3,4.15,4.62,5.05,3.59
+49-9021.02,Refrigeration Mechanics and Installers,NA,2.5,3.62,3.38,3.91,4.24,3.88,3.25,3.38,3.86,4.58,5.19,3.31
+49-9031.00,Home Appliance Repairers,NA,2.12,3.12,3,3,4.01,3.25,2.25,3,3.06,3.87,5.09,2.37
+49-9041.00,Industrial Machinery Mechanics,NA,2.5,3.12,3,3.64,3.89,3.5,3,3,2.98,3.4,3.99,1.67
+49-9043.00,"Maintenance Workers, Machinery",NA,2.12,3,3,4,3.86,3,2.12,2.88,2.59,3.53,3.53,2.05
+49-9044.00,Millwrights,NA,2.88,3.5,3.12,3.65,3.91,3.12,3.12,3,4,4.83,5.22,3.04
+49-9045.00,"Refractory Materials Repairers, Except Brickmasons",NA,1.88,2.88,2.88,2.85,2.77,3,2.12,2.12,2.4,4.28,3.61,2.25
+49-9051.00,Electrical Power-Line Installers and Repairers,NA,3,3.75,3.12,3.26,3.45,3.38,3,3.25,3.13,5.38,4.64,3.16
+49-9052.00,Telecommunications Line Installers and Repairers,NA,2.38,3,3,3.58,4.16,3.12,2.62,3,2.51,3.56,4.37,2.28
+49-9061.00,Camera and Photographic Equipment Repairers,NA,2.62,3.38,3.25,3.5,3.73,3.38,3.12,3.12,3.14,3.32,4.16,2.15
+49-9062.00,Medical Equipment Repairers,NA,3,3.38,3.38,3.48,4.2,3.62,3.25,3.12,4.09,4.81,5.35,3.31
+49-9063.00,Musical Instrument Repairers and Tuners,NA,2.75,3.12,3.12,3.41,3.93,3.25,3,2.88,4,4.14,4.34,2.52
+49-9064.00,Watch Repairers,NA,2.62,3.12,3,3.28,4.12,3,2.25,2.88,4.72,4.38,4.15,2.71
+49-9071.00,"Maintenance and Repair Workers, General",NA,2.12,3.25,3.12,3.53,3.61,3.12,3.12,3,2.67,2.8,3.01,1.65
+49-9081.00,Wind Turbine Service Technicians,NA,2.62,3.38,3.25,3.21,4.06,3.12,2.88,3,3.3,3.88,4.72,2.71
+49-9091.00,"Coin, Vending, and Amusement Machine Servicers and Repairers",NA,2,3,2.88,3.01,3.33,2.88,2.12,2.75,2.38,3.14,3.57,1.57
+49-9092.00,Commercial Divers,NA,3,3.75,3.5,4.05,3.96,3.75,3.12,3.12,3.27,4.4,4.48,3.01
+49-9093.00,"Fabric Menders, Except Garment",0,1.88,2.25,2,3.66,3.39,2.38,1.62,2.38,2.13,2.39,1.41,1.21
+49-9094.00,Locksmiths and Safe Repairers,NA,2.38,2.88,2.62,3.61,4,3.12,2.5,2.62,4,4.39,5,2.52
+49-9095.00,Manufactured Building and Mobile Home Installers,NA,2.88,3.25,3.25,4.12,3.87,3.25,3,3.25,4.46,5.9,5.56,3.45
+49-9096.00,Riggers,NA,2.25,3.38,2.88,3.81,3.77,3,2.38,2.62,2.24,4.68,2.23,2.09
+49-9097.00,Signal and Track Switch Repairers,NA,2.13,3.38,3.38,3.41,4.05,3.12,2.88,2.88,3.13,4.04,4.82,2.04
+49-9098.00,"Helpers--Installation, Maintenance, and Repair Workers",NA,2,2.88,2.88,2.73,3.14,3.12,2.62,2.38,3.18,3.62,4.22,2.48
+49-9099.01,Geothermal Technicians,NA,2.75,3.5,3.38,3.66,3.93,3,2.88,3,3.54,4.11,4.63,3.17
+51-1011.00,First-Line Supervisors of Production and Operating Workers,NA,3.5,3.62,3.75,3.46,3.92,3.88,3.25,3.5,3.04,3.89,3.91,2.27
+51-2011.00,"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",NA,2.5,3.38,3,3.36,3.26,3.12,3,2.88,3.47,4.01,4.69,3.16
+51-2021.00,"Coil Winders, Tapers, and Finishers",NA,0.88,3,2.62,3.46,3.56,2.88,1.88,1.88,3.47,4.54,3.23,2.73
+51-2022.00,Electrical and Electronic Equipment Assemblers,NA,2.12,3,3.12,3.03,2.72,3,2.75,2.5,2.7,3.72,3.71,3.32
+51-2023.00,Electromechanical Equipment Assemblers,NA,2,3.25,3,3.21,3.57,2.88,2.12,2.12,3.3,3.76,4.23,2.31
+51-2031.00,Engine and Other Machine Assemblers,NA,2,3,3,3.83,3.75,3,2.25,2.25,2.84,3.52,4.25,2.02
+51-2041.00,Structural Metal Fabricators and Fitters,0,1,3,2.88,3.43,3.55,2.25,1.62,2.25,2.63,3.64,3.43,2.19
+51-2091.00,Fiberglass Laminators and Fabricators,NA,2.38,2.88,2.88,3.25,3.38,2.88,2.75,2.75,4.14,4.8,4.59,3.51
+51-2092.00,Team Assemblers,NA,1.88,2.88,2.75,3.98,3.85,3,2.12,2.5,3.49,4.03,3.98,1.36
+51-2093.00,Timing Device Assemblers and Adjusters,NA,2.25,3,2.88,3.24,3.15,2.88,2.25,2.75,3.18,3.48,3.19,2.79
+51-3011.00,Bakers,0,2.62,2.75,2.75,3.18,3.13,3,3,2,2.66,2.84,2.64,1.75
+51-3021.00,Butchers and Meat Cutters,0,2,2.88,2.88,2.82,2.97,3,2.12,2.5,3.44,3.65,3.01,2.19
+51-3022.00,"Meat, Poultry, and Fish Cutters and Trimmers",0,2.12,2.75,2.25,3.19,3.12,2.88,2.25,2.12,3.6,3.72,4.03,1.92
+51-3023.00,Slaughterers and Meat Packers,0,0.88,2.38,2,3.29,3.21,1.88,1.5,1.75,2.13,2.04,2.03,1.69
+51-3091.00,"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",NA,2.12,3.12,2.88,3.03,3.04,3,2.62,2.75,2.66,4.5,3.03,3
+51-3092.00,Food Batchmakers,NA,1.5,3,2.75,2.9,3.45,3,2.25,2.75,3.36,3.66,3.29,1.95
+51-3093.00,Food Cooking Machine Operators and Tenders,NA,1.38,3,2.88,3.32,4.01,2.38,2.38,2.12,3.02,3.37,3.26,2.27
+51-4011.00,"Computer-Controlled Machine Tool Operators, Metal and Plastic",NA,3,3.75,3,3.52,3.85,4,3.12,3,3.11,3.9,4.49,2.8
+51-4012.00,"Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic",NA,3,3.25,3.12,3.6,4.07,3.5,3.62,3.38,3.68,3.9,5.19,2.84
+51-4021.00,"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",NA,2,2.88,2.62,3.03,2.94,2.75,2.25,2.62,3.27,3.83,3.44,1.93
+51-4022.00,"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",NA,2.12,3,3,3.75,3.4,2.88,2.12,2.75,2.89,3.42,3.46,1.98
+51-4023.00,"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",0,2.12,3.12,2.88,3.68,3.64,3,3,2.75,3.13,4.96,4.39,2.56
+51-4031.00,"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",NA,1.88,3,3,3.57,3.31,2.75,2.25,2.62,2.85,3.65,3.39,2.56
+51-4032.00,"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",NA,2.12,2.88,2.88,2.98,3.39,3.12,2.38,2.75,3.49,3.93,4.27,2.17
+51-4033.00,"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",NA,1.75,3.12,2.88,3.33,3.14,2.88,2.25,2.75,3.66,3.59,3.9,2.36
+51-4034.00,"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",0,2,3,2.62,3.35,3.32,3,2,2.5,3.62,4,4.12,2.34
+51-4035.00,"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",NA,2.25,3,2.88,3.07,3.29,2.88,2.5,2.5,2.71,3.1,3.29,2.57
+51-4041.00,Machinists,NA,3.12,3.25,3.12,3.34,3.22,3.12,2.88,3,3.24,3.88,3.76,2.51
+51-4051.00,Metal-Refining Furnace Operators and Tenders,NA,2,3,2.88,3.15,3.83,3,2.12,2.88,3.3,4.41,3.5,2.51
+51-4052.00,"Pourers and Casters, Metal",NA,2.12,2.88,2.75,3.03,3.21,3,2.12,2.12,3.58,4.06,3.5,3.28
+51-4061.00,"Model Makers, Metal and Plastic",NA,2.75,3.12,2.88,4.36,4.35,3,2.88,2.75,2.46,2.23,3.78,1.35
+51-4062.00,"Patternmakers, Metal and Plastic",NA,2.5,3.12,2.88,3.25,3.35,3,2.25,2.75,3.45,4.08,4.41,2.97
+51-4071.00,Foundry Mold and Coremakers,NA,1.25,2.75,2.12,3.07,3.32,2.5,1.75,2,2.82,3.31,2.53,2.07
+51-4072.00,"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",NA,2.25,3,2.62,3.3,3.67,2.62,2.25,2.25,2.81,3.3,3.64,1.72
+51-4081.00,"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",NA,2.12,3.25,3,3.61,3.66,3.12,2.88,3,3.51,3.49,3.55,1.81
+51-4111.00,Tool and Die Makers,NA,2.88,3.25,3.38,3.95,4.21,3,3,3,4.01,4.75,4.74,3.57
+51-4121.06,"Welders, Cutters, and Welder Fitters",NA,2.38,2.88,2.75,3.99,3.91,3,2.5,2.38,3.24,3.38,3.62,2.3
+51-4121.07,Solderers and Brazers,NA,0.88,2.38,2.12,3.1,2.87,2.38,1.88,2.25,2.04,2.39,2.77,1.69
+51-4122.00,"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",NA,1.62,2.88,3,3.07,2.68,3,2,2.5,2.75,3.64,3.31,2.53
+51-4191.00,"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",NA,1.88,3.12,2.88,3.22,3.48,3,2.62,2.62,2.98,2.91,3.27,1.84
+51-4192.00,"Layout Workers, Metal and Plastic",0,2.25,3.25,3,3.64,3.77,3.12,2.62,2.88,3.71,4.26,4.37,3.36
+51-4193.00,"Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic",NA,2.25,3,3,3.45,3.61,2.75,2.12,2.25,3.81,4,3.84,2.08
+51-4194.00,"Tool Grinders, Filers, and Sharpeners",NA,2.12,3,2.62,3.52,3.82,2.88,2.62,2.75,3.06,3.31,3,1.97
+51-5111.00,Prepress Technicians and Workers,NA,3,3.12,3,3.82,3.64,3,3,2.88,3.2,4.21,5.23,2.65
+51-5112.00,Printing Press Operators,NA,2.62,3.25,2.88,3.49,3.86,3.38,2.88,2.88,3.57,3.83,3.88,2.18
+51-5113.00,Print Binding and Finishing Workers,NA,2.38,3,2.88,3.01,3.2,3,2.38,2.88,3.25,3.89,2.96,2.34
+51-6011.00,Laundry and Dry-Cleaning Workers,0,2,2.62,2.5,2.9,2.9,2.5,2.12,2.25,2.21,2.7,1.56,1.41
+51-6021.00,"Pressers, Textile, Garment, and Related Materials",0,1.25,2.12,2.12,4.12,3.74,2.25,1.5,1.75,3,3.1,2.75,2.14
+51-6031.00,Sewing Machine Operators,NA,1.25,2.75,2.12,3.01,2.58,2.12,1.88,2.12,2.13,2.67,2.72,1.96
+51-6041.00,Shoe and Leather Workers and Repairers,0,0.88,2.5,2.38,3.37,2.63,2.62,1.75,2,1.96,2.02,2.01,1.57
+51-6042.00,Shoe Machine Operators and Tenders,0,1.88,2.63,2.63,3.36,3.19,2.38,1.75,2.5,3.11,3.11,3.26,2.37
+51-6051.00,"Sewers, Hand",NA,2.38,2.5,2.63,4,3.41,2.38,2.12,2.38,3.85,4.04,3.96,2.33
+51-6052.00,"Tailors, Dressmakers, and Custom Sewers",NA,2.63,2.63,2.75,3.99,3.24,3.12,2.75,2.88,3.04,4.08,2.66,1.15
+51-6061.00,Textile Bleaching and Dyeing Machine Operators and Tenders,NA,2.13,3.13,2.88,2.79,3.03,2.62,2,2.25,3.26,3.67,3.57,2.84
+51-6062.00,"Textile Cutting Machine Setters, Operators, and Tenders",NA,2.13,3,2.5,3.35,3.49,2.62,2.25,2.62,4.25,4.66,3.79,2.68
+51-6063.00,"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",NA,1.5,2.88,2.38,3.05,3.02,2.5,1.5,2,2.67,1.65,3.61,1.09
+51-6064.00,"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",NA,2,3.25,2.38,3,2.71,2.88,2.12,2.38,3.89,4.03,3.2,2.11
+51-6091.00,"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",NA,2.25,3.25,3.25,2.95,3.19,2.88,2.62,2.88,4.71,5.42,3.67,2.2
+51-6092.00,Fabric and Apparel Patternmakers,NA,3.88,3.38,3.25,4.14,4.06,3.38,3,3,2.84,3.86,4.07,2.71
+51-6093.00,Upholsterers,NA,3,3,2.88,3.45,3.15,3.12,2.88,3,3.35,3.78,3.65,2.84
+51-7011.00,Cabinetmakers and Bench Carpenters,0,2.75,2.88,2.88,2.93,3.42,3,2.75,2.75,3.47,4.37,3.37,2.73
+51-7021.00,Furniture Finishers,0,2.88,2.88,3,3.76,3.56,3.12,2.75,2.75,3.6,4.02,3.53,2.55
+51-7031.00,"Model Makers, Wood",NA,2.75,3,3,3.99,3.9,3.12,2.62,3,4.44,4.62,4.32,3.67
+51-7032.00,"Patternmakers, Wood",NA,2.38,2.88,2.88,3.71,3.79,2.88,2.5,2.75,2.42,3.2,3.31,1.95
+51-7041.00,"Sawing Machine Setters, Operators, and Tenders, Wood",NA,1.75,2.88,2.88,3.5,3.21,2.75,2,2.25,2.74,2.37,2.55,1.49
+51-7042.00,"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",0,2,2.88,2.75,3.44,3.48,2.88,2.12,2.5,2.76,2.89,2.84,1.38
+51-8011.00,Nuclear Power Reactor Operators,NA,3,4.12,3.88,2.6,4.14,4,3.12,3.25,3.57,4.94,5.46,2.46
+51-8012.00,Power Distributors and Dispatchers,NA,2.88,4,3.75,3.27,4,3.75,3,3.12,3.52,5.39,5.03,3.55
+51-8013.00,Power Plant Operators,NA,2.75,3.62,3.38,3.11,3.46,3.62,3,3,3.31,3.99,4.59,2.07
+51-8021.00,Stationary Engineers and Boiler Operators,NA,2.12,3.25,3,3.38,3.71,3.12,2.62,3,3.3,4.93,4.55,4.07
+51-8031.00,Water and Wastewater Treatment Plant and System Operators,NA,2.5,4,3.25,3.11,3.48,3.25,3.12,3,3.7,4.72,5.16,3.3
+51-8091.00,Chemical Plant and System Operators,NA,2.12,3.75,3.62,2.7,3.7,3.75,3,3.12,2.1,3.19,3.92,0.69
+51-8092.00,Gas Plant Operators,NA,2.5,3.63,3.38,3.7,4.28,3.38,3.12,3.12,2.55,4.45,4.24,1.83
+51-8093.00,"Petroleum Pump System Operators, Refinery Operators, and Gaugers",NA,2.63,3.88,3.75,3.37,3.41,3.75,3.25,3.25,4.14,5.11,4.59,2.62
+51-8099.01,Biofuels Processing Technicians,NA,2.75,3.38,3.12,3.12,3.65,3.12,2.75,3,3.64,4.35,4.3,2.5
+51-8099.03,Biomass Plant Technicians,NA,2.38,3.12,3.12,3.61,3.78,3.25,3,3,3.51,4.39,4.23,2.9
+51-8099.04,Hydroelectric Plant Technicians,NA,2.62,4,3.62,3.74,3.94,3.25,3.12,3.12,3.81,4.57,5.23,2.87
+51-9011.00,Chemical Equipment Operators and Tenders,NA,2.25,3.88,3.12,3.23,3.76,3.12,2.88,2.88,3.44,4.38,4.04,2.72
+51-9012.00,"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",NA,2.12,3.25,3,3,3.42,3,2.88,2.88,2.88,4.06,3.29,2.42
+51-9021.00,"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",NA,2.12,3,3,3.14,3.35,3,2.88,2.88,3.35,2.95,3.24,2.27
+51-9022.00,"Grinding and Polishing Workers, Hand",NA,2,3,2.75,3.05,3.34,2.88,2.25,2.5,3.55,4.04,3.46,3.1
+51-9023.00,"Mixing and Blending Machine Setters, Operators, and Tenders",NA,2,3.12,3,3.36,3.79,2.88,2.88,2.75,3.22,2.94,2.52,1.91
+51-9031.00,"Cutters and Trimmers, Hand",0,1.25,2.75,2.5,3.34,3.24,2.38,1.75,2.12,3.7,2.8,1.01,1.7
+51-9032.00,"Cutting and Slicing Machine Setters, Operators, and Tenders",NA,2,2.88,2.88,2.78,2.88,2.88,2,2.75,3.14,3.69,3.16,2.13
+51-9041.00,"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",NA,2,2.88,2.88,3.55,3.37,2.75,2.12,2.75,3.24,3.94,3.66,1.85
+51-9051.00,"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",0,1.12,3.12,2.88,3.22,3.01,3,2.38,2.62,3.69,4.28,3.87,2.25
+51-9061.00,"Inspectors, Testers, Sorters, Samplers, and Weighers",NA,2,3,3,3.03,3.36,3.38,2.25,2.62,3.73,3.41,3.46,1.99
+51-9071.01,Jewelers,NA,3.12,3,3,4.17,4.04,3.12,3.12,3,4.12,3.96,4.33,2.09
+51-9071.06,Gem and Diamond Workers,NA,2.75,2.88,3.12,3.28,3.47,3.12,2.62,2.62,4.44,3.41,3.52,1.89
+51-9071.07,Precious Metal Workers,NA,2.75,2.88,2.75,4.05,4.2,2.75,2.25,2.75,3.81,4.2,3.3,2.14
+51-9081.00,Dental Laboratory Technicians,NA,2.5,3.12,3,3.69,3.75,3.12,3,2.75,3.48,4.19,4.37,2.69
+51-9082.00,Medical Appliance Technicians,NA,3,3.62,3.12,3.85,3.79,3.5,3,3,3.52,4.13,4.04,2.89
+51-9083.00,Ophthalmic Laboratory Technicians,NA,1.88,3,2.5,3.16,3.21,2.88,2.5,2.5,3.11,2.88,3.42,1.84
+51-9111.00,Packaging and Filling Machine Operators and Tenders,0,2.25,2.88,2.75,3.21,3.03,2.25,2.12,2.12,3.9,3.51,3.99,2.78
+51-9121.00,"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",NA,2.12,2.88,2.88,2.76,3.37,2.75,2.12,2.62,4.2,4.2,3.79,3.21
+51-9122.00,"Painters, Transportation Equipment",0,1.88,2.75,2.12,3.66,3.77,2.75,1.88,2.12,3.99,4.57,4.87,2.74
+51-9123.00,"Painting, Coating, and Decorating Workers",0,1.75,2.63,2.63,3.85,2.86,2.75,1.75,2.12,2.88,3.03,2.56,1.56
+51-9141.00,Semiconductor Processors,NA,2.13,3,3,3.29,3.17,2.88,2.25,2.75,3.76,3.85,4.54,2.36
+51-9151.00,Photographic Process Workers and Processing Machine Operators,NA,2.75,3.12,3.12,3.69,3.94,3.12,2.88,2.75,2.67,3.75,4.12,2.07
+51-9191.00,Adhesive Bonding Machine Operators and Tenders,0,1.75,3,2.75,3.02,2.96,2.75,2.38,2.5,3.49,3.31,2.92,1.81
+51-9192.00,"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",NA,1.5,2.5,2.38,3.47,3.6,2.12,2.12,2.12,3.42,4.28,3.59,2.05
+51-9193.00,Cooling and Freezing Equipment Operators and Tenders,NA,2.38,3.12,3,3.25,3.34,3.25,3.12,3,3.67,3.56,3.72,2.67
+51-9194.00,Etchers and Engravers,0,2.5,3,2.88,3.5,3.72,3.12,2.25,2.25,3.37,3.68,3.69,2.24
+51-9195.03,"Stone Cutters and Carvers, Manufacturing",NA,2.75,3,2.75,3.07,3.38,2.88,2,2.38,3.35,4.06,3.82,2.51
+51-9195.04,"Glass Blowers, Molders, Benders, and Finishers",NA,2.75,3,2.88,3.32,3.46,3,2.88,2.75,2.3,2.73,2.83,1.84
+51-9195.05,"Potters, Manufacturing",NA,3.5,3.12,3,4.01,3.47,2.88,2.25,2.38,3.48,3.53,3.9,2.93
+51-9195.07,Molding and Casting Workers,NA,2,2.75,2.5,2.87,2.81,2.88,2.5,2.88,3.3,3.07,3.42,1.93
+51-9196.00,"Paper Goods Machine Setters, Operators, and Tenders",NA,2.12,2.75,2.75,2.85,3.25,2.88,2.25,2.38,3.25,3.19,3.42,2.65
+51-9197.00,Tire Builders,NA,1.88,2.75,2.63,2.89,2.52,2.5,1.88,2,3.2,2.98,3.85,1.63
+51-9198.00,Helpers--Production Workers,NA,1.62,2.75,2.75,2.65,2.82,2.25,1.88,2,2.96,3.14,3.26,1.96
+51-9199.01,Recycling and Reclamation Workers,NA,1.88,2.5,2.5,3.31,2.95,2.75,2.25,2.38,3.17,3.91,3.07,2.44
+53-1011.00,Aircraft Cargo Handling Supervisors,NA,3,3.5,3,3.83,3.76,3.5,2.88,2.88,3.55,5.04,4.62,3.12
+53-1021.00,"First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand",NA,3,3.75,3.25,3.99,3.87,3.75,2.88,3.12,3.24,3.82,3.1,2.49
+53-1021.01,Recycling Coordinators,NA,2.5,3,3.12,4.04,3.85,3.5,3.12,2.75,4.47,4.71,4.57,3.76
+53-1031.00,First-Line Supervisors of Transportation and Material-Moving Machine and Vehicle Operators,NA,3.12,3.5,3.25,3.42,3.76,3.5,3.12,3.5,3.47,4.51,4.72,3.03
+53-2011.00,"Airline Pilots, Copilots, and Flight Engineers",NA,3.12,4.88,4.12,2.81,4.22,4.12,4,3.88,4.6,5.94,5.08,2.48
+53-2012.00,Commercial Pilots,NA,3,4.75,4,2.98,4.17,4,4,3.62,4.38,5.23,4.87,3.09
+53-2021.00,Air Traffic Controllers,NA,3.5,4.62,4,3.41,4.29,4.12,3.75,4.5,3.02,6.25,5.57,3.45
+53-2022.00,Airfield Operations Specialists,NA,3.12,4.12,3.75,3.23,3.84,3.75,3.12,3.38,3.25,4.61,4.82,2.89
+53-2031.00,Flight Attendants,0,2,3.88,3,3.81,3.78,3.75,2.62,2.75,2.56,4.54,3.76,1.23
+53-3011.00,"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",0,2.38,3.75,3.12,3.29,3.34,3,3,2.75,3.79,3.67,4.46,2.58
+53-3021.00,"Bus Drivers, Transit and Intercity",0,1.75,3,2.25,2.94,3.44,2.75,2,1.62,2.53,4.17,3.65,2.23
+53-3022.00,"Bus Drivers, School or Special Client",0,2,3,2.5,3.63,3.69,2.88,1.88,2.38,3.3,2.66,2.51,1.2
+53-3031.00,Driver/Sales Workers,NA,2.25,2.88,2.5,2.11,2.11,3.5,2.38,2.75,2.84,2.2,2.58,1.92
+53-3032.00,Heavy and Tractor-Trailer Truck Drivers,NA,2.25,3,3,3,3.07,3,2.25,2.88,3.81,4.42,4.03,3.38
+53-3033.00,Light Truck or Delivery Services Drivers,NA,1.75,2.75,2.5,2.74,2.88,2.88,2.12,2,2.88,2.76,2.88,1.7
+53-3041.00,Taxi Drivers and Chauffeurs,NA,2.12,3,2.88,3.2,3.46,2.75,2.12,2.12,2.86,3.68,2.99,2.2
+53-4011.00,Locomotive Engineers,NA,2,3.38,3.12,3.26,3.74,3.12,3,3,3.37,4.18,3.64,2.86
+53-4012.00,Locomotive Firers,NA,2.12,3.5,3.12,2.85,3.55,2.75,2.5,2.62,2.5,4.1,4.15,1.8
+53-4013.00,"Rail Yard Engineers, Dinkey Operators, and Hostlers",NA,2.13,3.5,3.13,3.28,3.88,2.88,2.62,3,3.2,3.96,3.62,2.57
+53-4021.00,"Railroad Brake, Signal, and Switch Operators",NA,2.13,3.38,2.75,3.38,3.48,2.75,2.38,2.62,3.87,3.76,4.07,2.84
+53-4031.00,Railroad Conductors and Yardmasters,NA,2.75,3.75,3.12,2.78,3.58,3.62,3,3.38,2.25,3.27,3.6,1.89
+53-4041.00,Subway and Streetcar Operators,0,1.88,3.25,3,2.57,3.17,3.38,3,2.62,2.81,4.17,4.23,1.31
+53-5011.00,Sailors and Marine Oilers,NA,2.25,3.5,3,2.63,2.69,3,2.88,2.88,3.18,4.81,3.95,2.6
+53-5021.01,Ship and Boat Captains,NA,3,4,3.88,3.31,3.63,3.88,3.38,3.12,3.96,4.86,4.65,3.37
+53-5021.02,"Mates- Ship, Boat, and Barge",NA,3,3.62,3.25,3.48,3.72,3.25,3.12,3.12,4.12,4.87,4.31,2.91
+53-5021.03,"Pilots, Ship",NA,2.88,4,3.62,3.3,3.86,3.75,3.38,3.38,3.85,5.02,4.94,3.07
+53-5022.00,Motorboat Operators,NA,2.5,3.63,2.75,3.93,3.75,3.38,2.75,3,3.07,3.88,3.84,2.09
+53-5031.00,Ship Engineers,NA,3.12,4.12,3.88,3.58,4.22,3.75,3.12,3.38,3.72,4.38,4.33,2.48
+53-6011.00,Bridge and Lock Tenders,0,2,2.88,2.5,2.55,2.86,2.88,2.25,2.5,2.32,2.71,2,1.38
+53-6021.00,Parking Lot Attendants,0,1.75,2.88,2.5,2.35,2.4,2.75,1.75,2.12,2.55,2.99,1.96,1.12
+53-6031.00,Automotive and Watercraft Service Attendants,0,1.88,2.5,2.38,3.22,4.21,2.88,2,2.25,3.22,3.04,4.63,2.53
+53-6041.00,Traffic Technicians,NA,3,3.38,3.38,3.6,4.18,3.5,3.12,3.62,2.84,4.19,4.27,2.63
+53-6051.01,Aviation Inspectors,1,3,4.12,4,3.64,4.38,4,3.25,3.38,5.79,5.55,5.71,3
+53-6051.07,"Transportation Vehicle, Equipment and Systems Inspectors, Except Aviation",NA,2,3.12,3,3.47,3.36,2.88,2,2.25,2.09,3.52,3.38,1.2
+53-6051.08,Freight and Cargo Inspectors,NA,2.38,3.62,3.5,3.54,4.05,3.25,2.88,3,4.81,5.21,5.16,1.93
+53-6061.00,"Transportation Attendants, Except Flight Attendants",NA,2.12,3.25,2.88,2.74,3.6,3.25,2.5,2.38,1.42,2.52,2.28,0.86
+53-7011.00,Conveyor Operators and Tenders,NA,2.12,3.12,3,2.52,2.5,2.88,2.62,2.75,3.57,3.95,3.84,2.74
+53-7021.00,Crane and Tower Operators,NA,2.12,2.88,2.5,2.98,3.33,3,2.38,2.25,3.38,4.19,4.41,2.54
+53-7031.00,Dredge Operators,NA,1.75,2.75,2.38,3.09,2.81,2.75,2.12,2.5,1.76,2.92,2.38,1.71
+53-7032.00,Excavating and Loading Machine and Dragline Operators,NA,2.12,3.12,2.88,3.19,2.99,3,2.88,2.88,3.91,4.24,4.18,3.39
+53-7033.00,"Loading Machine Operators, Underground Mining",NA,1.25,2.75,2.62,2.87,2.83,2.75,1.75,2.5,2.63,1.95,2.34,1.61
+53-7041.00,Hoist and Winch Operators,NA,2.13,2.88,2.63,3.07,3.26,2.62,2.12,2.38,3.31,3.98,3.77,3.77
+53-7051.00,Industrial Truck and Tractor Operators,NA,1.75,3,2.12,3.43,3.26,2.38,1.75,2,3.51,3.85,3.35,2.84
+53-7061.00,Cleaners of Vehicles and Equipment,0,0.62,2.25,2.25,3.58,3.24,2.38,1.88,1.62,1.83,1.82,1.75,1.25
+53-7062.00,"Laborers and Freight, Stock, and Material Movers, Hand",NA,1.75,2.75,2.5,2.43,2.67,2.38,2,2.25,2.71,2.6,2.46,1.57
+53-7063.00,Machine Feeders and Offbearers,NA,1.75,2.75,2.75,2.83,2.81,2.62,2,2.12,2.33,2.88,2.41,1.38
+53-7064.00,"Packers and Packagers, Hand",0,1,2.5,2.12,3.01,3.21,2.25,1.12,1.75,3.6,3.55,3.62,2.96
+53-7071.00,Gas Compressor and Gas Pumping Station Operators,0,2.12,3.25,3.12,3.44,4.09,3,2.38,3,4.45,5.2,4.75,2.51
+53-7072.00,"Pump Operators, Except Wellhead Pumpers",NA,2.13,3.38,2.88,2.4,3.19,3.12,2.62,2.75,3.93,3.99,3.86,2.23
+53-7073.00,Wellhead Pumpers,NA,1.75,3.13,2.88,3.18,3.67,3.12,2.12,2.88,3.22,3.93,4.18,2.18
+53-7081.00,Refuse and Recyclable Material Collectors,0,2,2.25,2.25,3.56,3.37,3,2,2.12,3.12,3.14,2.59,2.2
+53-7111.00,Mine Shuttle Car Operators,NA,1.38,2.63,2.13,2.54,2.45,2.5,1.62,2.25,2.48,4.34,3.3,2.39
+53-7121.00,"Tank Car, Truck, and Ship Loaders",NA,2,3.13,2.88,3.56,3.53,2.75,2.62,2.75,4.2,4.33,4.83,3.49
