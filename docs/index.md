@@ -2,7 +2,7 @@
 # Introduction
 
 
-##The ONET Database: A Primary Source of Occupational Information
+The ONET Database: A Primary Source of Occupational Information
 
 The ONET database has a wide variety of worker and job oriented data categories. The ONET Content Model provides the framework that identifies and organizes this important information about work. The O*NET-SOC Occupation Taxonomy covers work performed in the U.S. economy and defines the set of occupations for which data is collected.
 
@@ -18,11 +18,11 @@ This RMD script contains:
 * Prediction
 
 
-## Checking and Loading required libraries
+Checking and Loading required libraries
 
-```{r message=FALSE, warning=FALSE, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
+```{r}
   
-# Initialization
+#Initialization
 
 packages <- c("tidyverse","readxl","scales","mice","randomForest","MASS","caret","klaR","writexl","modelr","kernlab") # add any packages that need to be installed to this vec.
 
@@ -103,7 +103,7 @@ SOC Code  |  Selected Feature                                   |  Description
  
 12 variables have been identified that describe analytical attributes. These features do a pretty good job of encompassing the analytical nature of an occupation title from various aspects or facets mentioned in our base definition/assumption.
 
-```{r,tidy=TRUE}
+```
 # Loading data (make sure the tables are in the same folder as the rmd)
  
 script_folder <-  getwd() # Retrieving the path from where the rmd is being accessed (To eliminate locating files and paths, if run from the Task folder since default behaviour for getwd in a rmd is to give the working directory of the rmd not the global setting)
