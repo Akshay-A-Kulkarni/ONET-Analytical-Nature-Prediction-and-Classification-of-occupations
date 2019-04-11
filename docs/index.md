@@ -1,18 +1,3 @@
----
-title: "Analytical Occupation Classfication on O*NET Database"
-author: "Akshay Kulkarni"
-date: "25 March 2019"
-output:
-  pdf_document: default
-  html_document:
-    fig_width: 10
-    highlight: tango
-    mathjax: local
-    number_sections: yes
-    self_contained: no
-    theme: readable
----
-
 
 # Introduction
 
