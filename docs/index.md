@@ -209,8 +209,7 @@ head(main_features,10)
 write_csv(main_features,paste(getwd(),"/TrainingFeatures.csv",sep=""))
 
 ```
-in
-Thus we have obtained a clean feature matrix with each row forming a feature vector x&‌#772; &‌asymp; R^12 for n = 967 occupation titles
+Thus we have obtained a clean feature matrix with each row forming a feature vector &x#772; &asymp; R^12 for n = 967 occupation titles
 
 
 # Generating Lables for Training
@@ -313,7 +312,7 @@ indicated by its highest meandecreaseGINI where the scale is irrelevant: only th
 
 ## Quadratic Discriminant Analysis.
 
-```r Quadratic Discriminant Analysis.
+```r 
 # Quadratic Discriminant Analysis.
 
 qdadata <- model_data %>% drop_na()
@@ -424,7 +423,7 @@ Answer - The models can be tuned further and maybe a different choice of kernel 
 
 
 
-```{r Further prediction analysis}
+```r
 
 # some data analysis
 
@@ -468,11 +467,6 @@ ggplot(dplyr::group_by(test,Title), aes(y=Value, x=Feature ,color=Feature)) +
   geom_bar(stat="identity",show.legend = FALSE)+
   facet_wrap(.~Title)+
   coord_flip()
-
-
-
-
-
 
 ```
 
