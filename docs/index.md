@@ -1,14 +1,39 @@
+---
+title: "Analytical Occupation Classfication on O*NET Database"
+author: "Akshay Kulkarni"
+date: "25 March 2019"
+output:
+  html_document:
+    fig_width: 10
+    highlight: tango
+    mathjax: local
+    number_sections: yes
+    self_contained: no
+    theme: readable
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+opts_chunk$set(tidy.opts=list(width.cutoff=99),tidy=TRUE)
+options(width = 99)
+```
+
 
 # Introduction
 
 
-The ONET Database: A Primary Source of Occupational Information
+##The ONET Database: A Primary Source of Occupational Information
 
 The ONET database has a wide variety of worker and job oriented data categories. The ONET Content Model provides the framework that identifies and organizes this important information about work. The O*NET-SOC Occupation Taxonomy covers work performed in the U.S. economy and defines the set of occupations for which data is collected.
 
 The ONet is now the primary source of occupational information. It is sponsored by ETA through a grant to the North Carolina Department of Commerce. Thus, it is a rich database with a sizable ampunt of information of very high quality.
 
 This is script deals with the task of classifying a given occupation from the the ONET database by implementing a model to estimate a probability of an occupation being *Analytical* in nature. After spending some time looking around on the ONET site, Relevant tables that contain possible promising features were identified and data was aqucisitoned, cleaned and transformed to create a feature matrix on which modelling was done to predict an occupation being analytical. 
+
+
+
 
 
 This RMD script contains:
@@ -18,20 +43,18 @@ This RMD script contains:
 * Prediction
 
 
-Checking and Loading required libraries
+## Checking and Loading required libraries
 
-```{r}
+```{r message=FALSE, warning=FALSE, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
   
-#Initialization
+# Initialization
 
-packages <- c("tidyverse","readxl","scales","mice","randomForest","MASS","caret","klaR","writexl","modelr","kernlab") 
-#add any packages that need to be installed to this vec.
+packages <- c("tidyverse","readxl","scales","mice","randomForest","MASS","caret","klaR","xlsx","modelr","kernlab") # add any packages that need to be installed to this vec.
 
-# defining a custom function for checking packages.
-checkPackage <- function(package_vec){  
+checkPackage <- function(package_vec){                 # defining a custom function for checking packages.
                             for (p in package_vec){
                                 if(p %in% rownames(installed.packages()) == FALSE){
-                                    cat(paste(p,"Package is not found/installed on this machine,installing the required package... \n"))
+                                    cat(paste(p,"Package is not found/installed on this machine,                  installing the required package... \n"))
                                     install.packages(p,dependencies = TRUE) # Installing with dependancies
                                 } else {
                                 cat(paste("[",p,"]","is present. \n"))
@@ -57,7 +80,7 @@ library('mice') # needed for possible imputation
 library('randomForest') # RF classification algorithm
 library('tidyverse') # Data manipulation + Visualization
 library('klaR') # for partimat function for plotting discriminant analysis plots
-library('writexl') # writing to xlsx format
+library('xlsx') # writing to xlsx format
 library('modelr') # for partitioning function
 library('caret')
 library('kernlab') #Gaussian Process Classification Function
@@ -105,29 +128,29 @@ SOC Code  |  Selected Feature                                   |  Description
  
 12 variables have been identified that describe analytical attributes. These features do a pretty good job of encompassing the analytical nature of an occupation title from various aspects or facets mentioned in our base definition/assumption.
 
-```
+```{r,tidy=TRUE}
 # Loading data (make sure the tables are in the same folder as the rmd)
  
 script_folder <-  getwd() # Retrieving the path from where the rmd is being accessed (To eliminate locating files and paths, if run from the Task folder since default behaviour for getwd in a rmd is to give the working directory of the rmd not the global setting)
 
 
-occupation_rawdata <- read_excel(paste(getwd(),"/Occupation Data.xlsx",sep = "")) # loading Occupation table
+occupation_rawdata <- read_xlsx(paste(getwd(),"/Occupation Data.xlsx",sep = "")) # loading Occupation table
 
-skills_rawdata <-  read_excel(paste(getwd(),"/Skills.xlsx",sep = ""))  # loading Skills table
+skills_rawdata <-  read_xlsx(paste(getwd(),"/Skills.xlsx",sep = ""))  # loading Skills table
 
-scale_ref <-  read_excel(paste(getwd(),"/Scales Reference.xlsx",sep = "")) # loading Scales ref table
+scale_ref <-  read_xlsx(paste(getwd(),"/Scales Reference.xlsx",sep = "")) # loading Scales ref table
 
-blsdata <-  read_excel(paste(getwd(),"/national_M2017_dl.xlsx",sep = "")) # national BLS data for general EDA
+blsdata <-  read_xlsx(paste(getwd(),"/national_M2017_dl.xlsx",sep = "")) # national BLS data for general EDA
 
-abilities_rawdata <-  read_excel(paste(getwd(),"/Abilities.xlsx",sep = "")) # loading abilities table
+abilities_rawdata <-  read_xlsx(paste(getwd(),"/Abilities.xlsx",sep = "")) # loading abilities table
 
-workactivities_rawdata <- read_excel(paste(getwd(),"/Work Activities.xlsx",sep = "")) # loading work activity table
+workactivities_rawdata <- read_xlsx(paste(getwd(),"/Work Activities.xlsx",sep = "")) # loading work activity table
 
-interests_rawdata <- read_excel(paste(getwd(),"/Interests.xlsx",sep = "")) # loading interests table
+interests_rawdata <- read_xlsx(paste(getwd(),"/Interests.xlsx",sep = "")) # loading interests table
 
-workstyles_rawdata <- read_excel(paste(getwd(),"/Work Styles.xlsx",sep = ""))
+workstyles_rawdata <- read_xlsx(paste(getwd(),"/Work Styles.xlsx",sep = ""))
 
-CMR <-  read_excel(paste(getwd(),"/Content Model Reference.xlsx",sep = "")) # Content model Reference details
+CMR <-  read_xlsx(paste(getwd(),"/Content Model Reference.xlsx",sep = "")) # Content model Reference details
 
 blsdatamay18 <- blsdata %>% mutate(OCC_CODE = paste(OCC_CODE,".00",sep="")) # BLS data for possible EDA
 
@@ -284,8 +307,8 @@ model_full_pred <- subset(model_full_pred, select=c(`O*NET-SOC.Code`, `Title`,`A
 model_full_pred_classwise <- subset(model_full_pred_classwise, select=c(`O*NET-SOC.Code`, `Title`,`ANALYTICAL`,`Pred Prob for (0)`,`Pred Prob for (1)`,`Originality`:`Developing.Objectives.and.Strategies`)) # reordering columns
 
 
-write_xlsx(model_full_pred,paste(getwd(),"/rfPredResult.xlsx",sep=""))
-write_xlsx(model_full_pred_classwise,paste(getwd(),"/rfPredResult(classwise).xlsx",sep=""))
+write.xlsx(model_full_pred,paste(getwd(),"/rfPredResult.xlsx",sep=""))
+write.xlsx(model_full_pred_classwise,paste(getwd(),"/rfPredResult(classwise).xlsx",sep=""))
 
 ```
 
@@ -325,7 +348,7 @@ model_full_pred2 <- model_data %>% mutate("Prediction" = (predict(qda.model,mode
 model_full_pred2 <- subset(model_full_pred2, select=c(`O*NET-SOC.Code`, `Title`,`ANALYTICAL`,`Prediction`,`Originality`:`Developing.Objectives.and.Strategies`)) # reordering columns
 
 
-write_xlsx(model_full_pred2,paste(getwd(),"/QDAPredResult.xlsx",sep=""))
+write.xlsx(model_full_pred2,paste(getwd(),"/QDAPredResult.xlsx",sep=""))
 
 
 ```
@@ -373,7 +396,7 @@ model_full_pred3 <- subset(model_full_pred3, select=c(`O*NET-SOC.Code`, `Title`,
 
 
 
-write_xlsx(model_full_pred3,paste(getwd(),"/GPCPredResult.xlsx",sep=""))
+write.xlsx(model_full_pred3,paste(getwd(),"/GPCPredResult.xlsx",sep=""))
 
 ggplot(data = filter(model_full_pred3, !is.na(model_full_pred3$Prediction)))+
   geom_bar(aes(x=Prediction,fill = as.factor(Prediction)))
@@ -414,7 +437,7 @@ Answer - The models can be tuned further and maybe a different choice of kernel 
 
 edadata <-  model_full_pred3
 
-feature_level_ref <-  read_excel(paste(getwd(),"/Level Scale Anchors.xlsx",sep = "")) 
+feature_level_ref <-  read_xlsx(paste(getwd(),"/Level Scale Anchors.xlsx",sep = "")) 
 
 feature_level_ref <-  feature_level_ref %>% filter(`Element Name` %in%(features))
 
@@ -461,10 +484,3 @@ ggplot(dplyr::group_by(test,Title), aes(y=Value, x=Feature ,color=Feature)) +
 ```
 
 
-```{r}
-
-install.packages("inTrees")
-library(inTrees)
-library(randomForest) 
-d
-```
