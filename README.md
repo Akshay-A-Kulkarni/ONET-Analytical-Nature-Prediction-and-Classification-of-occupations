@@ -1,4 +1,4 @@
-# ONET-Occupation-Analytical-nature-prediction-and-classification
+#[ONET-Occupation-Analytical-nature-prediction-and-classification](https://akshay-a-kulkarni.github.io/ONET-Analytical-Nature-Prediction-and-Classification-of-occupations/)
 
 
     
