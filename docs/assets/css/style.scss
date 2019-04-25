@@ -1,11 +1,7 @@
     
 ---
 ---
-@import "{{ jekyll-theme-cayman }}";
-
-$header-bg-color: #000000;
-$header-bg-color-secondary: #000000;
-$section-headings-color: #000000;
+@import "{{jekyll-theme-cayman}}";
 
 .inner {
   max-width: 100%;
