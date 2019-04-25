@@ -45,7 +45,7 @@ This RMD script contains:
 
 ## Checking and Loading required libraries
 
-```{r message=FALSE, warning=FALSE, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
+```r
   
 # Initialization
 
@@ -128,7 +128,7 @@ SOC Code  |  Selected Feature                                   |  Description
  
 12 variables have been identified that describe analytical attributes. These features do a pretty good job of encompassing the analytical nature of an occupation title from various aspects or facets mentioned in our base definition/assumption.
 
-```{r,tidy=TRUE}
+```r
 # Loading data (make sure the tables are in the same folder as the rmd)
  
 script_folder <-  getwd() # Retrieving the path from where the rmd is being accessed (To eliminate locating files and paths, if run from the Task folder since default behaviour for getwd in a rmd is to give the working directory of the rmd not the global setting)
@@ -234,7 +234,7 @@ The resulting DF contained the response variable `ANALYTICAL` $\in$ ${0,1}$ othe
 
 ## Loading Labled data
 
-```{r}
+```r
 
 Labled_original_data <-  read_csv(paste(getwd(),"/LabledTrainingFeatures.csv",sep = ""), na = "NA")
 model_data <- Labled_original_data
@@ -249,7 +249,7 @@ str(model_data)
 
 As a non-parametric modelling technique `randomForest` theoretically should and does perform well on classifcation problems and since its easy to implement its a great way to build a preliminary model to test initial accuracy and gather more information on importance of the selected features.
 
-```{r}
+```r
 
 # RandomForest Analysis
 
@@ -320,7 +320,7 @@ indicated by its highest meandecreaseGINI where the scale is irrelevant: only th
 
 ## Quadratic Discriminant Analysis.
 
-```{r Quadratic Discriminant Analysis.}
+```r Quadratic Discriminant Analysis.
 # Quadratic Discriminant Analysis.
 
 qdadata <- model_data %>% drop_na()
@@ -360,7 +360,7 @@ The `partimat()` fucntion provides a multiple figure array which shows the class
 
 Now we get to the main part of this excercise and implement a `Gaussian Process Classifier`.
 
-```{r}
+```r
 
 # Gaussian Process Classifier.
 
