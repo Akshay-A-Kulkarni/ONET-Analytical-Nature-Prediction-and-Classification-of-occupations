@@ -68,7 +68,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 
 <section class="page-header">
-<h1 class="title toc-ignore project-name">Gausian Process Classfication on O*NET Database</h1>
+<h1 class="title toc-ignore project-name" style="font-size:4em">Gausian Process Classfication on O*NET Database</h1>
 <h4 class="author project-author">Akshay Kulkarni</h4>
 </section>
 
@@ -80,8 +80,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="the-onet-database-a-primary-source-of-occupational-information" class="section level2">
 <h2>The ONET Database: A Primary Source of Occupational Information</h2>
 <p>The ONET database has a wide variety of worker and job oriented data categories. The ONET Content Model provides the framework that identifies and organizes this important information about work. The O*NET-SOC Occupation Taxonomy covers work performed in the U.S. economy and defines the set of occupations for which data is collected.</p>
-<p>The ONet is now the primary source of occupational information. It is sponsored by ETA through a grant to the North Carolina Department of Commerce. Thus, it is a rich database with a sizable ampunt of information of very high quality.</p>
-<p>This is script deals with the task of classifying a given occupation from the the ONET database by implementing a model to estimate a probability of an occupation being <em>Analytical</em> in nature. After spending some time looking around on the ONET site, Relevant tables that contain possible promising features were identified and data was aqucisitoned, cleaned and transformed to create a feature matrix on which modelling was done to predict an occupation being analytical.</p>
+<p>The ONet is considered now to be the primary source of occupational information and is sponsored by ETA through a grant to the North Carolina Department of Commerce. Thus, it is a rich database with a sizable ampunt of information of very high quality.</p>
+<p>This script deals with the task of classifying a given occupation from the the ONET database by implementing various models to estimate a probability of an occupation being <strong>Analytical</strong> in nature. After spending some time looking around on the ONET site, Relevant tables that contained possible promising features were identified and data was aqucisitoned, cleaned and transformed to create a feature table on which modelling was performed to predict an occupation being analytical.</p>
 <p>This RMD script contains:</p>
 <ul>
 <li>Feature Analysis and manipulation.</li>
@@ -141,7 +141,7 @@ checkPackage &lt;-<span class="st"> </span><span class="cf">function</span>(pack
 </div>
 <div id="data-collation-and-feature-selection" class="section level1">
 <h1>Data collation and Feature Selection:</h1>
-<p>Before any feature selection can begin setting a base definition about what constitutes as an ANALYTICAL and what aspects might influence the nature of an occupation will be good.</p>
+<p>Before any feature selection can begin setting a baseline definition as to what constitutes as an ANALYTICAL job and what aspects might influence the nature of these occupations is an important step.</p>
 <p>Solutions can be reached by clear-cut, methodical approaches or more creative and lateral angles, depending on the objective. Both ways of solving a problem require analytical skills. Analytical skills might sound technical, but we use these skills in everyday work when detecting patterns, brainstorming, observing, interpreting data, integrating new information, theorizing, and making decisions based on multiple factors and options available.</p>
 <p>therefore features that could capture the analytical nature of an occupation would have descriptions strongly correlating to aspects in :</p>
 <ul>
@@ -153,7 +153,7 @@ checkPackage &lt;-<span class="st"> </span><span class="cf">function</span>(pack
 <li>Research.</li>
 </ul>
 <p>etc.</p>
-<p>Therefore after systematically observing all tables int the ONET Content model and correlating features by using the Content Model Reference, Various variables from multiple tables such as Ablities, Skills, Work Activities , Interests were identified and further reduced to avoid repeated or correlating features.</p>
+<p>Therefore after systematically observing all tables in the ONET Content model and correlating features by using the Content Model Reference, Various variables from multiple tables such as Ablities, Skills, Work-Activities, Interests were identified and further reduced to avoid repeating or inter-correlating features.</p>
 <p>Thus the final feature list was identified as below :</p>
 <table>
 <colgroup>
